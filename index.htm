@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>داشبورد پروژه</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Include PapaParse and Chart.js libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="theme-dark">
+  <header>
+    <!-- Left: Time and Date (date is aligned RTL) -->
+    <div class="header-left">
+      <div id="time" class="time"></div>
+      <div id="date" class="date"></div>
+    </div>
+    <!-- Center: Title -->
+    <div class="header-title">
+      <h1>داشبورد پروژه</h1>
+    </div>
+    <!-- Right: Logo -->
+    <div class="header-right">
+      <img class="header-logo" src="logo.png" alt="لوگو" />
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Section A: Current Projects (Top-left) -->
+    <div class="section" id="sectionA">
+      <h2>پروژه‌های جاری</h2>
+      <div class="scrollable-content" id="contentA">
+        <table id="tableA">
+          <thead id="tableA-head"></thead>
+          <tbody id="tableA-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section B: Equipment (Top-right) -->
+    <div class="section" id="sectionB">
+      <div class="sub-section" id="sectionB1">
+        <h2>تجهیزات سرویس</h2>
+        <div class="scrollable-content" id="contentB1">
+          <table id="tableB1">
+            <thead id="tableB1-head"></thead>
+            <tbody id="tableB1-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sub-section" id="sectionB2">
+        <h2>تجهیزات کالیبراسیون</h2>
+        <div class="scrollable-content" id="contentB2">
+          <table id="tableB2">
+            <thead id="tableB2-head"></thead>
+            <tbody id="tableB2-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section C: Future Projects (Bottom-left, 10% taller than before) -->
+    <div class="section" id="sectionC">
+      <h2>پروژه‌های آتی</h2>
+      <div class="scrollable-content" id="contentC">
+        <table id="tableC">
+          <thead id="tableC-head"></thead>
+          <tbody id="tableC-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section D: R&D & Charts (Bottom-right, 10% taller than before) -->
+    <div class="section" id="sectionD">
+      <div class="sub-section-d" id="subD1">
+        <h2>پروژه‌های تحقیق و توسعه</h2>
+        <div id="splitFlapContainer">
+          <div id="splitFlap"></div>
+        </div>
+      </div>
+      <div class="sub-section-d" id="subD2">
+        <h2>توزیع پروژه‌ها</h2>
+        <div class="chart-row">
+          <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="sowPieChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global overlay for hovered table rows -->
+  <div id="overlay"></div>
+
+  <footer>
+    <!-- Footer Left: Logo -->
+    <div class="footer-left">
+      <img class="footer-logo" src="footer-logo.png" alt="لوگو" />
+    </div>
+    <!-- Footer Center: Powered by Text -->
+    <div class="footer-center">
+      <p>توسعه توسط مهدی اکبری فر</p>
+    </div>
+    <!-- Footer Right: Theme Switcher with 10 options -->
+    <div class="footer-right">
+      <div class="theme-switcher">
+        <!-- Original 5 themes -->
+        <div class="theme-option" data-theme="dark" title="تاریک"></div>
+        <div class="theme-option" data-theme="light" title="روشن"></div>
+        <div class="theme-option" data-theme="dark-colored" title="تاریک رنگی"></div>
+        <div class="theme-option" data-theme="light-colored" title="روشن رنگی"></div>
+        <div class="theme-option" data-theme="gray" title="خاکستری"></div>
+        <!-- 5 new additional themes -->
+        <div class="theme-option" data-theme="vintage" title="وینتیج"></div>
+        <div class="theme-option" data-theme="ocean" title="اقیانوسی"></div>
+        <div class="theme-option" data-theme="forest" title="جنگلی"></div>
+        <div class="theme-option" data-theme="sunset" title="غروب"></div>
+        <div class="theme-option" data-theme="neon" title="نئون"></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
