@@ -1,186 +1,327 @@
-// Header clock
-export function initHeaderClock() {
-  const timeEl = document.getElementById('clock-time');
-  const dateEl = document.getElementById('clock-date');
-  function updateClock() {
-    const now = new Date();
-    timeEl.textContent = now.toLocaleTimeString();
-    const persianDate = now.toLocaleDateString('fa-IR', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-    dateEl.textContent = persianDate;
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-// Theme switcher
-export function initThemeSwitcher() {
-  const themeOptions = document.querySelectorAll('.theme-option');
-  themeOptions.forEach(option => {
-    option.addEventListener('click', () => {
-      const theme = option.getAttribute('data-theme');
-      document.body.className = theme;
-      localStorage.setItem('selectedTheme', theme);
-    });
-  });
-  const savedTheme = localStorage.getItem('selectedTheme');
-  document.body.className = savedTheme ? savedTheme : 'theme-dark';
+body {
+  font-family: 'B Nazanin', 'Vazir', 'Tahoma', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  direction: ltr;
+  transition: background-color 0.5s, color 0.5s;
+  overflow: hidden;
 }
 
-// Restore scroll positions for all scrolled containers
-export function restoreScrollPositions() {
-  const containers = document.querySelectorAll('.scrollable-table');
-  containers.forEach(container => {
-    const id = container.id;
-    const savedPos = localStorage.getItem('scrollPos_' + id);
-    if (savedPos) container.scrollTop = parseInt(savedPos, 10);
-    container.addEventListener('scroll', () => {
-      localStorage.setItem('scrollPos_' + id, container.scrollTop);
-    });
-  });
+/* Default CSS variables */
+:root {
+  --background-color: #1f1f1f;
+  --section-bg: #2a2a2a;
+  --heading-bg: #333;
+  --heading-text: #ffffff;
+  --text-color: #ffffff;
+  /* Chart settings */
+  --chart-padding: 1px;
+  --chart-margin: 1px;
+  --chart-height: 150px;
+  --rd-chart-gap: 1px;
+  /* No fixed height for equipment tables */
 }
 
-// Revised auto-scroll function: for any container whose content does NOT exceed its height,
-// duplicate its innerHTML so that scrolling is always possible. Then, continuously increase scrollTop,
-// and reset to 0 at the end.
-export function initAutoScroll() {
-  const containers = document.querySelectorAll('.scrollable-table');
-  containers.forEach(container => {
-    // Delay a bit to allow content to be loaded.
-    setTimeout(() => {
-      // If content does not overflow, duplicate it.
-      if (container.scrollHeight <= container.clientHeight) {
-        container.innerHTML += container.innerHTML;
-      }
-    }, 200);
-    
-    const scrollSpeed = 1, intervalTime = 50;
-    let autoScrollTimer = setInterval(() => {
-      if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
-        container.scrollTop = 0;
-      } else {
-        container.scrollTop += scrollSpeed;
-      }
-    }, intervalTime);
-    
-    container.addEventListener('mouseenter', () => {
-      clearInterval(autoScrollTimer);
-    });
-    container.addEventListener('mouseleave', () => {
-      autoScrollTimer = setInterval(() => {
-        if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
-          container.scrollTop = 0;
-        } else {
-          container.scrollTop += scrollSpeed;
-        }
-      }, intervalTime);
-    });
-  });
+/* Theme classes */
+body.theme-dark {
+  --background-color: #1f1f1f;
+  --section-bg: #2a2a2a;
+  --heading-bg: #333;
+  --heading-text: #ffffff;
+  --text-color: #ffffff;
+}
+body.theme-light {
+  --background-color: #f5f5f5;
+  --section-bg: #ffffff;
+  --heading-bg: #e0e0e0;
+  --heading-text: #333;
+  --text-color: #333;
+}
+body.theme-dark-colored {
+  --background-color: #1f1f1f;
+  --section-bg: #2a2a2a;
+  --heading-bg: #6200ea;
+  --heading-text: #ffffff;
+  --text-color: #ffffff;
+}
+body.theme-light-colored {
+  --background-color: #f5f5f5;
+  --section-bg: #ffffff;
+  --heading-bg: #03dac6;
+  --heading-text: #333;
+  --text-color: #333;
+}
+body.theme-gray {
+  --background-color: #cccccc;
+  --section-bg: #e0e0e0;
+  --heading-bg: #999999;
+  --heading-text: #333;
+  --text-color: #333;
+}
+body.theme-vintage {
+  --background-color: #f7f1e1;
+  --section-bg: #f0e4d7;
+  --heading-bg: #d4a373;
+  --heading-text: #5d4037;
+  --text-color: #5d4037;
+}
+body.theme-ocean {
+  --background-color: #a1c4fd;
+  --section-bg: #c2e9fb;
+  --heading-bg: #0077be;
+  --heading-text: #000000;
+  --text-color: #000000;
+}
+body.theme-forest {
+  --background-color: #a8e6cf;
+  --section-bg: #dcedc1;
+  --heading-bg: #388e3c;
+  --heading-text: #000000;
+  --text-color: #000000;
+}
+body.theme-sunset {
+  --background-color: #ff9a9e;
+  --section-bg: #fad0c4;
+  --heading-bg: #ff6f69;
+  --heading-text: #000000;
+  --text-color: #000000;
+}
+body.theme-neon {
+  --background-color: #39ff14;
+  --section-bg: #e0ffe0;
+  --heading-bg: #00ff90;
+  --heading-text: #000;
+  --text-color: #000;
 }
 
-// Attach hover events to table rows so that pop-up displays full header and row data.
-export function attachRowHover(row) {
-  if (!row) return;
-  row.addEventListener("mouseenter", function (event) {
-    let popup = getHoverPopup();
-    const table = row.closest("table");
-    if (table) {
-      const headerCells = Array.from(table.querySelectorAll("thead th"));
-      const dataCells = Array.from(row.querySelectorAll("td"));
-      let tableHTML = `<table style="border-collapse: collapse;">`;
-      tableHTML += `<thead><tr>`;
-      for (let i = 0; i < dataCells.length; i++) {
-        const width = headerCells[i] ? headerCells[i].getBoundingClientRect().width : dataCells[i].getBoundingClientRect().width;
-        const headerText = headerCells[i] ? headerCells[i].textContent.trim() : `Column ${i + 1}`;
-        tableHTML += `<th style="border: 1px solid; padding:2px 4px; width:${width}px;">${headerText}</th>`;
-      }
-      tableHTML += `</tr></thead>`;
-      tableHTML += `<tbody><tr>`;
-      for (let i = 0; i < dataCells.length; i++) {
-        const width = dataCells[i].getBoundingClientRect().width;
-        tableHTML += `<td style="border: 1px solid; padding:2px 4px; width:${width}px;">${dataCells[i].getAttribute("data-fulltext")}</td>`;
-      }
-      tableHTML += `</tr></tbody></table>`;
-      popup.innerHTML = tableHTML;
-    }
-    popup.style.display = "block";
-    popup.style.left = event.pageX + 10 + "px";
-    popup.style.top = event.pageY + 10 + "px";
-    
-    // Set pop-up border and shadow based on theme.
-    let theme = document.body.className;
-    let borderColor = theme.indexOf("dark") !== -1 ? "#ffffff" : "#000000";
-    popup.style.border = `1px solid ${borderColor}`;
-    popup.style.boxShadow = `0 2px 6px ${borderColor}`;
-  });
-  row.addEventListener("mousemove", function (event) {
-    let popup = getHoverPopup();
-    popup.style.left = event.pageX + 10 + "px";
-    popup.style.top = event.pageY + 10 + "px";
-  });
-  row.addEventListener("mouseleave", function () {
-    let popup = getHoverPopup();
-    popup.style.display = "none";
-  });
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--heading-bg);
+  padding: 10px 20px;
+  height: 70px;
+  color: var(--heading-text);
+}
+.header-left, .header-center, .header-right {
+  flex: 1;
+}
+.header-left { text-align: left; }
+.header-center { text-align: center; }
+.header-right { text-align: right; }
+.header-logo {
+  height: 100%;
+  max-height: 70px;
+  object-fit: contain;
+  padding: 2px 0;
 }
 
-function getHoverPopup() {
-  let popup = document.getElementById("hover-popup");
-  if (!popup) {
-    popup = document.createElement("div");
-    popup.id = "hover-popup";
-    popup.style.position = "absolute";
-    popup.style.background = "var(--heading-bg)";
-    popup.style.color = "var(--heading-text)";
-    popup.style.padding = "6px 8px";
-    popup.style.borderRadius = "4px";
-    popup.style.zIndex = "1000";
-    popup.style.display = "none";
-    popup.style.pointerEvents = "none";
-    document.body.appendChild(popup);
-  }
-  return popup;
+/* Clock styling */
+#clock-time, #clock-date {
+  font-size: 1rem;
+  padding: 2px;
 }
 
-// Animate R&D rows one-by-one. Once the last row finishes, start over.
-export function animateRdRows(rows, container, originalRows) {
-  if (!originalRows) {
-    originalRows = rows.slice();
-  }
-  if (rows.length === 0) {
-    animateRdRows(originalRows.slice(), container, originalRows);
-    return;
-  }
-  const rowText = rows.shift();
-  const rowElem = document.createElement("div");
-  rowElem.className = "rd-row";
-  container.appendChild(rowElem);
-  
-  rowText.split("").forEach((char, index) => {
-    const span = document.createElement("span");
-    span.textContent = char;
-    span.style.opacity = "0";
-    span.style.display = "inline-block";
-    span.style.transformOrigin = "top";
-    span.style.animation = `flip 0.5s ease forwards`;
-    span.style.animationDelay = `${index * 0.05}s`;
-    rowElem.appendChild(span);
-  });
-  
-  const totalTime = rowText.length * 0.05 + 0.5; // in seconds
-  setTimeout(() => {
-    rowElem.style.transition = "opacity 0.5s ease";
-    rowElem.style.opacity = "0";
-    setTimeout(() => {
-      container.removeChild(rowElem);
-      animateRdRows(rows, container, originalRows);
-    }, 500);
-  }, totalTime * 1000 + 500);
+/* Main container grid layout */
+.dashboard-grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1.2fr;
+  gap: 10px;
+  padding: 10px;
+  height: calc(100vh - 140px);
+  background: var(--background-color);
 }
 
-// For backward compatibility.
-export function initSplitFlapEffect() {}
+/* Section styling */
+.section {
+  background: var(--section-bg);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.section-header {
+  background: var(--heading-bg);
+  color: var(--heading-text);
+  padding: 6px;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+.rd-header { padding: 4px; }
+
+/* Scrollable areas – all tables share this */
+.scrollable-table {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 4px;
+  scroll-behavior: smooth;
+}
+/* Equipment table containers now follow exactly the same rule as other scrollable tables. */
+
+/* Fixed table header */
+table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--heading-bg);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
+}
+table th {
+  background: var(--heading-bg);
+  color: var(--heading-text);
+}
+
+/* Equipment grid */
+.equipment-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.equipment-subsection {
+  background: var(--section-bg);
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.subsection-header {
+  background: var(--heading-bg);
+  color: var(--heading-text);
+  margin-bottom: 2px;
+  text-align: center;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+/* R&D split-flap text area */
+.rd-text {
+  background: var(--section-bg);
+  border: 1px dashed var(--heading-text);
+  margin-bottom: var(--rd-chart-gap);
+  text-align: center;
+  padding: 4px;
+  font-size: 0.9rem;
+  perspective: 1000px;
+}
+#rd-info { display: inline-block; }
+
+/* Charts container */
+.charts-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: var(--rd-chart-gap);
+  padding: var(--chart-padding);
+  margin-bottom: var(--chart-margin);
+}
+.chart-item {
+  flex: 1;
+  position: relative;
+}
+.chart-item canvas {
+  max-height: var(--chart-height);
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--heading-bg);
+  color: var(--heading-text);
+  padding: 10px 20px;
+}
+.footer-left, .footer-center, .footer-right { flex: 1; }
+.footer-left { text-align: left; }
+.footer-center { text-align: center; font-size: 0.9rem; }
+.footer-right { text-align: right; }
+.footer-logo { max-width: 60px; height: auto; }
+
+/* Theme switcher */
+#theme-switcher {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+.theme-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: transform 0.3s;
+}
+.theme-option:hover { transform: scale(1.2); }
+.theme-option[data-theme="theme-dark"] { background: #1f1f1f; }
+.theme-option[data-theme="theme-light"] { background: #f5f5f5; }
+.theme-option[data-theme="theme-dark-colored"] { background: #6200ea; }
+.theme-option[data-theme="theme-light-colored"] { background: #03dac6; }
+.theme-option[data-theme="theme-gray"] { background: #cccccc; }
+.theme-option[data-theme="theme-vintage"] { background: #d4a373; }
+.theme-option[data-theme="theme-ocean"] { background: #0077be; }
+.theme-option[data-theme="theme-forest"] { background: #388e3c; }
+.theme-option[data-theme="theme-sunset"] { background: #ff6f69; }
+.theme-option[data-theme="theme-neon"] { background: #00ff90; }
+
+/* Row highlight classes */
+.highlight-red {
+  background-color: rgba(255, 0, 0, 0.3) !important;
+}
+.highlight-yellow {
+  background-color: rgba(255, 255, 0, 0.3) !important;
+}
+
+/* Pop-up table extra styling */
+#hover-popup {
+  border: 1px solid #fff;
+  box-shadow: 0 2px 6px #fff;
+}
+
+/* Drag bars for resizing */
+.drag-bar {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.drag-bar.vertical {
+  width: 5px;
+  cursor: col-resize;
+  top: 0;
+  bottom: 0;
+}
+.drag-bar.horizontal {
+  height: 5px;
+  cursor: row-resize;
+  left: 0;
+  right: 0;
+}
+
+/* Flip keyframes for split-flap animation */
+@keyframes flip {
+  0% { transform: rotateX(90deg); opacity: 0; }
+  100% { transform: rotateX(0deg); opacity: 1; }
+}
