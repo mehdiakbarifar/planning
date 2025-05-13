@@ -7,11 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeaderClock();
   initThemeSwitcher();
   restoreScrollPositions();
-  initAutoScroll();
+  addGlobalStyles(); // Add this line
   setupCSVLoading();
   initCharts();
   populateTables();
   initDragResize();
+  
+  // Delay auto-scroll initialization until after CSV loading
+  setTimeout(initAutoScroll, 1000);
 });
 
 function initDragResize() {
