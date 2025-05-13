@@ -1,129 +1,137 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>داشبورد پروژه</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Include PapaParse and Chart.js libraries -->
-  <script src="papaparse.min.js"></script>
-  <script src="chart.js"></script>
+  <!-- Link to main CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Chart.js and PapaParse libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 </head>
-<body class="theme-dark">
+<body>
+  <!-- Header -->
   <header>
-    <!-- Left: Time and Date (date is aligned RTL) -->
     <div class="header-left">
-      <div id="time" class="time"></div>
-      <div id="date" class="date"></div>
+      <div id="clock-time"></div>
+      <div id="clock-date"></div>
     </div>
-    <!-- Center: Title -->
-    <div class="header-title">
+    <div class="header-center">
       <h1>داشبورد پروژه</h1>
     </div>
-    <!-- Right: Logo -->
     <div class="header-right">
-      <img class="header-logo" src="logo.png" alt="لوگو" />
+      <img src="logo.png" alt="Logo" class="header-logo" />
     </div>
   </header>
 
-  <div class="container">
-    <!-- Section A: Current Projects (Top-left) -->
-    <div class="section" id="sectionA">
-      <h2>پروژه‌های جاری</h2>
-      <div class="scrollable-content" id="contentA">
-        <table id="tableA">
-          <thead id="tableA-head"></thead>
-          <tbody id="tableA-body"></tbody>
+  <!-- Main container using CSS Grid -->
+  <main class="dashboard-grid">
+    <!-- Section A: Current Projects -->
+    <section id="section-a" class="section">
+      <h2 class="section-header">پروژه‌های جاری</h2>
+      <div class="scrollable-table" id="current-projects-table-container">
+        <table id="current-projects-table">
+          <!-- The table header (<thead>) will be populated via CSV loading -->
+          <tbody>
+            <!-- Data populated dynamically from projects_curr.csv -->
+          </tbody>
         </table>
       </div>
-    </div>
+    </section>
 
-    <!-- Section B: Equipment (Top-right) -->
-    <div class="section" id="sectionB">
-      <div class="sub-section" id="sectionB1">
-        <h2>تجهیزات سرویس</h2>
-        <div class="scrollable-content" id="contentB1">
-          <table id="tableB1">
-            <thead id="tableB1-head"></thead>
-            <tbody id="tableB1-body"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="sub-section" id="sectionB2">
-        <h2>تجهیزات کالیبراسیون</h2>
-        <div class="scrollable-content" id="contentB2">
-          <table id="tableB2">
-            <thead id="tableB2-head"></thead>
-            <tbody id="tableB2-body"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section C: Future Projects (Bottom-left, 10% taller than before) -->
-    <div class="section" id="sectionC">
-      <h2>پروژه‌های آتی</h2>
-      <div class="scrollable-content" id="contentC">
-        <table id="tableC">
-          <thead id="tableC-head"></thead>
-          <tbody id="tableC-body"></tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Section D: R&D & Charts (Bottom-right, 10% taller than before) -->
-    <div class="section" id="sectionD">
-      <div class="sub-section-d" id="subD1">
-        <h2>پروژه‌های تحقیق و توسعه</h2>
-        <div id="splitFlapContainer">
-          <div id="splitFlap"></div>
-        </div>
-      </div>
-      <div class="sub-section-d" id="subD2">
-        <h2>توزیع پروژه‌ها</h2>
-        <div class="chart-row">
-          <div class="chart-container">
-            <canvas id="pieChart"></canvas>
+    <!-- Section B: Equipment Data -->
+    <section id="section-b" class="section">
+      <h2 class="section-header">داده‌های تجهیز</h2>
+      <div class="equipment-container">
+        <div class="equipment-subsection">
+          <h3 class="subsection-header">تجهیزات سرویس</h3>
+          <!-- Fixed height to force auto-scroll even with few rows -->
+          <div class="scrollable-table" id="service-equipment-table-container">
+            <table id="service-equipment-table">
+              <!-- <thead> will be generated via CSV loading -->
+              <tbody>
+                <!-- Data populated dynamically from service_equipments.csv -->
+              </tbody>
+            </table>
           </div>
-          <div class="chart-container">
-            <canvas id="sowPieChart"></canvas>
+        </div>
+        <div class="equipment-subsection">
+          <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
+          <!-- Fixed height to force auto-scroll even with few rows -->
+          <div class="scrollable-table" id="calibration-equipment-table-container">
+            <table id="calibration-equipment-table">
+              <!-- <thead> will be generated via CSV loading -->
+              <tbody>
+                <!-- Data populated dynamically from calib_equipments.csv -->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Global overlay for hovered table rows -->
-  <div id="overlay"></div>
+    <!-- Section C: Future Projects -->
+    <section id="section-c" class="section">
+      <h2 class="section-header">پروژه‌های آینده</h2>
+      <div class="scrollable-table" id="future-projects-table-container">
+        <table id="future-projects-table">
+          <!-- <thead> will be generated via CSV loading -->
+          <tbody>
+            <!-- Data populated dynamically from projects_Future.csv -->
+          </tbody>
+        </table>
+      </div>
+    </section>
 
+    <!-- Section D: R&D Projects & Charts -->
+    <section id="section-d" class="section">
+      <h2 class="section-header rd-header">پروژه‌های تحقیق و توسعه</h2>
+      <div class="rd-text" id="rd-info-container">
+        <!-- The Res_Dev_projects.csv data will be loaded and animated row-by-row -->
+        <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
+      </div>
+      <div class="charts-container">
+        <div class="chart-item">
+          <canvas id="statusChart" aria-label="نمودار وضعیت پروژه‌ها" role="img"></canvas>
+        </div>
+        <div class="chart-item">
+          <canvas id="sowChart" aria-label="نمودار دسته‌بندی SOW" role="img"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drag bars for resizing (these are absolutely positioned inside the grid container) -->
+    <div id="drag-vertical" class="drag-bar vertical"></div>
+    <div id="drag-horizontal" class="drag-bar horizontal"></div>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <!-- Footer Left: Logo -->
     <div class="footer-left">
-      <img class="footer-logo" src="footer-logo.png" alt="لوگو" />
+      <img src="footer-logo.png" alt="Footer Logo" class="footer-logo" />
     </div>
-    <!-- Footer Center: Powered by Text -->
     <div class="footer-center">
       <p>توسعه توسط مهدی اکبری فر</p>
     </div>
-    <!-- Footer Right: Theme Switcher with 10 options -->
     <div class="footer-right">
-      <div class="theme-switcher">
-        <!-- Original 5 themes -->
-        <div class="theme-option" data-theme="dark" title="تاریک"></div>
-        <div class="theme-option" data-theme="light" title="روشن"></div>
-        <div class="theme-option" data-theme="dark-colored" title="تاریک رنگی"></div>
-        <div class="theme-option" data-theme="light-colored" title="روشن رنگی"></div>
-        <div class="theme-option" data-theme="gray" title="خاکستری"></div>
-        <!-- 5 new additional themes -->
-        <div class="theme-option" data-theme="vintage" title="وینتیج"></div>
-        <div class="theme-option" data-theme="ocean" title="اقیانوسی"></div>
-        <div class="theme-option" data-theme="forest" title="جنگلی"></div>
-        <div class="theme-option" data-theme="sunset" title="غروب"></div>
-        <div class="theme-option" data-theme="neon" title="نئون"></div>
+      <div id="theme-switcher">
+        <!-- 10 theme options -->
+        <div class="theme-option" data-theme="theme-dark"></div>
+        <div class="theme-option" data-theme="theme-light"></div>
+        <div class="theme-option" data-theme="theme-dark-colored"></div>
+        <div class="theme-option" data-theme="theme-light-colored"></div>
+        <div class="theme-option" data-theme="theme-gray"></div>
+        <div class="theme-option" data-theme="theme-vintage"></div>
+        <div class="theme-option" data-theme="theme-ocean"></div>
+        <div class="theme-option" data-theme="theme-forest"></div>
+        <div class="theme-option" data-theme="theme-sunset"></div>
+        <div class="theme-option" data-theme="theme-neon"></div>
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <!-- Main JavaScript entry point -->
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
