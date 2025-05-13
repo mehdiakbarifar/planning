@@ -1,0 +1,111 @@
+﻿Row,Client,Service Order,New Service order,Engine Type,SOW,QTY,Part Name,Applicant,Part No.,Month,Initial Notification,Actual End,Baseline (DueDate),Status,Description
+1,Zagros 2,S-20003,560029,CFM56-5A,"Cleaning, Inspection (FPI-4)",1,"SEAL, ROTAITING AIR REAR","Ghyasvand, Head of Engine Rem", 1359M86P03,3,2/12/2024,3/10/2024,2/20/2024,Completed,
+2,QC- NDT,5025114,510005,SAM 146 GDT-NDT005,"Cleaning, Inspection (FPI-2)",23755,"LIST (Bolt,..)",QC,List,3,2/13/2024,3/11/2024,4/18/2024,Completed,
+3,Meraj,S-10006,560005,CFM56-5B5/P,Cleaning /Inspection (FPI-2),596,LPT Blade stg.1-4,Engine shop,List,3,2/19/2024,3/30/2024,3/10/2024,Completed,
+4,Aseman 740178,5025213,560102,CFM56-5C2,"Inspection (FPI-2,3,4)",20,Compressor Rotor Assembly parts,Engine shop,List,3,1/9/2024,3/12/2024,3/7/2024,Completed,
+5,Owner/Apadana,5026205,,JT8D,"Cleaning, Inspection (FPI)",195,"Blade, Vane, Disk",Design,List,3,2/27/2024,3/17/2024,3/10/2024,Completed,
+6,Air1,S-10014,560013,CFM56-3C1,Cleaning,1533,"CC, HPT Nozzle, HPT shroud, LPT Nozzle, Part List",Engine shop,List,3,3/6/2024,3/12/2024,3/13/2024,Completed,
+7,GT20,5023621,510001,CFM56-5C,"Cleaning, Inspection (FPI-4)",12,"LPT, HPT blades",,"208M81P01, 3371277120",3,3/9/2024,3/16/2024,3/16/2024,Completed,
+8,Air1,S-10014,560013,CFM56-3C1,Cleaning,475,"Inner Liner, Nozzle, Blade, …",Engine shop,List,3,3/11/2024,3/12/2024,3/14/2024,Completed,
+9,Sepahan,S-10007,560006,CFM56-5A1/F,Cleaning,144,"Fan Blade, Damper, Retainer, Spacer",Engine shop,List,3,3/11/2024,3/14/2024,3/14/2024,Completed,
+10,GT21,,,CFM56,"Simulation, Building test stand",1, Fuel Nozzle Chamber Test Stand,Engine Design,,3,,,,,
+11,,,,PW4000 ,Inspection (Vt),1,HPT Blade Stage2,,,4,,4/8/2024,4/8/2024,Completed,
+12,Qeshm Air,S-10009,560008,CF6-80C2A5,"Inspection (Vt, Dt), Repair",62,"Seal. Shroud, Nozzle",معاونت کسب و کار,List,4,1/7/2024,4/27/2024,4/19/2024,Repair,
+13,Aseman 740178,5025213,560102,CFM56-5C2,"Inspection (FPI-2,4)",6,"Spool, bushing, spacer, c.c",Engine shop,List,4,1/9/2024,4/27/2024,4/17/2024,Completed,
+14,GT27,,,PW127M,Cleaning,1,HPT Disk stg 1,Engine Design,,4,4/14/2024,4/20/2024,4/16/2024,Completed,
+15,,,,PW4000 ,"Inspection (VT, DT)",143,HPT Blade,,List,4,4/20/2024,5/14/2024,4/21/2024,Completed,
+16,Sepahan,S-10005,560004,CFM56-5A3,Cleaning,1182,"Seal, Nozzel",Engine Shop,,4,4/20/2024,5/5/2024,4/27/2024,Completed,
+17,GT25,,,JT8D,Cleaning,2,Disk stg 3 & 4,Engine Design,"777603, 800804",4,4/27/2024,4/28/2024,4/28/2024,Completed,
+18,Air 1,S-10008,560007,CFM56-3C1,Cleaning,2972,"Part List (Fan blade, bolt, nut, ..)",Engine shop,List,4,4/22/2024,5/2/2024,5/2/2024,Completed,
+19,Iran Air tour,S-20002,560028,JT8D,"Cleaning, Inspection",64,1st HPT Blade (60Rl+4Sl),,"856101, 843901",5,,5/28/2024,5/5/2024,Completed,
+20,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, Repair (Tack weld)",1,LPT Case (Borescope Boss Stage 3 &  4),Engine Shop,3381174520,5,3/5/2024,5/13/2024,5/11/2024,Completed,
+21,Meraj,S-10006,560005,CFM56-5B5/P,Cleaning,1,Combustion case,Engine shop,1784M91G02,5,4/27/2024,5/8/2024,5/5/2024,Completed,
+22,Apadana,5025973,560114,V2500,Cleaning,244,"TURBINE STAGE NOZZLE, Case LpT",Engine Shop,List,5,4/30/2024,5/23/2024,5/22/2024,Completed,
+23,Sepahan,S-10005,560004,CFM56-5A3,Inspection,13,"BLADE, HPT ROTOR",Engine Shop,2080M87P07,5,5/1/2024,5/25/2024,6/11/2024,Completed,
+24,Air 1,S-10014,560013,CFM56-3C1,"Cleaning, Inspection",4,"Shaft, Seal, RETAINER, BLADE HPT RTR REAR & Front",Engine Shop,List,5,4/28/2024,5/27/2024,6/19/2024,Completed,
+25,Sepahan,S-10007,560006,CFM56-5A3,"Cleaning, Inspection (FPI)",1,"DISK, ASSY-FAN",Engine Shop,336-018-165-0,5,5/6/2024,5/19/2024,5/17/2024,Completed,
+26,GT21,5025114,510005,,Cleaning,1,"BLADE COMPRESSOR ROTOR, 8TH STAGE",Engine Design,-,5,5/7/2024,5/20/2024,5/19/2024,Completed,
+27,Sepahan,S-10007,560006,CFM56-5A3,"Cleaning, Inspection (FPI)",66,"BOLT, SHEAR DBL HEX HD",Engine Shop,"J818P060A , J816P063A",5,5/9/2024,5/26/2024,6/16/2024,Completed,
+28,GT20,,,,Sandblast,12,HPT Blade,Engine Construct,,5,5/12/2024,5/16/2024,5/16/2024,Completed,
+29,Sepahan,S-10019,560018,CFM56-5A3,Cleaning,2451,Parts list,Engine Shop,List,5,5/15/2024,5/28/2024,6/30/2024,Completed,
+30,GT21,5025114,510005,,"Cleaning, Inspection (FPI)",15,Bolt,QC,MS989508,5,5/18/2024,5/18/2024,5/18/2024,Completed,
+31,,,,V2500,Cleaning,2,1ST STG HPT SHROUD,Mechanic,-,5,5/19/2024,5/23/2024,5/23/2024,Completed,
+32,GT21,5025114,510005,,Inspection (FPI),722,"Bolt, Nut, Rivet, ..",NDT-QC,List,5,5/13/2024,5/13/2024,5/13/2024,Completed,
+33,Meraj,S-10006,560005,CFM56-5B5/P,Cleaning,2,"CASE, CPRSR STTR REAR, Front",Engine Shop,"1559M40G03, 1559M30G06",5,5/25/2024,5/29/2024,5/29/2024,Completed,
+34,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, inspection (FPI)",39,"Nozzle segment stg 2,3 , center vent tube",Engine shop,List,6,3/6/2024,6/10/2024,5/29/2024,Completed,
+35,Sepahan,S-10019,560018,CFM56-5A3,"Cleaning, Inspection",86,"BLADE, HPT ROTOR, linner, outer, cowl, dome, nut",Engine Shop,List,6,5/1/2024,6/11/2024,6/11/2024,Completed,
+36,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning (is Done), inspection",6,"Bracket, Tube, ..",Engine Shop,List,6,5/26/2024,6/30/2024,6/15/2024,Completed,
+37,GT21,5025114,510005,,Cleaning,1,"Case Fan,1st Stage",Engine Design,7622F20P01,6,6/8/2024,6/11/2024,6/13/2024,Completed,
+38,Sepahan,S-10019,560018,CFM56-5A3,Cleaning,74,Blade stg 3 & 4,Engine Shop,List,6,6/15/2024,7/20/2024,7/4/2024,Completed,
+39,Sepahan,Donator,,CFM56-5A1/F,Cleaning,78,Blade stg 3 & 4,Engine Shop,List,6,6/15/2024,7/202024,7/4/2024,Completed,
+40,Meraj,S-10006,560005,CFM56-5B5/P,Heat tint,4,LPT Blade Stage 2 ,Engine Shop,3381083040,6,6/2/2024,6/22/2024,6/22/2024,Completed,
+41,Fars Kooh. 1st,S-10022,560021,JT8D,"Cleaning, Inspection (VT, DT, FPI)",146,"LPT Blade stg 3 (88), 4 (58)",Fars Co.,"798403, 822504",7,4/22/2024,7/7/2024,5/21/2024,Completed,
+42,Fars Kooh.2nd,S-10022,560021,JT8D,"Cleaning, Inspection (VT, DT, FPI)",146,"LPT Blade stg 3 (88), 4 (58)",Fars Co.,"798403, 822504",7,4/22/2024,7/7/2024,5/23/2024,Completed,
+43,Fars Kooh. 3rd-219,S-10022,560021,JT8D,"Cleaning, Inspection (VT, DT, FPI)",146,"LPT Blade stg 3 (88), 4 (58)",Fars Co.,"798403, 822505",7,4/24/2024,7/7/2024,5/30/2024,Completed,
+44,Farsco 4th-219,S-10022,560021,JT8D,"Cleaning, Inspection (VT, DT, FPI)",146,"LPT Blade stg 3 (88), 4 (58)",Fars Co.,"798403, 822505, 851704",7,4/29/2024,7/7/2024,6/8/2024,Completed,
+45,"Farsco 5th-219, 217",S-10022,560021,JT8D,"Cleaning, Inspection (VT, DT, FPI)",204,"LPT Blade stg 3 (88), 4 (116)",Fars Co.,"798403, 822505",7,4/29/2024,7/7/2024,6/15/2024,Completed,
+46,Aseman,5025213,560102,CFM56-5C2/F,"Cleaning, Inspection (FPI)",614,HPC Blade,Engine Shop,List,7,5/1/2024,,5/29/2024,Completed,
+47,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, Inspection",614,HPC Blade STG 1-9 ,Engine Shop,List,7,5/11/2024,7/20/2024,6/16/2024,Completed,
+48,Sepahan,S-10019,560018,CFM56-5A3,Cleaning,1969,"LPT Rotor/Stator Part List, HPT Shroud & LPT Nozzle 1 Part List",Engine Shop,,7,5/23/2024,7/23/2024,6/1/2024,Completed,
+49,GT25,,,,Inspection (FPI),2,Blade turbine 3rd stg,NDT-QC,B 803003,7,5/27/2024,7/6/2024,6/15/2024,Completed,
+50,Sahand Asia,-,560217,JT8D,"Cleaning, Inspection, Repair",78,2nd stg. LPT Blade,معاونت کسب و کار,728058,7,5/28/2024,,8/20/2024,,تم?زکار? و FPI انجام شده است. FPI انجام شده در مرحله بازرس? چشم?
+51,GT25,,,JT8D,"Cleaning, Inspection (FPI)",8,Blade turbine 3rd stg,NDT-QC,"B 803003, 822504",7,6/1/2024,7/6/2024,6/15/2024,Completed,
+52,Zagros,S-20003,560029,CFM56-5A3,Cleaning,1,"Case, CPRSR STTR REAR",Engine Shop,1559M40G03,7,6/8/2024,7/23/2024,6/13/2024,Completed,
+53,Zagros,S-10023,560022,CFM56-5A1,Cleaning,2,"CASE, ASSY-CPRSR STTR, CASE, COMBUSTION",Engine Shop,"1318M75G10, 2002M88G02",7,6/8/2024,7/23/2024,6/13/2024,Completed,
+54,GT25,,,JT8D,Cleaning,2,LPT Disk Stage3 & Stage4,Engine Design,"777603, 800804",7,6/11/2024,7/28/2024,1/0/1900,Completed,
+55,Iran Air tour,S-10003,560002,JT8D,"Inspection, Repair",146,LPT Blade stg 3&4,معاونت کسب و کار,"803003, 851704",7,6/11/2024,7/14/2024,7/20/2024,Completed,
+56,Farsco 7th,S-10022,560021,JT8D,"Cleaning, Inspection, Repair",88,LPT Blade stg 3,Fars Co.,798403  ,7,6/18/2024,7/28/2024,7/25/2024,Completed,
+57,Zagros,-,560161,JT8D,"Cleaning, Inspection",146,LPT  Blade 3&4,Engine Shop,"851704, 803003",7,6/29/2024,7/28/2024,8/10/2024,Repair,اتمام کار قطعات ن?ازمند بازرس? پس از تعم?ر
+58,GT21,,,,Inspection (FPI),69,Standard Parts,NDT-QC,List,7,7/31/2024,8/1/2024,8/1/2024,Completed,
+59,Pars Air,S-10008,560007,CF34,"Cleaning, Inspection, Repair",40,HPT Nozzle segment (19+21),,List,8,2/17/2024,,3/16/2024,Repair,"16 قطعه تحو?ل کارفرما گرد?ده است. 21 عدد بر?ز?نگ انجام شده است. در حال تعم?ر نها??: بلند?نگ و بازرس? انجام شده است ن?از به بر?ز?نگ مجدد دارد (برگشت قطعات از بر?ز?نگ) و سپس بلند?نگ، کول?نک و پوشش"
+60,Iran Air,5025109,560192,Tay650-15,"Cleaning, Inspection, Repiar",72,HPT 1th ST Blade ,,List,8,,,12/10/2023,Repair,
+61,GT31,5026277,510005,SAM146,"Cleaning, Inspection, Repair",4," Cowl, Inner, Outer, Dome",GT31,,8,9/19/2023,,9/20/2024,Repair,در حال تعم?ر
+62,Meraj,S-10006,560005,CFM56/5B5P,"Cleaning, Inspection (VT, DT), Repair",3," CC (Inner, Outer, Dome)",Engine shop,"1561M26G05, 1968M44G06, 1968M64G01",8,2/3/2024,8/11/2024,8/20/2024,Completed,
+63,GT21,5025114,510005,,Repair (Copper machine),1,Fuel nozzle,Engine Design,,8,2/27/2024,5/15/2024,4/19/2024,Completed,
+64,Qeshm Air,S-10009,560008,CF6-80C2A5,"Repair, coating",120,HPT Blade 1 (53) & 2 (67),معاونت کسب و کار,List,8,1/7/2024,,7/3/2024,Repair, Repair Outsourcing
+65,Taban,S-10021,560020,JT8D-219,"Cleaning, Inspection, Repair",116, LPT Blade stg 2,,800002,8,4/15/2024,,7/15/2024,Repair,"پا?ان بازرس?، تحو?ل برا? تم?ز کار? بعد از FPI"
+66,Meraj,5025755/896,560105,V2500,Repair,35,Vane HPT stg 2,,List,8,,,4/15/2024,Repair,"پا?ان کار در مواد کاران، در انتظار پرداخت نها??"
+67,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, inspection (Vt, Dt), repair",14,Hanger Shroud HPT stator,Engine Shop,"1808M61G04, 1808M61G08",8,4/13/2024,,6/10/2024,,"پا?ان بازرس?، در مرحله CMM"
+68,Sepahan,S-10005,560004,CFM56-5A3,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,8,4/15/2024,,8/20/2024,,بازرس? چشم? انجام شده است. در حال بازرس? ابعاد?. ارسال برا? تست مونتاژ?
+69,Sepahan,S-10007,560006,CFM56-5A3,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,8,4/15/2024,,8/20/2024,,بازرس? چشم? انجام شده است. در حال بازرس? ابعاد?. ارسال برا? تست مونتاژ?
+70,Sepahan/ owner,donator,,CFM56-5A1/F,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,8,4/15/2024,,8/20/2024,,بازرس? چشم? انجام شده است. در حال بازرس? ابعاد?. درخواست مجوز تخر?ب
+71,Taban,S-10020,560019,JT8D-219,"Cleaning, Inspection (VT, DT, FPI)",292,"LPT Blade stg 3 (176), 4 (116)",,"798403, 822504",8,4/15/2024,8/1/2024,7/15/2024,Completed,
+72,GT20,,,CFM56,"Cleaning, Inspection (Air flow)",1,NGV ,Engine Design,,8,4/20/2024,,4/28/2024,,در انتظار ساخت ف?کسچر (فرخ?)
+73,Sepahan,Donator,,CFM56-5A1/F,Inspection,80,"BLADE, HPT ROTOR",Engine Shop,2080M87P04,8,5/1/2024,,6/11/2024,,در انتظارسندبلاست و استر?پ?نگ
+74,Sepahan,S-10007,560006,CFM56-5A3,Inspection,67,"BLADE, HPT ROTOR",Engine Shop,2080M87P04,8,5/1/2024,,6/11/2024,,در انتظارسندبلاست و استر?پ?نگ
+75,GT25,,,JT8D, Repair,13,"LPT VANE STAGE 3 & 4 (10), LPT Blade stg 3 (3)",Engine Shop,List,8,5/9/2024,,6/20/2024,Repair,در انتظار تأ??د معاونت محترم
+76,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, Inspection, Repair",43,"Shroud, HPT Stator (42), CVT support (1)",Engine Shop,"2080M28P02, 337-111-903-0",8,3/6/2024,,6/16/2024,Repair,اتمام بازرس? CVT. ابلاغ تعم?ر به واحد تعم?رات
+77,,5025874,560109,V2500,"Inspection, Repair",143,"HPT vane satg 1 (51+28), HPT blade stg 1 (48+16)",,"2A4201, 2A9201",8,5/11/2024,,6/15/2024,Repair,قطعات در?افت گرد?د برنامه ر?ز? برا? بازرس? پس از تعم?ر . حکاک? سر?ال نامبرها انجام شده است.
+78,Qeshm Air,S-10009,560008,CF6-80C2,"Cleaning, Inspection, Repair",28,"HPT Blade Stg.1 (18), HPT NGV2 (7), C.C (3)",معاونت کسب و کار,List,8,4/21/2024,,7/30/2024,Repair,اتمام تم?زکار? و بازرس?. استعلام از آقا? رضا?? انجام شده. قطعات جهت دمونتاژ به شاپ 2 فرستاده شده است.
+79,GT22,,,LTC4B-8D,"Cleaning, Inspection (FPI), Repair",1,2ND NOZZLE,Roostapishe,2-140-240-01 ,8,5/28/2024,,7/20/2024,Repair,"تم?زکار? و بازرس? انجام شده، ن?ازمند توافق نظر تعم?رات و توسعه تعم?رات در خصوص ع?وب? است که در کتاب ذکر نشده است."
+80,Farsco 6th,S-20007,560033,JT8D,"Cleaning, Inspection, Repair",160,HPT Blade stg 1,Fars Co.,"856001, 847601",8,6/11/2024,,7/30/2024,,در مرحله سند بلاست
+81,Iran Air tour,-,560098,JT8D-219,Root Cause Failure Analysis,4,LPT Blade Stage 2 ,Engine Shop,B 800002,8,6/16/2024,,8/20/2024,,تحو?ل واحد تحق?ق و توسعه. مجوز تخر?ب گرفته شده است.
+82,Iran Air tour,-,560098,JT8D-219,"Cleaning, Inspection",5,"Shaft, Disk, HUB ASSY",Engine Shop,List,8,6/22/2024,,7/30/2024,," سر?ال موتور: 725562، تم?زکار? انجام شده است. شروع بازرس? چشم? و FPI"
+83,Chabahar,-,560186,JT8D," Inspectio, Repair",188,HPT Blade stg 1,,856101,8,6/26/2024,,7/25/2024,Repair,پا?ان تعم?ر و شروع بازرس? پس از تعم?ر
+84,Meraj,S-10006,560005,CFM56-5B5/P,"Cleaning, Inspection, Coating (Aluminize)",350,"Nozzle segment stg 2,3 , Blade, 350 (38+312+4)",Engine shop,List,8,6/29/2024,,7/27/2024,Repair,تم?زکار? انجام شده است. در مرحله سندبلاست و استر?پ?نگ به منظور پوشش
+85,GT 21,5025114,510005,,Repair,537,"Blade, Compressor rotor  (HPC)",GT21,List,8,6/26/2024,,7/20/2024,Repair,سورت و پول?ش انجام شده است. پا?ان تعم?رات در مرحله بازرس? پس از تعم?ر
+86,Meraj,S-10006,560005,CFM56-5B5/P,Repair,4,"Bracket, Tube, ..",Engine Shop,List,8,6/30/2024,,8/20/2024,Repair,پا?ان تعم?رات سه قطعه و شروع بازرس? پس از تعم?ر
+87,Mearj,-,560187,CFM56-5B62P (575616),"Cleaning, Inspection, Repair",5,"COMB CHAMBER, DAC COMB CHAMBER, DOME OUTER COMB CHAMBER, INNER COMB CHAMBER",معاونت کسب و کار,"1968M99G13, 1968M99G07, 1873M8G02, 1968M96G10",8,7/7/2024,,9/20/2024,Repair,"تم?زکار? و بازرس? انجام شده (بازرس? ابعاد? ا?نرلا?نر باق? مانده است)،در مرحله ته?ه جاب کارد و اسکوپ تعم?رات"
+88,Kish air,-,560185,JT8D,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,معاونت کسب و کار,"798403, 822504",8,7/7/2024,,9/10/2024,Completed,پا?ان بازرس? و ارسال گزارش به مشتر?
+89,Kish air (Farsco),S-10022,560021,JT8D,Repair,82,LPT Blade stg 3,معاونت کسب و کار,798403,8,7/9/2024,,8/20/2024,Repair,در مرحله ته?ه اسکوپ تعم?رات
+90,GT20,,,,Cleaning,80,HPT balde,Engine Design,M79G01 ( 2080M81P01),8,7/9/2024,,7/20/2024,,در انتظار تم?زکار?
+91,Air 1,S-10018,560017,CFM56-3C1,"Cleaning, inspection, Repair",14,"HPT Seal, Shield Nut, …",Engine  shop,List,8,7/14/2024,,8/11/2024,,تم?زکار? انجام شده است
+92,Air 1,S-10014,560013,CFM56-3C1,"Cleaning, inspection, Repair",3,Manifolds,Engine  shop,List,8,7/14/2024,,8/11/2024,,تم?زکار? انجام شده است (عدم در?افت قطعه رد?ف اول ل?ست)
+93,Iran Air tour,S-10003,560002,JT8D,Cleaning Inspection,257,"Ring Assy, Duct, Spacer",معاونت کسب و کار,List,8,7/14/2024,,,Repair,"ارسال نتا?ج، تحو?ل بل?د ها? 3 و 4 به ن?کل آل?اژ جهت تعم?ر (74 عدد بل?د 3 و 57 عدد بل?د 4)"
+94,Zagros,-,560162,JT8D,Cleaning,466,"Disk, Case, standard, …",Enigine shop,List,8,7/24/2024,,8/11/2024,,برنامه ر?ز? برا? تم?زکار?
+95,Sepahan,S-10019,560018,CFM56-5A,"Cleaning, FPI (2-3-4)",211,"Damper, Shaft, Seal , Disk, ...",Enigine shop,List,8,7/24/2024,,8/11/2024,,انتظار تحو?ل قطعات
+96,Zagros,560161,560161,JT8D-217C,Cleaning,244,"Vane, Blade, Ring Assy, …",Enigine shop,List,8,7/29/2024,,8/11/2024,,برنامه ر?ز? برا? تم?زکار?
+97,Air 1,560097,560097,CFM56-3C1,Cleaning,930,"CC, Nozzle, Shroud, …",Enigine shop,List,8,7/29/2024,,8/11/2024,,برنامه ر?ز? برا? تم?زکار?
+98,Air 1,,560097,CFM56-3C1,Cleaning,2982,Standard Parts,Enigine shop,List,8,8/10/2024,,,,
+99,GT21,,,IFM,"Cleaning, Inspection",882,Part List IFM,GT21,List,8,8/4/2024,,,,
+100,GT21,,,FDTM,"Cleaning, Inspection",789,Part List FDTM,GT21,List,8,8/4/2024,,,,
+101,GT22,,,RS,"Cleaning, Inspection",456,Part List RS,GT22,List,8,08/04/202,,,,
+102,Kish Air,,560173,JT8D-219," Cleaning, Inspection (FPI)",173,"Vane, Blade, Disk",Engine shop 2,List,8,8/13/2024,,,,
+103,Sepahan,S-10019,,CFM56-5A,Cleaning,1,"FRAME, ASSY-LPT",Engine Shop,336-031-631-0,8,8/15/2024,,,,
+104,Qeshm Air,,560208,CFM56-5B4/P,Cleaning,107,"Liner, Dome, Shroud, Blade",Engine Shop,List,8,8/15/2024,,,,
+105,GT21,,,,Inspection (FPI-2),240,Bolt,NDT-QC,"MS9698-09 (A), MS9698-09 (B), MS9732-06",8,8/17/2024,,,,
+106,Farsco 8th ,,560210,JT8D,"Cleaning, Inspection ",64,1th stg. HPT  Blade,معاونت کسب و کار,856101,8,8/17/2024,,,,
+107,Farsco 8th ,,560211,JT8D,"Cleaning, Inspection ",88,3rd stg. HPT  Blade,معاونت کسب و کار,803003,8,8/17/2024,,,,
+108,ATA,,560223,JT8D,"Cleaning, Inspection ",146,3rd & 4th stg LPT Blade,معاونت کسب و کار,"798403, 822504",8,8/17/2024,,,,
+109,Esfahan,,,AC-P4,,2,"Torus assembly, outlet",تجه?زات جانب?,,8,8/17/2024,,,,
+Sum,,,,,,50222,,,,,,,,,
