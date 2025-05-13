@@ -2,6 +2,7 @@
 export function initHeaderClock() {
   const timeEl = document.getElementById('clock-time');
   const dateEl = document.getElementById('clock-date');
+
   function updateClock() {
     const now = new Date();
     timeEl.textContent = now.toLocaleTimeString();
@@ -13,6 +14,7 @@ export function initHeaderClock() {
     });
     dateEl.textContent = persianDate;
   }
+
   updateClock();
   setInterval(updateClock, 1000);
 }
@@ -27,49 +29,54 @@ export function initThemeSwitcher() {
       localStorage.setItem('selectedTheme', theme);
     });
   });
+
   const savedTheme = localStorage.getItem('selectedTheme');
   document.body.className = savedTheme ? savedTheme : 'theme-dark';
 }
 
-// Restore scroll positions for all scrolled containers
+// Restore scroll positions for all tables
 export function restoreScrollPositions() {
   const containers = document.querySelectorAll('.scrollable-table');
   containers.forEach(container => {
     const id = container.id;
     const savedPos = localStorage.getItem('scrollPos_' + id);
     if (savedPos) container.scrollTop = parseInt(savedPos, 10);
+    
     container.addEventListener('scroll', () => {
       localStorage.setItem('scrollPos_' + id, container.scrollTop);
     });
   });
 }
 
-// Revised auto-scroll function: for any container whose content does NOT exceed its height,
-// duplicate its innerHTML so that scrolling is always possible. Then, continuously increase scrollTop,
-// and reset to 0 at the end.
+// Auto-scroll function for all tables
 export function initAutoScroll() {
   const containers = document.querySelectorAll('.scrollable-table');
   containers.forEach(container => {
-    // Delay a bit to allow content to be loaded.
     setTimeout(() => {
-      // If content does not overflow, duplicate it.
       if (container.scrollHeight <= container.clientHeight) {
-        container.innerHTML += container.innerHTML;
+        // Ensure content overflows by duplicating existing content multiple times
+        let originalHTML = container.innerHTML;
+        let duplicationFactor = Math.ceil(container.clientHeight / container.scrollHeight) + 2;
+        
+        for (let i = 0; i < duplicationFactor; i++) {
+          container.innerHTML += originalHTML;
+        }
       }
     }, 200);
-    
+
     const scrollSpeed = 1, intervalTime = 50;
     let autoScrollTimer = setInterval(() => {
       if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
-        container.scrollTop = 0;
+        container.scrollTop = 0;  // Reset to the top when reaching the last row
       } else {
         container.scrollTop += scrollSpeed;
       }
     }, intervalTime);
-    
+
     container.addEventListener('mouseenter', () => {
       clearInterval(autoScrollTimer);
     });
+
     container.addEventListener('mouseleave', () => {
       autoScrollTimer = setInterval(() => {
         if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
@@ -82,46 +89,52 @@ export function initAutoScroll() {
   });
 }
 
-// Attach hover events to table rows so that pop-up displays full header and row data.
+// Attach hover events for popup effect
 export function attachRowHover(row) {
   if (!row) return;
+  
   row.addEventListener("mouseenter", function (event) {
     let popup = getHoverPopup();
     const table = row.closest("table");
+
     if (table) {
       const headerCells = Array.from(table.querySelectorAll("thead th"));
       const dataCells = Array.from(row.querySelectorAll("td"));
       let tableHTML = `<table style="border-collapse: collapse;">`;
       tableHTML += `<thead><tr>`;
+      
       for (let i = 0; i < dataCells.length; i++) {
         const width = headerCells[i] ? headerCells[i].getBoundingClientRect().width : dataCells[i].getBoundingClientRect().width;
         const headerText = headerCells[i] ? headerCells[i].textContent.trim() : `Column ${i + 1}`;
         tableHTML += `<th style="border: 1px solid; padding:2px 4px; width:${width}px;">${headerText}</th>`;
       }
-      tableHTML += `</tr></thead>`;
-      tableHTML += `<tbody><tr>`;
+
+      tableHTML += `</tr></thead><tbody><tr>`;
       for (let i = 0; i < dataCells.length; i++) {
         const width = dataCells[i].getBoundingClientRect().width;
         tableHTML += `<td style="border: 1px solid; padding:2px 4px; width:${width}px;">${dataCells[i].getAttribute("data-fulltext")}</td>`;
       }
       tableHTML += `</tr></tbody></table>`;
+
       popup.innerHTML = tableHTML;
     }
+
     popup.style.display = "block";
     popup.style.left = event.pageX + 10 + "px";
     popup.style.top = event.pageY + 10 + "px";
     
-    // Set pop-up border and shadow based on theme.
     let theme = document.body.className;
-    let borderColor = theme.indexOf("dark") !== -1 ? "#ffffff" : "#000000";
+    let borderColor = theme.includes("dark") ? "#ffffff" : "#000000";
     popup.style.border = `1px solid ${borderColor}`;
     popup.style.boxShadow = `0 2px 6px ${borderColor}`;
   });
+
   row.addEventListener("mousemove", function (event) {
     let popup = getHoverPopup();
     popup.style.left = event.pageX + 10 + "px";
     popup.style.top = event.pageY + 10 + "px";
   });
+
   row.addEventListener("mouseleave", function () {
     let popup = getHoverPopup();
     popup.style.display = "none";
@@ -146,20 +159,22 @@ function getHoverPopup() {
   return popup;
 }
 
-// Animate R&D rows one-by-one. Once the last row finishes, start over.
+// R&D Projects animation effect (row-by-row split-flap transition)
 export function animateRdRows(rows, container, originalRows) {
   if (!originalRows) {
     originalRows = rows.slice();
   }
+  
   if (rows.length === 0) {
     animateRdRows(originalRows.slice(), container, originalRows);
     return;
   }
+
   const rowText = rows.shift();
   const rowElem = document.createElement("div");
   rowElem.className = "rd-row";
   container.appendChild(rowElem);
-  
+
   rowText.split("").forEach((char, index) => {
     const span = document.createElement("span");
     span.textContent = char;
@@ -170,8 +185,8 @@ export function animateRdRows(rows, container, originalRows) {
     span.style.animationDelay = `${index * 0.05}s`;
     rowElem.appendChild(span);
   });
-  
-  const totalTime = rowText.length * 0.05 + 0.5; // in seconds
+
+  const totalTime = rowText.length * 0.05 + 0.5; 
   setTimeout(() => {
     rowElem.style.transition = "opacity 0.5s ease";
     rowElem.style.opacity = "0";
@@ -182,5 +197,5 @@ export function animateRdRows(rows, container, originalRows) {
   }, totalTime * 1000 + 500);
 }
 
-// For backward compatibility.
+// For backward compatibility
 export function initSplitFlapEffect() {}

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCSVLoading();
   initCharts();
   populateTables();
-  initDragResize(); // Draggable grid with persistence
+  initDragResize();
 });
 
 function initDragResize() {
@@ -19,11 +19,12 @@ function initDragResize() {
   const verticalBar = document.getElementById('drag-vertical');
   const horizontalBar = document.getElementById('drag-horizontal');
 
+  // Restore grid settings if saved
   const savedCols = localStorage.getItem('gridColumns');
   const savedRows = localStorage.getItem('gridRows');
   if (savedCols) container.style.gridTemplateColumns = savedCols;
   if (savedRows) container.style.gridTemplateRows = savedRows;
-  
+
   const updateDragBarPositions = () => {
     const rect = container.getBoundingClientRect();
     const colTemplate = getComputedStyle(container).gridTemplateColumns.split(" ");
@@ -32,7 +33,7 @@ function initDragResize() {
       col1Width = rect.width * (parseFloat(colTemplate[0]) / 100);
     }
     verticalBar.style.left = (col1Width - 2.5) + 'px';
-    
+
     const rowTemplate = getComputedStyle(container).gridTemplateRows.split(" ");
     let row1Height = parseFloat(rowTemplate[0]);
     if (rowTemplate[0].endsWith('%')) {
@@ -42,7 +43,7 @@ function initDragResize() {
   };
   updateDragBarPositions();
   window.addEventListener('resize', updateDragBarPositions);
-  
+
   verticalBar.addEventListener('mousedown', startDragVertical);
   function startDragVertical(e) {
     e.preventDefault();
@@ -59,12 +60,12 @@ function initDragResize() {
     container.style.gridTemplateColumns = `${col1Percent}% ${col2Percent}%`;
     verticalBar.style.left = (offsetX - 2.5) + 'px';
   }
-  function stopDragVertical(e) {
+  function stopDragVertical() {
     document.removeEventListener('mousemove', dragVertical);
     document.removeEventListener('mouseup', stopDragVertical);
     localStorage.setItem('gridColumns', container.style.gridTemplateColumns);
   }
-  
+
   horizontalBar.addEventListener('mousedown', startDragHorizontal);
   function startDragHorizontal(e) {
     e.preventDefault();
@@ -81,7 +82,7 @@ function initDragResize() {
     container.style.gridTemplateRows = `${row1Percent}% ${row2Percent}%`;
     horizontalBar.style.top = (offsetY - 2.5) + 'px';
   }
-  function stopDragHorizontal(e) {
+  function stopDragHorizontal() {
     document.removeEventListener('mousemove', dragHorizontal);
     document.removeEventListener('mouseup', stopDragHorizontal);
     localStorage.setItem('gridRows', container.style.gridTemplateRows);
