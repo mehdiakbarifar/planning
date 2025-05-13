@@ -31,7 +31,7 @@ export function initThemeSwitcher() {
   document.body.className = savedTheme ? savedTheme : 'theme-dark';
 }
 
-// Restore scroll positions
+// Restore scroll positions for all scrolled containers
 export function restoreScrollPositions() {
   const containers = document.querySelectorAll('.scrollable-table');
   containers.forEach(container => {
@@ -44,54 +44,58 @@ export function restoreScrollPositions() {
   });
 }
 
-// Revised auto-scroll with pause on hover
-// If the container's content is too short (i.e. it does not overflow),
-// we duplicate its content so that auto-scrolling works.
+// Revised auto-scroll function: for any container whose content does NOT exceed its height,
+// duplicate its innerHTML so that scrolling is always possible. Then, continuously increase scrollTop,
+// and reset to 0 at the end.
 export function initAutoScroll() {
   const containers = document.querySelectorAll('.scrollable-table');
   containers.forEach(container => {
-    // Slight delay to allow content to load before checking scrollHeight
+    // Delay a bit to allow content to be loaded.
     setTimeout(() => {
-      if (container.scrollHeight <= container.clientHeight + 5) {
+      // If content does not overflow, duplicate it.
+      if (container.scrollHeight <= container.clientHeight) {
         container.innerHTML += container.innerHTML;
       }
-    }, 100);
+    }, 200);
+    
     const scrollSpeed = 1, intervalTime = 50;
     let autoScrollTimer = setInterval(() => {
-      if (container.scrollTop >= container.scrollHeight - container.clientHeight)
+      if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
         container.scrollTop = 0;
-      else container.scrollTop += scrollSpeed;
+      } else {
+        container.scrollTop += scrollSpeed;
+      }
     }, intervalTime);
-    container.addEventListener('mouseenter', () => { clearInterval(autoScrollTimer); });
+    
+    container.addEventListener('mouseenter', () => {
+      clearInterval(autoScrollTimer);
+    });
     container.addEventListener('mouseleave', () => {
       autoScrollTimer = setInterval(() => {
-        if (container.scrollTop >= container.scrollHeight - container.clientHeight)
+        if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
           container.scrollTop = 0;
-        else container.scrollTop += scrollSpeed;
+        } else {
+          container.scrollTop += scrollSpeed;
+        }
       }, intervalTime);
     });
   });
 }
 
-// Attach hover events to display a pop-up table that shows the full header and row data.
+// Attach hover events to table rows so that pop-up displays full header and row data.
 export function attachRowHover(row) {
   if (!row) return;
   row.addEventListener("mouseenter", function (event) {
     let popup = getHoverPopup();
     const table = row.closest("table");
     if (table) {
-      // Use existing <thead> to build header, so that all CSV header names appear correctly.
       const headerCells = Array.from(table.querySelectorAll("thead th"));
       const dataCells = Array.from(row.querySelectorAll("td"));
       let tableHTML = `<table style="border-collapse: collapse;">`;
       tableHTML += `<thead><tr>`;
       for (let i = 0; i < dataCells.length; i++) {
-        const width = headerCells[i]
-          ? headerCells[i].getBoundingClientRect().width
-          : dataCells[i].getBoundingClientRect().width;
-        const headerText = headerCells[i]
-          ? headerCells[i].textContent.trim()
-          : `Column ${i + 1}`;
+        const width = headerCells[i] ? headerCells[i].getBoundingClientRect().width : dataCells[i].getBoundingClientRect().width;
+        const headerText = headerCells[i] ? headerCells[i].textContent.trim() : `Column ${i + 1}`;
         tableHTML += `<th style="border: 1px solid; padding:2px 4px; width:${width}px;">${headerText}</th>`;
       }
       tableHTML += `</tr></thead>`;
@@ -106,7 +110,8 @@ export function attachRowHover(row) {
     popup.style.display = "block";
     popup.style.left = event.pageX + 10 + "px";
     popup.style.top = event.pageY + 10 + "px";
-    // Set dynamic border and shadow color based on theme (if theme contains "dark", use light border, else dark)
+    
+    // Set pop-up border and shadow based on theme.
     let theme = document.body.className;
     let borderColor = theme.indexOf("dark") !== -1 ? "#ffffff" : "#000000";
     popup.style.border = `1px solid ${borderColor}`;
@@ -141,7 +146,7 @@ function getHoverPopup() {
   return popup;
 }
 
-// R&D row-by-row split-flap animation: animate rows one-by-one, and when the last row finishes, start over.
+// Animate R&D rows one-by-one. Once the last row finishes, start over.
 export function animateRdRows(rows, container, originalRows) {
   if (!originalRows) {
     originalRows = rows.slice();
@@ -166,7 +171,7 @@ export function animateRdRows(rows, container, originalRows) {
     rowElem.appendChild(span);
   });
   
-  const totalTime = rowText.length * 0.05 + 0.5; // seconds
+  const totalTime = rowText.length * 0.05 + 0.5; // in seconds
   setTimeout(() => {
     rowElem.style.transition = "opacity 0.5s ease";
     rowElem.style.opacity = "0";
