@@ -48,30 +48,42 @@ export function restoreScrollPositions() {
   });
 }
 
-// Auto-scroll function for all tables
 export function initAutoScroll() {
-  const containers = document.querySelectorAll('.scrollable-table');
-  containers.forEach(container => {
-    setTimeout(() => {
-      if (container.scrollHeight <= container.clientHeight) {
-        // Ensure content overflows by duplicating existing content multiple times
-        let originalHTML = container.innerHTML;
-        let duplicationFactor = Math.ceil(container.clientHeight / container.scrollHeight) + 2;
-        
-        for (let i = 0; i < duplicationFactor; i++) {
-          container.innerHTML += originalHTML;
-        }
-      }
-    }, 200);
+  // Only target equipment tables
+  const equipmentTables = [
+    'service-equipment-table',
+    'calibration-equipment-table'
+  ].map(id => document.getElementById(id)).filter(Boolean);
 
-    const scrollSpeed = 1, intervalTime = 50;
-    let autoScrollTimer = setInterval(() => {
-      if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
-        container.scrollTop = 0;  // Reset to the top when reaching the last row
-      } else {
-        container.scrollTop += scrollSpeed;
-      }
-    }, intervalTime);
+  equipmentTables.forEach(table => {
+    if (!table) return;
+
+    // Add the scrollable class
+    table.classList.add('equipment-scroll-table');
+
+    // Duplicate content for seamless scrolling
+    const tbody = table.querySelector('tbody');
+    if (tbody && tbody.children.length > 0) {
+      tbody.innerHTML += tbody.innerHTML;
+    }
+
+    // Calculate scroll duration based on row count
+    const rowCount = table.querySelectorAll('tbody tr').length;
+    const scrollDuration = Math.max(20, rowCount * 0.75); // Minimum 20s
+    table.style.animationDuration = `${scrollDuration}s`;
+  });
+}
+
+export function addGlobalStyles() {
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes equipment-scroll {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(calc(-50% + 400px)); }
+    }
+  `;
+  document.head.appendChild(style);
+}
 
     container.addEventListener('mouseenter', () => {
       clearInterval(autoScrollTimer);
