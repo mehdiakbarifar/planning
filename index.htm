@@ -32,9 +32,9 @@
       <h2 class="section-header">پروژه‌های جاری</h2>
       <div class="scrollable-table" id="current-projects-table-container">
         <table id="current-projects-table">
-          <!-- The table header (<thead>) will be populated via CSV loading -->
+          <!-- <thead> will be populated via CSV loading -->
           <tbody>
-            <!-- Data populated dynamically from projects_curr.csv -->
+            <!-- Data from projects_curr.csv -->
           </tbody>
         </table>
       </div>
@@ -46,24 +46,22 @@
       <div class="equipment-container">
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات سرویس</h3>
-          <!-- Fixed height to force auto-scroll even with few rows -->
           <div class="scrollable-table" id="service-equipment-table-container">
             <table id="service-equipment-table">
-              <!-- <thead> will be generated via CSV loading -->
+              <!-- <thead> populated via CSV -->
               <tbody>
-                <!-- Data populated dynamically from service_equipments.csv -->
+                <!-- Data from service_equipments.csv -->
               </tbody>
             </table>
           </div>
         </div>
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
-          <!-- Fixed height to force auto-scroll even with few rows -->
           <div class="scrollable-table" id="calibration-equipment-table-container">
             <table id="calibration-equipment-table">
-              <!-- <thead> will be generated via CSV loading -->
+              <!-- <thead> populated via CSV -->
               <tbody>
-                <!-- Data populated dynamically from calib_equipments.csv -->
+                <!-- Data from calib_equipments.csv -->
               </tbody>
             </table>
           </div>
@@ -76,9 +74,9 @@
       <h2 class="section-header">پروژه‌های آینده</h2>
       <div class="scrollable-table" id="future-projects-table-container">
         <table id="future-projects-table">
-          <!-- <thead> will be generated via CSV loading -->
+          <!-- <thead> populated via CSV -->
           <tbody>
-            <!-- Data populated dynamically from projects_Future.csv -->
+            <!-- Data from projects_Future.csv -->
           </tbody>
         </table>
       </div>
@@ -101,7 +99,7 @@
       </div>
     </section>
 
-    <!-- Drag bars for resizing (these are absolutely positioned inside the grid container) -->
+    <!-- Draggable bars for resizing the grid -->
     <div id="drag-vertical" class="drag-bar vertical"></div>
     <div id="drag-horizontal" class="drag-bar horizontal"></div>
   </main>
