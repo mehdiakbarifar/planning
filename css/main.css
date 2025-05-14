@@ -26,7 +26,6 @@ body {
   --chart-margin: 1px;
   --chart-height: 150px;
   --rd-chart-gap: 1px;
-  /* No fixed height for equipment tables */
 }
 
 /* Theme classes */
@@ -161,16 +160,16 @@ header {
 }
 .rd-header { padding: 4px; }
 
-/* Scrollable areas – all tables share this */
-.scrollable-table {
-    position: relative;
+/* Scrollable areas for tables (for both generic tables and equipment) */
+.scrollable-table,
+.table-container {
+  position: relative;
   overflow-y: auto;
   flex: 1;
   min-height: 0;
-  margin-top: 4px;
   scroll-behavior: smooth;
+  margin-top: 4px;
 }
-/* Equipment table containers now follow exactly the same rule as other scrollable tables. */
 
 /* Fixed table header */
 table thead {
@@ -184,7 +183,8 @@ table {
   border-collapse: collapse;
   table-layout: auto;
 }
-table th, table td {
+table th,
+table td {
   border: 1px solid #ddd;
   padding: 4px;
   text-align: center;
@@ -195,7 +195,6 @@ table th {
 }
 
 /* Recreated Equipment Section */
-
 /* Equipment wrapper using flex */
 .equipment-wrapper {
   display: flex;
@@ -222,7 +221,7 @@ table th {
   margin-bottom: 2px;
 }
 
-/* Reuse table-container: add scrollable properties */
+/* The new scrollable container for equipment tables */
 .table-container {
   position: relative;
   overflow-y: auto;
@@ -230,7 +229,6 @@ table th {
   min-height: 0;
   scroll-behavior: smooth;
 }
-
 
 /* R&D split-flap text area */
 .rd-text {
@@ -273,13 +271,15 @@ footer {
   color: var(--heading-text);
   padding: 10px 20px;
 }
-.footer-left, .footer-center, .footer-right { flex: 1; }
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+}
 .footer-left { text-align: left; }
 .footer-center { text-align: center; font-size: 0.9rem; }
 .footer-right { text-align: right; }
 .footer-logo { max-width: 60px; height: auto; }
 
-/* Theme switcher */
+/* Theme switcher in footer */
 #theme-switcher {
   display: flex;
   gap: 6px;
