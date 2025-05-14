@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>داشبورد پروژه</title>
-  <!-- Link to main CSS -->
-  <link rel="stylesheet" href="css/main.css" />
-  <!-- Chart.js and PapaParse libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="header-left">
-      <div id="clock-time"></div>
-      <div id="clock-date"></div>
-    </div>
-    <div class="header-center">
-      <h1>داشبورد پروژه</h1>
-    </div>
-    <div class="header-right">
-      <img src="logo.png" alt="Logo" class="header-logo" />
-    </div>
-  </header>
-
-  <!-- Main container using CSS Grid -->
-  <main class="dashboard-grid">
-    <!-- Section A: Current Projects -->
-    <section id="section-a" class="section">
-      <h2 class="section-header">پروژه‌های جاری</h2>
-      <div class="scrollable-table" id="current-projects-table-container">
-        <table id="current-projects-table">
-          <!-- <thead> will be populated via CSV loading -->
-          <tbody>
-            <!-- Data from projects_curr.csv -->
-          </tbody>
-        </table>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Management Dashboard - Dash Alpha</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header (Dash Alpha – unchanged) -->
+    <header>
+      <div class="header-left">
+        <div id="clock-time"></div>
+        <div id="clock-date"></div>
       </div>
-    </section>
+      <div class="header-center">
+        <img src="logo.png" alt="Project Logo" class="header-logo" />
+      </div>
+      <div class="header-right">
+        <!-- No theme switcher here -->
+      </div>
+    </header>
 
-          <!-- Section B – Equipment Data (Recreated from scratch) -->
+    <!-- Main Dashboard Grid -->
+    <main class="dashboard-grid">
+      <!-- Section A – Current Projects -->
+      <section id="current-projects" class="section">
+        <div class="section-header">Current Projects</div>
+        <div class="scrollable-table table-container">
+          <table id="current-projects-table">
+            <thead>
+              <tr>
+                <th>Project ID</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated via CSV or sample data -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section B – Equipment Data (Recreated) -->
       <section id="equipment-data" class="section">
         <div class="section-header">Equipment Data</div>
         <div class="equipment-wrapper">
-          <!-- Service Equipment Subsection -->
+          <!-- Service Equipment -->
           <div class="equipment-table">
             <div class="table-title">Service Equipment</div>
-            <!-- Added "scrollable-table" class here -->
             <div class="table-container scrollable-table">
               <table id="service-equipment-table">
                 <thead>
@@ -58,15 +59,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- CSV data from data/service_equipments.csv will load here -->
+                  <!-- Data from data/service_equipments.csv -->
                 </tbody>
               </table>
             </div>
           </div>
-          <!-- Calibration Equipment Subsection -->
+          <!-- Calibration Equipment -->
           <div class="equipment-table">
             <div class="table-title">Calibration Equipment</div>
-            <!-- Added "scrollable-table" class here -->
             <div class="table-container scrollable-table">
               <table id="calibration-equipment-table">
                 <thead>
@@ -77,7 +77,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- CSV data from data/calib_equipments.csv will load here -->
+                  <!-- Data from data/calib_equipments.csv -->
                 </tbody>
               </table>
             </div>
@@ -85,67 +85,70 @@
         </div>
       </section>
 
-    <!-- Section C: Future Projects -->
-    <section id="section-c" class="section">
-      <h2 class="section-header">پروژه‌های آینده</h2>
-      <div class="scrollable-table" id="future-projects-table-container">
-        <table id="future-projects-table">
-          <!-- <thead> populated via CSV -->
-          <tbody>
-            <!-- Data from projects_Future.csv -->
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Section D: R&D Projects & Charts -->
-    <section id="section-d" class="section">
-      <h2 class="section-header rd-header">پروژه‌های تحقیق و توسعه</h2>
-      <div class="rd-text" id="rd-info-container">
-        <!-- The Res_Dev_projects.csv data will be loaded and animated row-by-row -->
-        <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
-      </div>
-      <div class="charts-container">
-        <div class="chart-item">
-          <canvas id="statusChart" aria-label="نمودار وضعیت پروژه‌ها" role="img"></canvas>
+      <!-- Section C – Future Projects -->
+      <section id="future-projects" class="section">
+        <div class="section-header">Future Projects</div>
+        <div class="scrollable-table table-container">
+          <table id="future-projects-table">
+            <thead>
+              <tr>
+                <th>Project ID</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data from data/projects_Future.csv -->
+            </tbody>
+          </table>
         </div>
-        <div class="chart-item">
-          <canvas id="sowChart" aria-label="نمودار دسته‌بندی SOW" role="img"></canvas>
+      </section>
+
+      <!-- Section D – R&D Projects & Charts -->
+      <section id="rnd-projects" class="section">
+        <div class="rd-header">R&D Projects</div>
+        <div class="rd-text" id="rd-info">
+          <!-- R&D data with split-flap animation loaded here from data/Res_Dev_projects.csv -->
+        </div>
+        <div class="charts-container">
+          <div class="chart-item">
+            <canvas id="status-chart" aria-label="Project Statuses Chart" role="img"></canvas>
+          </div>
+          <div class="chart-item">
+            <canvas id="sow-chart" aria-label="Scope of Work Chart" role="img"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (with theme switcher in the right) -->
+    <footer>
+      <div class="footer-left">
+        <img src="footer_logo.png" alt="Footer Logo" class="footer-logo" />
+      </div>
+      <div class="footer-center">
+        Project Management Dashboard &copy; 2025
+      </div>
+      <div class="footer-right">
+        <div id="theme-switcher">
+          <div class="theme-option" data-theme="theme-dark"></div>
+          <div class="theme-option" data-theme="theme-light"></div>
+          <div class="theme-option" data-theme="theme-dark-colored"></div>
+          <div class="theme-option" data-theme="theme-light-colored"></div>
+          <div class="theme-option" data-theme="theme-gray"></div>
+          <div class="theme-option" data-theme="theme-vintage"></div>
+          <div class="theme-option" data-theme="theme-ocean"></div>
+          <div class="theme-option" data-theme="theme-forest"></div>
+          <div class="theme-option" data-theme="theme-sunset"></div>
+          <div class="theme-option" data-theme="theme-neon"></div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Draggable bars for resizing the grid -->
-    <div id="drag-vertical" class="drag-bar vertical"></div>
-    <div id="drag-horizontal" class="drag-bar horizontal"></div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-left">
-      <img src="footer-logo.png" alt="Footer Logo" class="footer-logo" />
-    </div>
-    <div class="footer-center">
-      <p>توسعه توسط مهدی اکبری فر</p>
-    </div>
-    <div class="footer-right">
-      <div id="theme-switcher">
-        <!-- 10 theme options -->
-        <div class="theme-option" data-theme="theme-dark"></div>
-        <div class="theme-option" data-theme="theme-light"></div>
-        <div class="theme-option" data-theme="theme-dark-colored"></div>
-        <div class="theme-option" data-theme="theme-light-colored"></div>
-        <div class="theme-option" data-theme="theme-gray"></div>
-        <div class="theme-option" data-theme="theme-vintage"></div>
-        <div class="theme-option" data-theme="theme-ocean"></div>
-        <div class="theme-option" data-theme="theme-forest"></div>
-        <div class="theme-option" data-theme="theme-sunset"></div>
-        <div class="theme-option" data-theme="theme-neon"></div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Main JavaScript entry point -->
-  <script type="module" src="js/app.js"></script>
-</body>
+    <!-- External libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Entry point (ES6 module) -->
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>
