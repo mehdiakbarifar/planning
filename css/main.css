@@ -163,8 +163,10 @@ header {
 
 /* Scrollable areas – all tables share this */
 .scrollable-table {
-  flex: 1;
+    position: relative;
   overflow-y: auto;
+  flex: 1;
+  min-height: 0;
   margin-top: 4px;
   scroll-behavior: smooth;
 }
