@@ -194,27 +194,43 @@ table th {
   color: var(--heading-text);
 }
 
-/* Equipment grid */
-.equipment-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* Recreated Equipment Section */
+
+/* Equipment wrapper using flex */
+.equipment-wrapper {
+  display: flex;
   gap: 10px;
+  flex: 1;
+  min-height: 0;
 }
-.equipment-subsection {
-  background: var(--section-bg);
-  border-radius: 4px;
-  padding: 4px;
+
+/* Each equipment table container */
+.equipment-table {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }
-.subsection-header {
+
+/* Title for each equipment table */
+.table-title {
   background: var(--heading-bg);
   color: var(--heading-text);
-  margin-bottom: 2px;
-  text-align: center;
   padding: 4px;
+  text-align: center;
   font-size: 1rem;
+  margin-bottom: 2px;
 }
+
+/* Reuse table-container: add scrollable properties */
+.table-container {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  scroll-behavior: smooth;
+}
+
 
 /* R&D split-flap text area */
 .rd-text {
