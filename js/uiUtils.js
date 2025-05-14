@@ -51,43 +51,38 @@ export function restoreScrollPositions() {
 // Auto-scroll function for all tables
 export function initAutoScroll() {
   const containers = document.querySelectorAll('.scrollable-table');
+
   containers.forEach(container => {
-    setTimeout(() => {
-      if (container.scrollHeight <= container.clientHeight) {
-        // Ensure content overflows by duplicating existing content multiple times
-        let originalHTML = container.innerHTML;
-        let duplicationFactor = Math.ceil(container.clientHeight / container.scrollHeight) + 2;
+    if (!container.dataset.duplicated) {
+      container.innerHTML += container.innerHTML; // Ensure looping works
+      container.dataset.duplicated = "true";
+    }
+
+    let paused = false;
+    container.addEventListener('mouseenter', () => { paused = true; });
+    container.addEventListener('mouseleave', () => { paused = false; });
+
+    const speed = 0.5;
+
+    function scrollStep() {
+      if (!paused) {
+        container.scrollTop += speed;
         
-        for (let i = 0; i < duplicationFactor; i++) {
-          container.innerHTML += originalHTML;
-        }
-      }
-    }, 200);
-
-    const scrollSpeed = 1, intervalTime = 50;
-    let autoScrollTimer = setInterval(() => {
-      if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
-        container.scrollTop = 0;  // Reset to the top when reaching the last row
-      } else {
-        container.scrollTop += scrollSpeed;
-      }
-    }, intervalTime);
-
-    container.addEventListener('mouseenter', () => {
-      clearInterval(autoScrollTimer);
-    });
-
-    container.addEventListener('mouseleave', () => {
-      autoScrollTimer = setInterval(() => {
-        if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
+        // Fix: Dynamically calculate reset threshold using actual container height
+        const resetThreshold = container.scrollHeight - container.clientHeight;
+        
+        if (container.scrollTop >= resetThreshold) {
+         
           container.scrollTop = 0;
-        } else {
-          container.scrollTop += scrollSpeed;
         }
-      }, intervalTime);
-    });
+      }
+      requestAnimationFrame(scrollStep);
+    }
+
+    requestAnimationFrame(scrollStep);
   });
 }
+
 
 // Attach hover events for popup effect
 export function attachRowHover(row) {

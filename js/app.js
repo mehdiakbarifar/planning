@@ -25,6 +25,14 @@ function initDragResize() {
   if (savedCols) container.style.gridTemplateColumns = savedCols;
   if (savedRows) container.style.gridTemplateRows = savedRows;
 
+function updateTableSizes() {
+  document.querySelectorAll('.scrollable-table').forEach(container => {
+    container.style.maxHeight = container.parentElement.clientHeight + "px";
+  });
+}
+
+window.addEventListener('resize', updateTableSizes);
+
   const updateDragBarPositions = () => {
     const rect = container.getBoundingClientRect();
     const colTemplate = getComputedStyle(container).gridTemplateColumns.split(" ");

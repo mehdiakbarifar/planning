@@ -1,5 +1,8 @@
 import { attachRowHover, animateRdRows } from './uiUtils.js';
 
+
+
+
 export function setupCSVLoading() {
   const csvFiles = [
     { url: 'data/projects_curr.csv', targetId: 'current-projects-table' },
@@ -115,4 +118,19 @@ function updateRdInfo(data) {
   // We call animateRdRows from uiUtils.js.
   // Note: We assume that animateRdRows is imported in uiUtils.js.
   animateRdRows(rows, rdInfoEl);
+}
+
+export function fetchCSV(url, callback) {
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      Papa.parse(text, {
+        header: true,
+        skipEmptyLines: true,
+        complete: function (results) {
+          callback(results.data);
+        }
+      });
+    })
+    .catch(error => console.error("Error loading CSV:", error));
 }
