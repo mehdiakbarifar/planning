@@ -26,6 +26,7 @@ body {
   --chart-margin: 1px;
   --chart-height: 150px;
   --rd-chart-gap: 1px;
+  /* No fixed height for equipment tables */
 }
 
 /* Theme classes */
@@ -160,16 +161,14 @@ header {
 }
 .rd-header { padding: 4px; }
 
-/* Scrollable areas for tables (for both generic tables and equipment) */
-.scrollable-table,
-.table-container {
-  position: relative;
-  overflow-y: auto;
+/* Scrollable areas – all tables share this */
+.scrollable-table {
   flex: 1;
-  min-height: 0;
-  scroll-behavior: smooth;
+  overflow-y: auto;
   margin-top: 4px;
+  scroll-behavior: smooth;
 }
+/* Equipment table containers now follow exactly the same rule as other scrollable tables. */
 
 /* Fixed table header */
 table thead {
@@ -183,8 +182,7 @@ table {
   border-collapse: collapse;
   table-layout: auto;
 }
-table th,
-table td {
+table th, table td {
   border: 1px solid #ddd;
   padding: 4px;
   text-align: center;
@@ -194,40 +192,26 @@ table th {
   color: var(--heading-text);
 }
 
-/* Recreated Equipment Section */
-/* Equipment wrapper using flex */
-.equipment-wrapper {
-  display: flex;
+/* Equipment grid */
+.equipment-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  flex: 1;
-  min-height: 0;
 }
-
-/* Each equipment table container */
-.equipment-table {
-  flex: 1;
+.equipment-subsection {
+  background: var(--section-bg);
+  border-radius: 4px;
+  padding: 4px;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
-
-/* Title for each equipment table */
-.table-title {
+.subsection-header {
   background: var(--heading-bg);
   color: var(--heading-text);
-  padding: 4px;
-  text-align: center;
-  font-size: 1rem;
   margin-bottom: 2px;
-}
-
-/* The new scrollable container for equipment tables */
-.table-container {
-  position: relative;
-  overflow-y: auto;
-  flex: 1;
-  min-height: 0;
-  scroll-behavior: smooth;
+  text-align: center;
+  padding: 4px;
+  font-size: 1rem;
 }
 
 /* R&D split-flap text area */
@@ -271,15 +255,13 @@ footer {
   color: var(--heading-text);
   padding: 10px 20px;
 }
-.footer-left, .footer-center, .footer-right {
-  flex: 1;
-}
+.footer-left, .footer-center, .footer-right { flex: 1; }
 .footer-left { text-align: left; }
 .footer-center { text-align: center; font-size: 0.9rem; }
 .footer-right { text-align: right; }
 .footer-logo { max-width: 60px; height: auto; }
 
-/* Theme switcher in footer */
+/* Theme switcher */
 #theme-switcher {
   display: flex;
   gap: 6px;
