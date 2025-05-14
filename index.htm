@@ -40,34 +40,50 @@
       </div>
     </section>
 
-    <!-- Section B: Equipment Data -->
-    <section id="section-b" class="section">
-      <h2 class="section-header">داده‌های تجهیز</h2>
-      <div class="equipment-container">
-        <div class="equipment-subsection">
-          <h3 class="subsection-header">تجهیزات سرویس</h3>
-          <div class="scrollable-table" id="service-equipment-table-container">
-            <table id="service-equipment-table">
-              <!-- <thead> populated via CSV -->
-              <tbody>
-                <!-- Data from service_equipments.csv -->
-              </tbody>
-            </table>
+          <!-- Section B – Equipment Data (Recreated from scratch) -->
+      <section id="equipment-data" class="section">
+        <div class="section-header">Equipment Data</div>
+        <div class="equipment-wrapper">
+          <!-- Service Equipment Subsection -->
+          <div class="equipment-table">
+            <div class="table-title">Service Equipment</div>
+            <!-- Added "scrollable-table" class here -->
+            <div class="table-container scrollable-table">
+              <table id="service-equipment-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- CSV data from data/service_equipments.csv will load here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Calibration Equipment Subsection -->
+          <div class="equipment-table">
+            <div class="table-title">Calibration Equipment</div>
+            <!-- Added "scrollable-table" class here -->
+            <div class="table-container scrollable-table">
+              <table id="calibration-equipment-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- CSV data from data/calib_equipments.csv will load here -->
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="equipment-subsection">
-          <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
-          <div class="scrollable-table" id="calibration-equipment-table-container">
-            <table id="calibration-equipment-table">
-              <!-- <thead> populated via CSV -->
-              <tbody>
-                <!-- Data from calib_equipments.csv -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Section C: Future Projects -->
     <section id="section-c" class="section">
