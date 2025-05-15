@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>داشبورد پروژه</title>
-  <!-- Link to main CSS -->
   <link rel="stylesheet" href="css/main.css" />
   <!-- Chart.js and PapaParse libraries -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- If needed, include a time-adapter (for Chart.js v3+) -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 </head>
 <body>
@@ -29,12 +30,29 @@
   <main class="dashboard-grid">
     <!-- Section A: Current Projects -->
     <section id="section-a" class="section">
-      <h2 class="section-header">پروژه‌های جاری</h2>
+      <div class="section-header">
+        <div class="section-header-left">
+          <input type="text" class="section-filter" placeholder="جستجو..." data-target="#current-projects-table" />
+        </div>
+        <div class="section-header-center">
+          <h2>پروژه‌های جاری</h2>
+        </div>
+        <div class="section-header-right">
+          <!-- Future controls can go here -->
+        </div>
+      </div>
       <div class="scrollable-table" id="current-projects-table-container">
         <table id="current-projects-table">
-          <!-- <thead> will be populated via CSV loading -->
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Client</th>
+            </tr>
+          </thead>
           <tbody>
-            <!-- Data from projects_curr.csv -->
+            <!-- Data from projects_curr.csv or sample data will be populated here -->
           </tbody>
         </table>
       </div>
@@ -42,7 +60,17 @@
 
     <!-- Section B: Equipment Data -->
     <section id="section-b" class="section">
-      <h2 class="section-header">داده‌های تجهیز</h2>
+      <div class="section-header">
+        <div class="section-header-left">
+          <input type="text" class="section-filter" placeholder="جستجو همه تجهیزات..." data-target=".equipment-container table" />
+        </div>
+        <div class="section-header-center">
+          <h2>داده‌های تجهیز</h2>
+        </div>
+        <div class="section-header-right">
+          <input type="text" class="section-filter" placeholder="فیلتر تجهیزات کالیبراسیون..." data-target="#calibration-equipment-table" />
+        </div>
+      </div>
       <div class="equipment-container">
         <!-- Service Equipment Table -->
         <div class="equipment-subsection">
@@ -57,7 +85,7 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- Data loaded from service_equipments.csv will populate here -->
+                <!-- Data from service_equipments.csv will populate here -->
               </tbody>
             </table>
           </div>
@@ -75,22 +103,44 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- Data loaded from calib_equipments.csv will populate here -->
+                <!-- Data from calib_equipments.csv will populate here -->
               </tbody>
             </table>
           </div>
         </div>
       </div>
+      <!-- New row: Calibration Due Date Distribution Timeline Graph -->
+      <div class="equipment-timeline-container">
+        <h3 class="timeline-title">توزیع تاریخ کالیبراسیون</h3>
+        <canvas id="calibrationTimelineChart" aria-label="Calibration Timeline Chart" role="img"></canvas>
+      </div>
     </section>
 
     <!-- Section C: Future Projects -->
     <section id="section-c" class="section">
-      <h2 class="section-header">پروژه‌های آینده</h2>
+      <div class="section-header">
+        <div class="section-header-left">
+          <input type="text" class="section-filter" placeholder="جستجو..." data-target="#future-projects-table" />
+        </div>
+        <div class="section-header-center">
+          <h2>پروژه‌های آینده</h2>
+        </div>
+        <div class="section-header-right">
+          <!-- Future controls can go here -->
+        </div>
+      </div>
       <div class="scrollable-table" id="future-projects-table-container">
         <table id="future-projects-table">
-          <!-- <thead> populated via CSV -->
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Client</th>
+            </tr>
+          </thead>
           <tbody>
-            <!-- Data from projects_Future.csv -->
+            <!-- Data from projects_Future.csv will populate here -->
           </tbody>
         </table>
       </div>
@@ -98,7 +148,18 @@
 
     <!-- Section D: R&D Projects & Charts -->
     <section id="section-d" class="section">
-      <h2 class="section-header rd-header">پروژه‌های تحقیق و توسعه</h2>
+      <div class="section-header">
+        <div class="section-header-left">
+          <!-- Filter input hidden for charts section -->
+          <input type="text" class="section-filter" placeholder="جستجو..." data-target="" style="opacity: 0; pointer-events: none;" />
+        </div>
+        <div class="section-header-center">
+          <h2>پروژه‌های تحقیق و توسعه</h2>
+        </div>
+        <div class="section-header-right">
+          <!-- Future controls can go here -->
+        </div>
+      </div>
       <div class="rd-text" id="rd-info-container">
         <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
       </div>
@@ -114,6 +175,12 @@
         <div class="chart-item">
           <canvas id="applicantChart" aria-label="نمودار توزیع متقاضیان" role="img"></canvas>
           <p class="chart-label">Applicant</p>
+        </div>
+      </div>
+      <div class="client-chart-container">
+        <div class="chart-item">
+          <canvas id="clientChart" aria-label="Client Distribution Chart" role="img"></canvas>
+          <p class="chart-label">Client Distribution</p>
         </div>
       </div>
     </section>
@@ -135,19 +202,18 @@
       <div id="theme-switcher">
         <div class="theme-option" data-theme="theme-dark"></div>
         <div class="theme-option" data-theme="theme-light"></div>
-        <div class="theme-option" data-theme="theme-dark-colored"></div>
+        <div class="theme-option" data-theme="theme-midnight"></div>
         <div class="theme-option" data-theme="theme-light-colored"></div>
         <div class="theme-option" data-theme="theme-gray"></div>
         <div class="theme-option" data-theme="theme-vintage"></div>
         <div class="theme-option" data-theme="theme-ocean"></div>
         <div class="theme-option" data-theme="theme-forest"></div>
-        <div class="theme-option" data-theme="theme-sunset"></div>
-        <div class="theme-option" data-theme="theme-neon"></div>
+        <div class="theme-option" data-theme="theme-solar"></div>
+        <div class="theme-option" data-theme="theme-crimson"></div>
       </div>
     </div>
   </footer>
 
-  <!-- Main JavaScript entry point -->
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
