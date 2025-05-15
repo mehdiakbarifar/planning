@@ -8,24 +8,26 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
   restoreScrollPositions();
   initAutoScroll();
-  setupCSVLoading();
-  initCharts();
+  // Populate tables before initializing charts
   populateTables();
+  setupCSVLoading();
+  // Initialize all charts (Charts and Client Chart read their data after CSV load)
+  initCharts();
   initDragResize();
+  initSectionFilters();
 });
 
+// Existing drag resize code here …
 function initDragResize() {
   const container = document.querySelector('.dashboard-grid');
   const verticalBar = document.getElementById('drag-vertical');
   const horizontalBar = document.getElementById('drag-horizontal');
 
-  // Restore grid settings if saved
   const savedCols = localStorage.getItem('gridColumns');
   const savedRows = localStorage.getItem('gridRows');
   if (savedCols) container.style.gridTemplateColumns = savedCols;
   if (savedRows) container.style.gridTemplateRows = savedRows;
 
-  // Update table sizes on window resize
   function updateTableSizes() {
     document.querySelectorAll('.scrollable-table').forEach(cont => {
       cont.style.maxHeight = cont.parentElement.clientHeight + "px";
@@ -33,7 +35,6 @@ function initDragResize() {
   }
   window.addEventListener('resize', updateTableSizes);
 
-  // Update drag bar positions based on current grid sizes
   const updateDragBarPositions = () => {
     const rect = container.getBoundingClientRect();
     const colTemplate = getComputedStyle(container).gridTemplateColumns.split(" ");
@@ -53,7 +54,6 @@ function initDragResize() {
   updateDragBarPositions();
   window.addEventListener('resize', updateDragBarPositions);
 
-  // Create a tooltip element for displaying percentage splits during resizing
   function createResizeTooltip() {
     let tooltip = document.getElementById("resize-tooltip");
     if (!tooltip) {
@@ -73,7 +73,6 @@ function initDragResize() {
   }
   const resizeTooltip = createResizeTooltip();
 
-  // -------- Vertical resizing --------
   verticalBar.addEventListener('mousedown', startDragVertical);
   function startDragVertical(e) {
     e.preventDefault();
@@ -88,7 +87,6 @@ function initDragResize() {
     const col1Percent = (offsetX / rect.width) * 100;
     const col2Percent = 100 - col1Percent;
 
-    // Update tooltip position and text
     resizeTooltip.style.left = e.clientX + "px";
     resizeTooltip.style.top = e.clientY + "px";
     resizeTooltip.textContent = `${Math.round(col1Percent)}% / ${Math.round(col2Percent)}%`;
@@ -104,7 +102,6 @@ function initDragResize() {
     localStorage.setItem('gridColumns', container.style.gridTemplateColumns);
   }
 
-  // -------- Horizontal resizing --------
   horizontalBar.addEventListener('mousedown', startDragHorizontal);
   function startDragHorizontal(e) {
     e.preventDefault();
@@ -119,7 +116,6 @@ function initDragResize() {
     const row1Percent = (offsetY / rect.height) * 100;
     const row2Percent = 100 - row1Percent;
 
-    // Update tooltip position and text for horizontal dragging
     resizeTooltip.style.left = e.clientX + "px";
     resizeTooltip.style.top = e.clientY + "px";
     resizeTooltip.textContent = `${Math.round(row1Percent)}% / ${Math.round(row2Percent)}%`;
@@ -135,3 +131,23 @@ function initDragResize() {
     localStorage.setItem('gridRows', container.style.gridTemplateRows);
   }
 }
+
+// New: Initialize section filters for table search inputs.
+function initSectionFilters() {
+  const filters = document.querySelectorAll('.section-filter');
+  filters.forEach(filter => {
+    filter.addEventListener('keyup', (event) => {
+      const query = event.target.value.toLowerCase();
+      const targetSelector = event.target.getAttribute('data-target');
+      if (!targetSelector) return;
+      const table = document.querySelector(targetSelector);
+      if (!table) return;
+      const rows = table.querySelectorAll("tbody tr");
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(query) ? "" : "none";
+      });
+    });
+  });
+}
+
