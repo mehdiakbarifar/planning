@@ -82,8 +82,7 @@ export function initAutoScroll() {
 // Attach hover events for popup effect
 export function attachRowHover(row) {
   if (!row) return;
-  
-row.addEventListener("click", function () {
+  row.addEventListener("click", function () {
     const modal = document.getElementById("row-modal");
     const modalTableHead = modal.querySelector("#modal-data-table thead tr");
     const modalTableBody = modal.querySelector("#modal-data-table tbody tr");
