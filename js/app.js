@@ -82,8 +82,8 @@ function initDragResize() {
   function dragVertical(e) {
     const rect = container.getBoundingClientRect();
     let offsetX = e.clientX - rect.left;
-    if (offsetX < rect.width * 0.1) offsetX = rect.width * 0.1;
-    if (offsetX > rect.width * 0.9) offsetX = rect.width * 0.9;
+    if (offsetX < rect.width * 0.01) offsetX = rect.width * 0.01;
+    if (offsetX > rect.width * 0.99) offsetX = rect.width * 0.99;
     const col1Percent = (offsetX / rect.width) * 100;
     const col2Percent = 100 - col1Percent;
 
@@ -111,8 +111,8 @@ function initDragResize() {
   function dragHorizontal(e) {
     const rect = container.getBoundingClientRect();
     let offsetY = e.clientY - rect.top;
-    if (offsetY < rect.height * 0.1) offsetY = rect.height * 0.1;
-    if (offsetY > rect.height * 0.9) offsetY = rect.height * 0.9;
+    if (offsetY < rect.height * 0.01) offsetY = rect.height * 0.01;
+    if (offsetY > rect.height * 0.99) offsetY = rect.height * 0.99;
     const row1Percent = (offsetY / rect.height) * 100;
     const row2Percent = 100 - row1Percent;
 
