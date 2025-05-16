@@ -151,29 +151,37 @@ header {
   margin-bottom: 10px;
 }
 
-/* Fixed Table Header (Prevents Header from Scrolling) */
+/* Static header container */
+.static-header-container {
+  margin-bottom: 4px;
+}
+.static-header-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.static-header-container th {
+  background: var(--heading-bg);
+  color: var(--heading-text);
+  padding: 8px;
+  border: 1px solid #ddd;
+  height: 40px;
+  text-align: center;
+}
+
+/* Scrollable table container for data rows */
 .scrollable-table {
-  display: block;
-  max-height: 300px; /* Ensure scrolling happens only inside tbody */
+  max-height: 300px; /* Adjust as necessary */
   overflow-y: auto;
 }
-
-.scrollable-table thead {
-  display: table-header-group; /* Ensures the header row is not scrolled */
+.scrollable-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
-
-.scrollable-table tbody {
-  display: block;
-  overflow-y: auto;
-  max-height: 260px; /* Slightly shorter to allow smooth scrolling */
-}
-
-.scrollable-table th,
 .scrollable-table td {
   padding: 8px;
-  text-align: center;
   border: 1px solid #ddd;
-  height: 40px; /* Keep header row height the same as data rows */
+  height: 40px;
+  text-align: center;
 }
 
 /* Equipment Timeline Container styling */
@@ -185,7 +193,8 @@ header {
   text-align: center;
 }
 .equipment-timeline-container canvas {
-  height: 300px !important; /* Ensure chart is visible */
+  width: 100% !important;
+  height: 300px !important; /* Ensure the chart is visible */
 }
 
 /* Footer styling */
