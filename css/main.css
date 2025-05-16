@@ -1,4 +1,17 @@
-/* Global resets */
+/* Global Resets and Font Embedding */
+@font-face {
+  font-family: 'BNazanin';
+  src: url('../fonts/BNazanin.woff2') format('woff2'),
+       url('../fonts/BNazanin.woff') format('woff'),
+       url('../fonts/BNazanin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:lang(fa) {
+  font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +19,7 @@
 }
 
 body {
-  font-family: 'B Nazanin', 'Vazir', 'Tahoma', sans-serif;
+  font-family: 'Vazir', 'Tahoma', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   direction: ltr;
@@ -14,7 +27,7 @@ body {
   overflow: hidden;
 }
 
-/* Default CSS variables */
+/* CSS Variables and Themes */
 :root {
   --background-color: #1f1f1f;
   --section-bg: #2a2a2a;
@@ -25,9 +38,9 @@ body {
   --chart-margin: 1px;
   --chart-height: 150px;
   --rd-chart-gap: 1px;
+  --content-font-size: 1.2rem;
 }
 
-/* Theme classes for body */
 body.theme-dark {
   --background-color: #1f1f1f;
   --section-bg: #2a2a2a;
@@ -99,7 +112,7 @@ body.theme-crimson {
   --text-color: #ffebee;
 }
 
-/* Top header styling */
+/* Header Styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -112,9 +125,16 @@ header {
 .header-left, .header-center, .header-right {
   flex: 1;
 }
-.header-center { text-align: center; }
-.header-left { text-align: left; }
-.header-right { text-align: right; }
+.header-center { 
+  text-align: center; 
+}
+.header-left { 
+  text-align: left;
+}
+.header-right { 
+  text-align: right;
+}
+
 .header-logo {
   height: 90%;
   max-height: 70px;
@@ -122,13 +142,12 @@ header {
   padding: 5px;
 }
 
-/* Clock styling */
 #clock-time, #clock-date {
   font-size: 1rem;
   padding: 2px;
 }
 
-/* Main container grid layout */
+/* Dashboard Grid Layout (for Desktop) */
 .dashboard-grid {
   display: grid;
   position: relative;
@@ -140,7 +159,11 @@ header {
   background: var(--background-color);
 }
 
-/* Section styling */
+main, footer {
+  font-size: var(--content-font-size);
+}
+
+/* Section Styling */
 .section {
   background: var(--section-bg);
   border-radius: 8px;
@@ -150,8 +173,10 @@ header {
   overflow: hidden;
   margin-bottom: 10px;
 }
+.section.active {
+  display: block;
+}
 
-/* Section Header styling for three-column layout */
 .section-header {
   display: flex;
   align-items: center;
@@ -160,6 +185,7 @@ header {
   padding: 6px;
   border-radius: 4px;
   margin-bottom: 4px;
+  font-size: 0.8rem;
 }
 .section-header-left,
 .section-header-center,
@@ -168,9 +194,15 @@ header {
   display: flex;
   align-items: center;
 }
-.section-header-left { justify-content: flex-start; }
-.section-header-center { justify-content: center; }
-.section-header-right { justify-content: flex-end; }
+.section-header-left { 
+  justify-content: flex-start; 
+}
+.section-header-center { 
+  justify-content: center; 
+}
+.section-header-right { 
+  justify-content: flex-end; 
+}
 .section-header-left input.section-filter,
 .section-header-right input.section-filter {
   background: var(--heading-bg);
@@ -179,10 +211,10 @@ header {
   padding: 4px;
   border-radius: 4px;
   width: 90%;
-   font-size: 1.5rem;
+  font-size: 1.3em;
 }
 
-/* Table styling */
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -196,9 +228,12 @@ table th, table td {
 table th {
   background: var(--heading-bg);
   color: var(--heading-text);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
-/* Highlight classes for date-based coloring */
+/* Highlight Classes */
 .highlight-red {
   background-color: rgba(255, 0, 0, 0.3) !important;
 }
@@ -206,7 +241,7 @@ table th {
   background-color: rgba(255, 255, 0, 0.3) !important;
 }
 
-/* Scrollable areas */
+/* Scrollable Table Container */
 .scrollable-table {
   flex: 1;
   max-height: 100%;
@@ -219,7 +254,7 @@ table th {
   height: 100%;
 }
 
-/* Equipment grid styling */
+/* Equipment Grid Styling */
 .equipment-container {
   display: flex;
   flex-direction: row;
@@ -238,7 +273,7 @@ table th {
   margin-bottom: 2px;
   text-align: center;
   padding: 4px;
-  font-size: 1rem;
+  font-size: 1em;
 }
 #service-equipment-scroll,
 #calibration-equipment-scroll {
@@ -248,7 +283,7 @@ table th {
   overflow-x: hidden;
 }
 
-/* Equipment Timeline Container styling */
+/* Equipment Timeline Container */
 .equipment-timeline-container {
   margin-top: 10px;
   padding: 8px;
@@ -258,27 +293,26 @@ table th {
 }
 .equipment-timeline-container .timeline-title {
   display: block;
-  font-size: 1.2rem;  /* Increase font size if needed */
+  font-size: 1.2em;
   color: var(--heading-text);
   margin-bottom: 8px;
 }
 
-
-/* R&D text area */
+/* R&D Text Area */
 .rd-text {
   background: var(--section-bg);
   border: 1px dashed var(--heading-text);
   margin-bottom: var(--rd-chart-gap);
   text-align: center;
   padding: 4px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   perspective: 1000px;
 }
 #rd-info {
   display: inline-block;
 }
 
-/* Charts container styling */
+/* Charts Container */
 .charts-container {
   display: flex;
   flex-direction: row;
@@ -298,7 +332,7 @@ table th {
   margin: 0 auto;
 }
 
-/* Client Chart Container Styling */
+/* Client Chart Container */
 .client-chart-container {
   margin-top: 10px;
   padding: 8px;
@@ -306,7 +340,7 @@ table th {
   border-radius: 8px;
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
   display: flex;
   justify-content: space-between;
@@ -332,11 +366,17 @@ footer {
   height: auto;
 }
 
-/* Theme switcher styling */
-#theme-switcher {
+/* Footer Controls */
+#footer-controls {
   display: flex;
-  gap: 6px;
   justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+#theme-switcher {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
 }
 .theme-option {
   width: 20px;
@@ -360,7 +400,27 @@ footer {
 .theme-option[data-theme="theme-solar"] { background: #c67c00; }
 .theme-option[data-theme="theme-crimson"] { background: #d32f2f; }
 
-/* Drag bars for resizing */
+/* Font Size Controls */
+#font-size-controls {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+#font-size-controls button {
+  background: var(--heading-bg);
+  color: var(--heading-text);
+  border: 1px solid var(--heading-text);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#font-size-controls button:hover {
+  transform: scale(1.1);
+}
+
+/* Drag Bars for Desktop Resizing */
 .drag-bar {
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
@@ -379,7 +439,7 @@ footer {
   right: 0;
 }
 
-/* Grid resizing tooltip */
+/* Resize Tooltip */
 #resize-tooltip {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -392,7 +452,7 @@ footer {
   z-index: 1000;
 }
 
-/* Flip keyframes for split-flap animation */
+/* Flip Animation Keyframes */
 @keyframes flip {
   0% {
     transform: rotateX(90deg);
@@ -402,4 +462,69 @@ footer {
     transform: rotateX(0deg);
     opacity: 1;
   }
+}
+
+/* Mobile-Specific Styling */
+@media (max-width: 768px) {
+  /* Show tab navigation only on mobile */
+  .tab-nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--heading-bg);
+    padding: 10px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--heading-text);
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .tab-button.active,
+  .tab-button:hover {
+    background: var(--section-bg);
+  }
+  
+  /* On mobile, force the dashboard grid container to be visible */
+  .dashboard-grid {
+    display: block;
+  }
+  
+  /* Force inactive sections to be hidden and active ones visible */
+  .section {
+    display: none !important;
+  }
+  .section.active {
+    display: block !important;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  background: var(--section-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.modal-content {
+  overflow-y: auto;
+  max-height: 70vh;
+}
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
 }
