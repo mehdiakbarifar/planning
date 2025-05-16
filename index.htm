@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>داشبورد پروژه</title>
   <link rel="stylesheet" href="css/main.css" />
-  <!-- Chart.js, Time Adapter, and PapaParse libraries -->
+  <!-- Chart.js and PapaParse libraries -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- If needed, include a time-adapter (for Chart.js v3+) -->
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 </head>
@@ -40,9 +41,8 @@
           <!-- Future controls can go here -->
         </div>
       </div>
-      <!-- Static header copy (from CSV header) -->
-      <div class="static-header-container">
-        <table id="current-projects-header">
+      <div class="scrollable-table" id="current-projects-table-container">
+        <table id="current-projects-table">
           <thead>
             <tr>
               <th>Title</th>
@@ -51,13 +51,8 @@
               <th>Client</th>
             </tr>
           </thead>
-        </table>
-      </div>
-      <!-- Scrollable container for data rows only -->
-      <div class="scrollable-table" id="current-projects-table-container">
-        <table id="current-projects-table">
           <tbody>
-            <!-- CSV parsing code will populate only data rows here -->
+            <!-- Data from projects_curr.csv or sample data will be populated here -->
           </tbody>
         </table>
       </div>
@@ -80,9 +75,8 @@
         <!-- Service Equipment Table -->
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات سرویس</h3>
-          <!-- Static header for Service Equipment -->
-          <div class="static-header-container">
-            <table id="service-equipment-header">
+          <div class="scrollable-table" id="service-equipment-scroll">
+            <table id="service-equipment-table">
               <thead>
                 <tr>
                   <th>کد</th>
@@ -90,12 +84,8 @@
                   <th>تاریخ</th>
                 </tr>
               </thead>
-            </table>
-          </div>
-          <div class="scrollable-table" id="service-equipment-scroll">
-            <table id="service-equipment-table">
               <tbody>
-                <!-- CSV data rows for service equipment -->
+                <!-- Data from service_equipments.csv will populate here -->
               </tbody>
             </table>
           </div>
@@ -103,9 +93,8 @@
         <!-- Calibration Equipment Table -->
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
-          <!-- Static header for Calibration Equipment -->
-          <div class="static-header-container">
-            <table id="calibration-equipment-header">
+          <div class="scrollable-table" id="calibration-equipment-scroll">
+            <table id="calibration-equipment-table">
               <thead>
                 <tr>
                   <th>کد</th>
@@ -113,19 +102,16 @@
                   <th>تاریخ</th>
                 </tr>
               </thead>
-            </table>
-          </div>
-          <div class="scrollable-table" id="calibration-equipment-scroll">
-            <table id="calibration-equipment-table">
               <tbody>
-                <!-- CSV data rows for calibration equipment -->
+                <!-- Data from calib_equipments.csv will populate here -->
               </tbody>
             </table>
           </div>
         </div>
       </div>
-      <!-- Calibration Timeline Chart -->
+      <!-- New row: Calibration Due Date Distribution Timeline Graph -->
       <div class="equipment-timeline-container">
+        <h3 class="timeline-title">توزیع تاریخ کالیبراسیون</h3>
         <canvas id="calibrationTimelineChart" aria-label="Calibration Timeline Chart" role="img"></canvas>
       </div>
     </section>
@@ -143,9 +129,8 @@
           <!-- Future controls can go here -->
         </div>
       </div>
-      <!-- Static header for Future Projects -->
-      <div class="static-header-container">
-        <table id="future-projects-header">
+      <div class="scrollable-table" id="future-projects-table-container">
+        <table id="future-projects-table">
           <thead>
             <tr>
               <th>Title</th>
@@ -154,18 +139,53 @@
               <th>Client</th>
             </tr>
           </thead>
-        </table>
-      </div>
-      <div class="scrollable-table" id="future-projects-table-container">
-        <table id="future-projects-table">
           <tbody>
-            <!-- CSV data rows for future projects -->
+            <!-- Data from projects_Future.csv will populate here -->
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Resizable Drag Bars -->
+    <!-- Section D: R&D Projects & Charts -->
+    <section id="section-d" class="section">
+      <div class="section-header">
+        <div class="section-header-left">
+          <!-- Filter input hidden for charts section -->
+          <input type="text" class="section-filter" placeholder="جستجو..." data-target="" style="opacity: 0; pointer-events: none;" />
+        </div>
+        <div class="section-header-center">
+          <h2>پروژه‌های تحقیق و توسعه</h2>
+        </div>
+        <div class="section-header-right">
+          <!-- Future controls can go here -->
+        </div>
+      </div>
+      <div class="rd-text" id="rd-info-container">
+        <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
+      </div>
+      <div class="charts-container">
+        <div class="chart-item">
+          <canvas id="statusChart" aria-label="نمودار وضعیت پروژه‌ها" role="img"></canvas>
+          <p class="chart-label">Projects Status</p>
+        </div>
+        <div class="chart-item">
+          <canvas id="sowChart" aria-label="نمودار دسته‌بندی SOW" role="img"></canvas>
+          <p class="chart-label">Scope</p>
+        </div>
+        <div class="chart-item">
+          <canvas id="applicantChart" aria-label="نمودار توزیع متقاضیان" role="img"></canvas>
+          <p class="chart-label">Applicant</p>
+        </div>
+      </div>
+      <div class="client-chart-container">
+        <div class="chart-item">
+          <canvas id="clientChart" aria-label="Client Distribution Chart" role="img"></canvas>
+          <p class="chart-label">Client Distribution</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Draggable bars for resizing the grid -->
     <div id="drag-vertical" class="drag-bar vertical"></div>
     <div id="drag-horizontal" class="drag-bar horizontal"></div>
   </main>
@@ -176,7 +196,7 @@
       <img src="footer-logo.png" alt="Footer Logo" class="footer-logo" />
     </div>
     <div class="footer-center">
-      <p>توسعه توسط مهدی اکبری فر</p>
+      <p>توسعه توسط یخش هماهنگ‌کننده معاونت تعمیر قطعه</p>
     </div>
     <div class="footer-right">
       <div id="theme-switcher">
