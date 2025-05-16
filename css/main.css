@@ -208,17 +208,34 @@ table th {
 
 /* Scrollable areas */
 .scrollable-table {
-  flex: 1;
-  max-height: 100%;
+  max-height: 300px; /* Adjust as needed */
   overflow-y: auto;
-  overflow-x: hidden;
+  display: block; /* Enables independent scrolling */
 }
 #section-a, #section-c {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+.scrollable-table thead {
+  display: table-header-group; /* Ensures the header remains fixed */
+}
+.scrollable-table tbody {
+  display: block;
+  overflow-y: auto;
+  max-height: 270px; /* Ensure scrolling within tbody only */
+}
+.scrollable-table th,
+.scrollable-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 40px; /* Keep header row height the same as data rows */
+}
 
+.scrollable-table tbody tr {
+  height: 40px; /* Match header row height */
+}
 /* Equipment grid styling */
 .equipment-container {
   display: flex;
