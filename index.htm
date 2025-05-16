@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>داشبورد پروژه</title>
   <link rel="stylesheet" href="css/main.css" />
-  <!-- Chart.js and Time Adapter -->
+  <!-- Chart.js, Time Adapter, and PapaParse libraries -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
@@ -40,8 +40,9 @@
           <!-- Future controls can go here -->
         </div>
       </div>
-      <div class="scrollable-table" id="current-projects-table-container">
-        <table id="current-projects-table">
+      <!-- Static header copy (from CSV header) -->
+      <div class="static-header-container">
+        <table id="current-projects-header">
           <thead>
             <tr>
               <th>Title</th>
@@ -50,8 +51,13 @@
               <th>Client</th>
             </tr>
           </thead>
+        </table>
+      </div>
+      <!-- Scrollable container for data rows only -->
+      <div class="scrollable-table" id="current-projects-table-container">
+        <table id="current-projects-table">
           <tbody>
-            <!-- Data from projects_curr.csv or sample data will be populated here -->
+            <!-- CSV parsing code will populate only data rows here -->
           </tbody>
         </table>
       </div>
@@ -74,8 +80,9 @@
         <!-- Service Equipment Table -->
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات سرویس</h3>
-          <div class="scrollable-table" id="service-equipment-scroll">
-            <table id="service-equipment-table">
+          <!-- Static header for Service Equipment -->
+          <div class="static-header-container">
+            <table id="service-equipment-header">
               <thead>
                 <tr>
                   <th>کد</th>
@@ -83,8 +90,12 @@
                   <th>تاریخ</th>
                 </tr>
               </thead>
+            </table>
+          </div>
+          <div class="scrollable-table" id="service-equipment-scroll">
+            <table id="service-equipment-table">
               <tbody>
-                <!-- Data from service_equipments.csv will populate here -->
+                <!-- CSV data rows for service equipment -->
               </tbody>
             </table>
           </div>
@@ -92,8 +103,9 @@
         <!-- Calibration Equipment Table -->
         <div class="equipment-subsection">
           <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
-          <div class="scrollable-table" id="calibration-equipment-scroll">
-            <table id="calibration-equipment-table">
+          <!-- Static header for Calibration Equipment -->
+          <div class="static-header-container">
+            <table id="calibration-equipment-header">
               <thead>
                 <tr>
                   <th>کد</th>
@@ -101,8 +113,12 @@
                   <th>تاریخ</th>
                 </tr>
               </thead>
+            </table>
+          </div>
+          <div class="scrollable-table" id="calibration-equipment-scroll">
+            <table id="calibration-equipment-table">
               <tbody>
-                <!-- Data from calib_equipments.csv will populate here -->
+                <!-- CSV data rows for calibration equipment -->
               </tbody>
             </table>
           </div>
@@ -127,8 +143,9 @@
           <!-- Future controls can go here -->
         </div>
       </div>
-      <div class="scrollable-table" id="future-projects-table-container">
-        <table id="future-projects-table">
+      <!-- Static header for Future Projects -->
+      <div class="static-header-container">
+        <table id="future-projects-header">
           <thead>
             <tr>
               <th>Title</th>
@@ -137,8 +154,12 @@
               <th>Client</th>
             </tr>
           </thead>
+        </table>
+      </div>
+      <div class="scrollable-table" id="future-projects-table-container">
+        <table id="future-projects-table">
           <tbody>
-            <!-- Data from projects_Future.csv will populate here -->
+            <!-- CSV data rows for future projects -->
           </tbody>
         </table>
       </div>
