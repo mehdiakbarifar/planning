@@ -179,6 +179,7 @@ header {
   padding: 4px;
   border-radius: 4px;
   width: 90%;
+   font-size: 1.5rem;
 }
 
 /* Table styling */
@@ -362,7 +363,7 @@ footer {
 /* Drag bars for resizing */
 .drag-bar {
   position: absolute;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
 .drag-bar.vertical {
