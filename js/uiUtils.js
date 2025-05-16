@@ -67,12 +67,8 @@ export function initAutoScroll() {
     function scrollStep() {
       if (!paused) {
         container.scrollTop += speed;
-        
-        // Fix: Dynamically calculate reset threshold using actual container height
         const resetThreshold = container.scrollHeight - container.clientHeight;
-        
         if (container.scrollTop >= resetThreshold) {
-         
           container.scrollTop = 0;
         }
       }
@@ -83,11 +79,37 @@ export function initAutoScroll() {
   });
 }
 
-
 // Attach hover events for popup effect
 export function attachRowHover(row) {
   if (!row) return;
   
+row.addEventListener("click", function () {
+    const modal = document.getElementById("row-modal");
+    const modalTableHead = modal.querySelector("#modal-data-table thead tr");
+    const modalTableBody = modal.querySelector("#modal-data-table tbody tr");
+    
+    modalTableHead.innerHTML = "";
+    modalTableBody.innerHTML = "";
+
+    const headerCells = Array.from(row.closest("table").querySelectorAll("thead th"));
+    const dataCells = Array.from(row.querySelectorAll("td"));
+
+    headerCells.forEach((header, index) => {
+      const th = document.createElement("th");
+      th.textContent = header.textContent.trim();
+      modalTableHead.appendChild(th);
+      
+      const td = document.createElement("td");
+      td.textContent = dataCells[index].getAttribute("data-fulltext");
+      modalTableBody.appendChild(td);
+    });
+
+    modal.style.display = "block";
+  });
+
+  document.querySelector(".close-modal").addEventListener("click", function () {
+    document.getElementById("row-modal").style.display = "none";
+  });
   row.addEventListener("mouseenter", function (event) {
     let popup = getHoverPopup();
     const table = row.closest("table");
@@ -192,5 +214,25 @@ export function animateRdRows(rows, container, originalRows) {
   }, totalTime * 1000 + 500);
 }
 
-// For backward compatibility
-export function initSplitFlapEffect() {}
+// New: Initialize font size adjuster for content (excludes header)
+export function initFontSizeAdjuster() {
+  const increaseBtn = document.getElementById('increase-font');
+  const decreaseBtn = document.getElementById('decrease-font');
+  // Retrieve the current content font size from localStorage or use default 1rem.
+  let currentFontSize = parseFloat(localStorage.getItem('contentFontSize')) || 1;
+  
+  // Set the CSS variable on the root element.
+  document.documentElement.style.setProperty('--content-font-size', currentFontSize + 'rem');
+
+  increaseBtn.addEventListener('click', () => {
+    currentFontSize += 0.1;
+    document.documentElement.style.setProperty('--content-font-size', currentFontSize.toFixed(1) + 'rem');
+    localStorage.setItem('contentFontSize', currentFontSize.toFixed(1));
+  });
+
+  decreaseBtn.addEventListener('click', () => {
+    currentFontSize = Math.max(0.5, currentFontSize - 0.1);
+    document.documentElement.style.setProperty('--content-font-size', currentFontSize.toFixed(1) + 'rem');
+    localStorage.setItem('contentFontSize', currentFontSize.toFixed(1));
+  });
+}

@@ -13,6 +13,14 @@ function parseCustomDate(dateStr) {
 }
 
 export function initCharts() {
+  console.log("Initializing charts...");
+  
+  // Ensure all charts have a defined height before rendering
+  document.querySelectorAll("canvas").forEach(canvas => {
+    canvas.style.minHeight = "200px";
+    canvas.style.display = "block";
+  });
+
   // Initialize Status Chart
   const statusCanvas = document.getElementById('statusChart');
   if (statusCanvas) {
@@ -118,23 +126,6 @@ export function initCharts() {
         plugins: { legend: { position: 'right' } }
       }
     });
-    const otherBox = document.getElementById('otherApplicantsBox');
-    const otherList = document.getElementById('otherApplicantsList');
-    if (otherBox && otherList) {
-      if (otherApplicants.length > 0) {
-        otherBox.style.display = "block";
-        otherList.innerHTML = "";
-        otherApplicants.forEach(applicant => {
-          const listItem = document.createElement("li");
-          listItem.textContent = applicant;
-          otherList.appendChild(listItem);
-        });
-      } else {
-        otherBox.style.display = "none";
-      }
-    } else {
-      console.warn("Other Applicants container elements not found.");
-    }
     console.log("Applicant Chart Rendered Successfully!");
   });
 
@@ -191,69 +182,6 @@ function initClientChartFromCSV() {
           },
           x: {
             title: { display: true, text: 'Client' }
-          }
-        }
-      }
-    });
-  });
-}
-
-function initCalibrationTimelineChart() {
-  const timelineCanvas = document.getElementById('calibrationTimelineChart');
-  if (!timelineCanvas) {
-    console.error("Calibration Timeline Chart canvas not found!");
-    return;
-  }
-  // Ensure the canvas has a visible height
-  timelineCanvas.style.height = "300px";
-  
-  // Use the "date" column from the calibration CSV.
-  fetchCSV('data/calib_equipments.csv', (data) => {
-    if (!data || data.length === 0) {
-      console.error("No data found in calib_equipments.csv for Calibration Timeline Chart!");
-      return;
-    }
-    // Aggregate calibration dates from the "date" column.
-    const dateCounts = {};
-    data.forEach(row => {
-      let calDate = row['date'];
-      if (calDate && calDate.trim() !== "") {
-        dateCounts[calDate] = (dateCounts[calDate] || 0) + 1;
-      }
-    });
-    // Sort dates in ascending order using our custom parser.
-    const sortedDates = Object.keys(dateCounts).sort((a, b) => parseCustomDate(a) - parseCustomDate(b));
-    const counts = sortedDates.map(date => dateCounts[date]);
-
-    const timelineCtx = timelineCanvas.getContext('2d');
-    new Chart(timelineCtx, {
-      type: 'bar',
-      data: {
-        labels: sortedDates,
-        datasets: [{
-          label: 'Scheduled Calibrations',
-          data: counts,
-          backgroundColor: 'rgba(255, 99, 132, 0.7)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: {
-            type: 'time',
-            time: {
-              parser: 'M/d/yyyy', // parser string matching M/D/YYYY format
-              tooltipFormat: 'MMM d, yyyy',
-              unit: 'month'
-            },
-            title: { display: true, text: 'Calibration Due Date' }
-          },
-          y: {
-            beginAtZero: true,
-            title: { display: true, text: 'Count' }
           }
         }
       }
