@@ -502,3 +502,29 @@ footer {
     display: block !important;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  background: var(--section-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.modal-content {
+  overflow-y: auto;
+  max-height: 70vh;
+}
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
