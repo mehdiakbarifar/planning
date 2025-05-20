@@ -1,153 +1,133 @@
-ï»¿,,,,
-,Document reference No.:,,,
-Row,Tool/Equipment Type,Tools name,Cal & Ser Due Date,Condition
-1,Standard Tool,Digital scale (8000g),10-Jan-26,Active
-2,Standard Tool,Large vernier caliper 0-310 mm,20-Jan-26,Active
-3,Standard Tool ,Small vernier caliper,20-Jan-26,Active
-4,Standard Tool,Small micrometer 0-25 mm,20-Jan-26,Active
-5,Standard Tool,Depth gauge micrometer 0-300 mm,20-Jan-26,Active
-6,Standard Tool,Surface roughness meter,4-Oct-25,Active
-7,Standard Tool,Sample-Surface roughness meter,4-Oct-25,Active
-8,Standard Tool,Coating Thickness gauge,4-Oct-25,Active
-9,Standard Tool,Samples-Coating Thickness gauge,4-Oct-25,Active
-10,Standard Tool,Digital height caliper 0-600 mmÂ Â Â Â Â Â Â  ,20-Jun-25,Active
-11,Standard Tool,Digital caliper 0-150 mmÂ Â Â Â Â Â Â  ,21-Nov-25,Active
-12,Standard Tool, Test indicatorÂ Â Â  ,21-Nov-25,Active
-13,Standard Tool,Digital caliper (100 mm),27-Jul-24,Sent to Cal./Ser.
-14,Standard Tool,Depth gauge digital with pin 150 mm  ,29-Jul-25,Active
-15,Standard Tool,Accurate Weight 2000 g,28-Jun-25,Active
-16,Standard Tool,Vernier Caliper 1000mm,20-Jan-26,Quarantined for Cal.
-17,Standard Tool,Filler Gauge  0.05 - 1mm,20-Jan-27,Active
-18,Standard Tool,Headlight magnifier (2 ea.),-,Active
-19,Standard Tool,Hand-held lighted magnifier (2 ea.),-,Active
-20,Standard Tool,Magnifier (1 ea.),-,Active
-21,Standard Tool,Inside micrometer 5-30mm,21-Nov-25,Active
-22,Standard Tool,Digimatic Indicator,2-Mar-25,Quarantined for Cal.
-23,Standard Tool,Tubular Inside Micrometer,21-Nov-25,Active
-24,Standard Tool,Inch/Metric Screw Pitch Gauge,4-Feb-25,Quarantined for Cal.
-25,Standard Tool,Digital caliper (150 mm),21-Nov-25,Active
-26,Standard Tool,Radius Gauge,11-Dec-25,Active
-27,"Specific Tool
-(Alternate Tool)","Fixture, Heat Treat - Combustor Inner Liner",-,Active
-28,"Specific Tool
-(Alternate Tool)","Fixture, Weld/Machine-Seal Lip, Combustor, AFT",-,Active
-29,"Specific Tool
-(Alternate Tool)","Fixture, Heat Treat-Combustor Outer Liner",-,Active
-30,"Specific Tool
-(Alternate Tool)","Fixture, Sizing Shoes-Combustor Inner Liner",-,Active
-31,"Specific Tool
-(Alternate Tool)","Fixture, Lift-Turn Combustor Liner",-,Active
-32,"Specific Tool
-(Alternate Tool)",General Support Fixture,-,Active
-33,"Specific Tool
-(Alternate Tool)","Fixture, Sizing Shoe-Combustion Dome",-,Active
-34,"Specific Tool
-(Alternate Tool)","Fixture, Expander - Combustor ",,Active
-35,Standard Equipment,FPI line,,Active
-36,Standard Equipment,Current Rectifier,,Active
-37,Standard Equipment,Magnetic Stirrer (3 ea.),,Active
-38,Standard Equipment,Sandblast - Pressure Gauge,,Active
-39,Standard Equipment,Reference Plane 800Ã—1000 mm,10-Jan-26,Active
-40,Standard Equipment,Desktop Stereo Microscope (M-01),,Active
-41,Standard Equipment,Desktop Stereo Microscope (M-04),,Active
-42,Standard Equipment,Label Print,,Active
-43,Standard Equipment,Digital Microscope (M-03),,Active
-44,Standard Equipment,Digital Microscope (M-02),,Active
-45,Standard Equipment,Super Slim Digital Microscope (M-05),,Unserviceable
-46,Standard Equipment,Camera,,Active
-47,Standard Equipment,Universal Magnetic Stand,,Active
-48,Standard Equipment,Magnetic Stand,,Active
-49,Standard Equipment,Airflow Test ,,Unserviceable
-50,Standard Equipment,Airflow Test (A-02),,Active
-51,Standard Equipment,Water Check (A-01),,Active
-52,Standard Equipment,Reference plane 630Ã—630 mmÂ Â Â Â Â Â Â Â Â Â  ,10-Jan-26,Active
-53,Standard Equipment,Ultrasonic Cleaning Tank,-,Active
-54,Standard Equipment,Laser Profilometer (L-02),-,Active
-55,Standard Equipment,Laser Engraving (L-01),-,Active
-56,Standard Equipment,3D Printer (A-03),,Active
-57,Standard Equipment,Steam Cleaner,-,Active
-58,Standard Tool,Knife Filler Gauge 0.05-1mm,20-Jan-27,Quarantined for Cal.
-59,Standard Tool,Knife Filler Gauge 0.05-1mm,20-Jan-27,Active
-60,Standard Tool,Digital caliper 0-300 mm ÙƒÙˆÙ„ÙŠØ³ 30Ø³Ø§Ù†Øª Ø¯ÙŠØ¬ÙŠØªØ§Ù„,14-Jan-26,Active
-61,Standard Tool,External Dial Caliper Gauge 0-50 ÙƒÙˆÙ„ÙŠØ³ Ø´Ø§Ø®ÙƒÙŠ,20-Jan-26,Active
-62,Standard Tool,"Steel Gauge Block, 103 block per set Grade 0 Ú¯ÙŠØ¬ Ø¨Ù„ÙˆÙƒ",22-Jun-25,Active
-63,Standard Tool,Dial gauge 10 / 0.01 mm,21-Nov-25,Active
-64,Standard Tool,Digital Caliper 0-150 mm,2-Mar-25,Quarantined for Cal.
-65,Standard Tool,Digital Caliper 0-200 mm,19-Mar-26,Active
-66,Standard Tool,Internal Dial Caliper 30-50 mm,19-Mar-26,Active
-67,Standard Tool,Pin gauge set 0.5-1,19-Feb-26,Active
-68,Standard Tool,Pin gauge set 1-1.5,19-Feb-26,Active
-69,Standard Tool,Pin gauge set 1.5-2,19-Feb-26,Active
-70,Standard Tool,Pin gauge set 2-2.5,19-Feb-26,Active
-71,Standard Tool,Pin gauge set 2.5-3,19-Feb-26,Active
-72,Standard Tool,Pin gauge set 3-3.5,19-Feb-26,Active
-73,Standard Tool,Pin gauge set 3.5-4,19-Feb-26,Active
-74,Standard Tool,Pin gauge set 4-4.5,19-Feb-26,Active
-75,Standard Tool,Pin gauge set 4.5-5,19-Feb-26,Active
-76,Standard Tool,Screw pitch Gauge ,19-Feb-26,Active
-77,Standard Tool,Ext.Mic.with Digital Counter 25-50 mm     ,19-May-26,Active
-78,Standard Tool,Ext.Mic.with Digital Counter 50-75 mm    ,19-May-26,Active
-79,Standard Tool,Test Indicator with Long Stylus 0.01mm     ,20-May-26,Active
-80,Standard Tool,Bore Gauge 10-18.5 mm,2-Sep-25,Active
-81,Standard Tool,Digimatic Bore Gauge 100-160 mm,2-Sep-25,Active
-82,Standard Tool,Universal bevel Protractor,2-Sep-25,Active
-83,Standard Tool,Micrometer Stand ,,Active
-84,Standard Tool,Bore Gauge 160-250 mm,2-Sep-25,Active
-85,Standard Tool,Outside Micrometer 200-300 mm,2-Sep-25,Active
-86,Standard Tool,Outside Micrometer 300-400 mm,2-Sep-25,Active
-87,Standard Tool,Outside Micrometer 400-500 mm,2-Sep-25,Active
-88,Standard Tool,Digimatic Caliper 0-600 mm,2-Sep-24,Quarantined for Cal.
-89,Standard Tool,Digimatic Caliper 0-1000 mm,2-Sep-25,Active
-90,Standard Tool,Test Indicator with Long Stylus 0.01mm,2-Sep-24,Sent to Cal./Ser.
-91,Standard Equipment,PP Cleaning Bath,-,Active
-92,Standard Equipment,Chemical Hood,-,Active
-93,Standard Tool,PH meter,-,Active
-94,Standard Equipment,TIG WELDING MACHINE/ MAGIC WAVE 3000,2-May-24,Quarantined for Cal.
-95,Standard Equipment,TIG WELDING MACHINE/ IWAVE 300I,2-Aug-24,Quarantined for Cal.
-96,Standard Equipment,LASER WELDING MACHINE/ SFMR02 - 4000W,,Active
-97,Standard Equipment,FUME EXTRACTOR BLANDING AND WELDING TABLE/GRINDEX - DF (2 ea.),,Active
-98,Standard Equipment,ANTIPOLLUTION SYSTEM/ CLEANGO (2 ea.),,Active
-99,Standard Equipment,BELT SANDER/ BOSTON,,Active
-100,Standard Tool,ARGON GAS CYLINDER (6 ea.),,Active
-101,Standard Equipment, Muffle furnace / Model: AFE1150L-18DUM,Not Calibrated,Quarantined for Cal.
-102,Standard Equipment, Tube furnace / Model: ATE1200L-80H558,Not Calibrated,Quarantined for Cal.
-103,Standard Equipment, Elevator furnace,Not Calibrated,Quarantined for Cal.
-104,Standard Equipment,Coating Machine,,Active
-105,Standard Tool,POINT MICROMETER 0-25MM ,3-Dec-25,Active
-106,Standard Tool,DIGIMATIC DEPTH GAGE 150MM ,3-Dec-25,Active
-107,Standard Tool,EXT.MICROMETER 100-125MM ,3-Dec-25,Active
-108,Standard Tool,EXT.MICROMETER 125-150MM ,3-Dec-25,Active
-109,Standard Tool,EXT.MICROMETER 150-175MM,3-Dec-25,Active
-110,Standard Tool,BORE GAUGE 6-10 ,3-Dec-25,Active
-111,Standard Tool,DIGIMATIC CALIPER 0-150MM,3-Dec-25,Active
-112,Standard Tool,DIGIMATIC CALIPER 0-150MM ,3-Dec-25,Active
-113,Standard Tool,DIGIMATIC CALIPER 0-150MM ,3-Dec-25,Active
-114,Standard Tool,DIGIMATIC CALIPER 0-300MM ,3-Dec-25,Active
-115,Standard Tool,Cross Table (C-01),,Active
-116,Standard Tool,Steel Clamping Kit,,Active
-117,Standard Tool,GENERATOR,,Active
-118,Standard Equipment,4 AXIS CNC,,Active
-119,Standard Tool,Thermometer-PCE-889B,,Quarantined for Cal.
-120,Standard Equipment,Heat Treatment Furnace / Model: AFE1200R-1000DHN,Not Calibrated,Quarantined for Cal.
-121,Standard Tool,Air Metal Shear ST-6620,,Unserviceable
-122,Standard Equipment,BELT SANDER,,Active
-123,Standard Tool,(ÙØ±Ø² Ø§Ù†Ú¯Ø´Øª? (3Ø¹Ø¯Ø¯,,Active
-124,Standard Equipment,Silicon Power Convertion,,Active
-125,Standard Equipment,Shaker,,Active
-126,Standard Tool,Ù…Ø§Ù†ÙˆÙ…ØªØ± (4 Ø¹Ø¯Ø¯),6-May-26,Active
-127,Standard Tool,Ù…?Ú©Ø±Ùˆ ÙØ±Ø²,,Unserviceable
-128,Standard Tool,Ø³Ø§Ø¹Øª Ø§Ù†Ø¯?Ú©Ø§ØªÙˆØ±,Not Calibrated,Quarantined for Cal.
-129,Standard Tool,"Pressure Gauge 0-10 bar
-Analogue Thermometer, Res. 2oC",,Active
-130,Standard Tool,Pressure Gauge 0-10 bar,,Active
-131,Standard Equipment,Sinus Clamp,,Active
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+Equipment	Date
+Digital scale (8000g)	10-Jan-26
+Large vernier caliper 0-310 mm	20-Jan-26
+Small vernier caliper	20-Jan-26
+Small micrometer 0-25 mm	20-Jan-26
+Depth gauge micrometer 0-300 mm	20-Jan-26
+Surface roughness meter	4-Oct-25
+Sample-Surface roughness meter	4-Oct-25
+Coating Thickness gauge	4-Oct-25
+Samples-Coating Thickness gauge	4-Oct-25
+Digital height caliper 0-600 mm        	20-Jun-25
+Digital caliper 0-150 mm        	21-Nov-25
+ Test indicator    	21-Nov-25
+Digital caliper (100 mm)	27-Jul-24
+Depth gauge digital with pin 150 mm  	29-Jul-25
+Accurate Weight 2000 g	28-Jun-25
+Vernier Caliper 1000mm	20-Jan-26
+Filler Gauge  0.05 - 1mm	20-Jan-27
+Headlight magnifier (2 ea.)	-
+Hand-held lighted magnifier (2 ea.)	-
+Magnifier (1 ea.)	-
+Inside micrometer 5-30mm	21-Nov-25
+Digimatic Indicator	2-Mar-25
+Tubular Inside Micrometer	21-Nov-25
+Inch/Metric Screw Pitch Gauge	4-Feb-25
+Digital caliper (150 mm)	21-Nov-25
+Radius Gauge	11-Dec-25
+"Fixture, Heat Treat - Combustor Inner Liner"	-
+"Fixture, Weld/Machine-Seal Lip, Combustor, AFT"	-
+"Fixture, Heat Treat-Combustor Outer Liner"	-
+"Fixture, Sizing Shoes-Combustor Inner Liner"	-
+"Fixture, Lift-Turn Combustor Liner"	-
+General Support Fixture	-
+"Fixture, Sizing Shoe-Combustion Dome"	-
+"Fixture, Expander - Combustor "	
+FPI line	
+Current Rectifier	
+Magnetic Stirrer (3 ea.)	
+Sandblast - Pressure Gauge	
+Reference Plane 800×1000 mm	10-Jan-26
+Desktop Stereo Microscope (M-01)	
+Desktop Stereo Microscope (M-04)	
+Label Print	
+Digital Microscope (M-03)	
+Digital Microscope (M-02)	
+Super Slim Digital Microscope (M-05)	
+Camera	
+Universal Magnetic Stand	
+Magnetic Stand	
+Airflow Test 	
+Airflow Test (A-02)	
+Water Check (A-01)	
+Reference plane 630×630 mm           	10-Jan-26
+Ultrasonic Cleaning Tank	-
+Laser Profilometer (L-02)	-
+Laser Engraving (L-01)	-
+3D Printer (A-03)	
+Steam Cleaner	-
+Knife Filler Gauge 0.05-1mm	20-Jan-27
+Knife Filler Gauge 0.05-1mm	20-Jan-27
+Digital caliper 0-300 mm ßæáíÓ 30ÓÇäÊ ÏíÌíÊÇá	14-Jan-26
+External Dial Caliper Gauge 0-50 ßæáíÓ ÔÇÎßí	20-Jan-26
+"Steel Gauge Block, 103 block per set Grade 0 íÌ Èáæß"	22-Jun-25
+Dial gauge 10 / 0.01 mm	21-Nov-25
+Digital Caliper 0-150 mm	2-Mar-25
+Digital Caliper 0-200 mm	19-Mar-26
+Internal Dial Caliper 30-50 mm	19-Mar-26
+Pin gauge set 0.5-1	19-Feb-26
+Pin gauge set 1-1.5	19-Feb-26
+Pin gauge set 1.5-2	19-Feb-26
+Pin gauge set 2-2.5	19-Feb-26
+Pin gauge set 2.5-3	19-Feb-26
+Pin gauge set 3-3.5	19-Feb-26
+Pin gauge set 3.5-4	19-Feb-26
+Pin gauge set 4-4.5	19-Feb-26
+Pin gauge set 4.5-5	19-Feb-26
+Screw pitch Gauge 	19-Feb-26
+Ext.Mic.with Digital Counter 25-50 mm     	19-May-26
+Ext.Mic.with Digital Counter 50-75 mm    	19-May-26
+Test Indicator with Long Stylus 0.01mm     	20-May-26
+Bore Gauge 10-18.5 mm	2-Sep-25
+Digimatic Bore Gauge 100-160 mm	2-Sep-25
+Universal bevel Protractor	2-Sep-25
+Micrometer Stand 	
+Bore Gauge 160-250 mm	2-Sep-25
+Outside Micrometer 200-300 mm	2-Sep-25
+Outside Micrometer 300-400 mm	2-Sep-25
+Outside Micrometer 400-500 mm	2-Sep-25
+Digimatic Caliper 0-600 mm	2-Sep-24
+Digimatic Caliper 0-1000 mm	2-Sep-25
+Test Indicator with Long Stylus 0.01mm	2-Sep-24
+PP Cleaning Bath	-
+Chemical Hood	-
+PH meter	-
+TIG WELDING MACHINE/ MAGIC WAVE 3000	2-May-24
+TIG WELDING MACHINE/ IWAVE 300I	2-Aug-24
+LASER WELDING MACHINE/ SFMR02 - 4000W	
+FUME EXTRACTOR BLANDING AND WELDING TABLE/GRINDEX - DF (2 ea.)	
+ANTIPOLLUTION SYSTEM/ CLEANGO (2 ea.)	
+BELT SANDER/ BOSTON	
+ARGON GAS CYLINDER (6 ea.)	
+ Muffle furnace / Model: AFE1150L-18DUM	Not Calibrated
+ Tube furnace / Model: ATE1200L-80H558	Not Calibrated
+ Elevator furnace	Not Calibrated
+Coating Machine	
+POINT MICROMETER 0-25MM 	3-Dec-25
+DIGIMATIC DEPTH GAGE 150MM 	3-Dec-25
+EXT.MICROMETER 100-125MM 	3-Dec-25
+EXT.MICROMETER 125-150MM 	3-Dec-25
+EXT.MICROMETER 150-175MM	3-Dec-25
+BORE GAUGE 6-10 	3-Dec-25
+DIGIMATIC CALIPER 0-150MM	3-Dec-25
+DIGIMATIC CALIPER 0-150MM 	3-Dec-25
+DIGIMATIC CALIPER 0-150MM 	3-Dec-25
+DIGIMATIC CALIPER 0-300MM 	3-Dec-25
+Cross Table (C-01)	
+Steel Clamping Kit	
+GENERATOR	
+4 AXIS CNC	
+Thermometer-PCE-889B	
+Heat Treatment Furnace / Model: AFE1200R-1000DHN	Not Calibrated
+Air Metal Shear ST-6620	
+BELT SANDER	
+(İÑÒ ÇäÔÊ? (3ÚÏÏ	
+Silicon Power Convertion	
+Shaker	
+ãÇäæãÊÑ (4 ÚÏÏ)	6-May-26
+ã?˜Ñæ İÑÒ	
+ÓÇÚÊ ÇäÏ?˜ÇÊæÑ	Not Calibrated
+"Pressure Gauge 0-10 bar
+Analogue Thermometer, Res. 2oC"	
+Pressure Gauge 0-10 bar	
+Sinus Clamp	
