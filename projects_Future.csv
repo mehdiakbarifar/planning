@@ -1,5 +1,4 @@
-﻿,,,,,,,,,,,Effective Dates,,,,
-Row,Client,Service Order,New Service order,Engine Type,ESN,SOW,QTY,Part Name,Applicant,Part No.,Recieveing Email ,Entry to Warehouse ,Cleaning,Status,Remarks
+﻿Row,Client,Service Order,New Service order,Engine Type,ESN,SOW,QTY,Part Name,Applicant,Part No.,Recieveing Email ,Entry to Warehouse ,Cleaning,Status,Remarks
 139,Purchased parts,,520026,,,Inspection,43,LLP,,,25/09/24,25/09/24,,Cancelled,
 142,Air 1 ,S-10018,560017,CFM56-3C1,858719,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G08, 1317M90G04, 1317M58G02",29/09/24,7/10/2024,Completed,Cancelled,
 143,Air 1,,560097,CFM56-3C1,858594,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G04, 1317M90G04, 1317M91G02",29/09/24,7/10/2024,Completed,Cancelled,
