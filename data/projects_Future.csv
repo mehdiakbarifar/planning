@@ -1,12 +1,11 @@
-,,,,,,,,,,,Effective Dates,,,,
-Row,Client,Service Order,New Service order,Engine Type,ESN,SOW,QTY,Part Name,Applicant,Part No.,Recieveing Email ,Entry to Warehouse ,Cleaning,Status,Remarks
+ï»¿Row,Client,Service Order,New Service order,Engine Type,ESN,SOW,QTY,Part Name,Applicant,Part No.,Recieveing Email ,Entry to Warehouse ,Cleaning,Status,Remarks
 139,Purchased parts,,520026,,,Inspection,43,LLP,,,25/09/24,25/09/24,,Cancelled,
 142,Air 1 ,S-10018,560017,CFM56-3C1,858719,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G08, 1317M90G04, 1317M58G02",29/09/24,7/10/2024,Completed,Cancelled,
 143,Air 1,,560097,CFM56-3C1,858594,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G04, 1317M90G04, 1317M91G02",29/09/24,7/10/2024,Completed,Cancelled,
-158,˜Çã?áÇ ,,"560257, 560258, 560259",CFM56-3C,,"Cleaning, Inspection",173,"HPT STG1, Nozzle Segment-HPT, LPT STG1",NDT-QC,"1475M35P02, 2080M29G01, 301-330-114-0",28/10/24,28/10/24,,,ÏÑ ãÑÍáå ÊÏæ?ä ÌÇÈ ˜ÇÑÏ
-190,Taban,,560224,CFM56-5C1,,"Cleaning, Inspection",273,"Blade, Vane, Disk",Engine Shop,List,19/02/25,22/02/25,,Cancelled,Èå Ïá?á äŞÕ İä? ÂáÊÑÇÓæä?˜ æ ÚÏã Çã˜Çä Êã?Ò˜ÇÑ? ˜äÓá ÑÏ?Ï ŞØÚÇÊ ãæÑÎ 1403/12/08 ÚæÏÊ ÑÏ?Ï.
-200,Kish Air,5025293,560141,CFM56-5B ,577860,"Cleaning, Inspection",8,"LLP (Booster Spool, Fan shaft,..)",Engine Shop,List,28/04/25,12/5/2025,,,ÏÑ ãÑÍáå Êã?Ò˜ÇÑ?
-201,Zagros,,560162,JT8D,726987,AD,1,Disk Assy of Turb Stg.2 LPT,Engine Shop,777622,5/7/2025,,,,ÏÑ ÇäÊÙÇÑ ÏÑ?ÇİÊ ŞØÚå
-203,Qeshm ,,560262,CFM56-5B4/P,779225,"Cleaning, Inspection, Repair",17,"Vane, Cover, HPT Nozzle, …",Engine Shop,List,7/5/2025,12/5/2025,,,ÏÑ ãÑÍáå Êã?Ò˜ÇÑ?
-204,Zagros,5026220,560140,CFM56-5B,779245,"Cleaning, Inspection, Repair",2,"Vane, Assy-Fan Bstr Stg 3, Vane, Assy-Fan Bstr Stg 4",Engine Shop,"338-003-305-0, 338-003-403-0",10/5/2025,,,,ÏÑ ÇäÊÙÇÑ ÏÑ?ÇİÊ ŞØÚå
-206,Zagros,5026220,560140,CFM56-5B4/P,779245,"Cleaning, Inspection, Repair",80, HPT Blade (80) ,Engine Shop,1957M10P03,18/05/25,,,,ÏÑ ãÑÍáå ÇÏ? ˜ÇÑäÊ
+158,Ú©Ø§Ù…?Ù„Ø§ ,,"560257, 560258, 560259",CFM56-3C,,"Cleaning, Inspection",173,"HPT STG1, Nozzle Segment-HPT, LPT STG1",NDT-QC,"1475M35P02, 2080M29G01, 301-330-114-0",28/10/24,28/10/24,,,Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¯Ùˆ?Ù† Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯
+190,Taban,,560224,CFM56-5C1,,"Cleaning, Inspection",273,"Blade, Vane, Disk",Engine Shop,List,19/02/25,22/02/25,,Cancelled,Ø¨Ù‡ Ø¯Ù„?Ù„ Ù†Ù‚Øµ ÙÙ†? Ø¢Ù„ØªØ±Ø§Ø³ÙˆÙ†?Ú© Ùˆ Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±? Ú©Ù†Ø³Ù„ Ú¯Ø±Ø¯?Ø¯ Ù‚Ø·Ø¹Ø§Øª Ù…ÙˆØ±Ø® 1403/12/08 Ø¹ÙˆØ¯Øª Ú¯Ø±Ø¯?Ø¯.
+200,Kish Air,5025293,560141,CFM56-5B ,577860,"Cleaning, Inspection",8,"LLP (Booster Spool, Fan shaft,..)",Engine Shop,List,28/04/25,12/5/2025,,,Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªÙ…?Ø²Ú©Ø§Ø±?
+201,Zagros,,560162,JT8D,726987,AD,1,Disk Assy of Turb Stg.2 LPT,Engine Shop,777622,5/7/2025,,,,Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± Ø¯Ø±?Ø§ÙØª Ù‚Ø·Ø¹Ù‡
+203,Qeshm ,,560262,CFM56-5B4/P,779225,"Cleaning, Inspection, Repair",17,"Vane, Cover, HPT Nozzle, â€¦",Engine Shop,List,7/5/2025,12/5/2025,,,Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªÙ…?Ø²Ú©Ø§Ø±?
+204,Zagros,5026220,560140,CFM56-5B,779245,"Cleaning, Inspection, Repair",2,"Vane, Assy-Fan Bstr Stg 3, Vane, Assy-Fan Bstr Stg 4",Engine Shop,"338-003-305-0, 338-003-403-0",10/5/2025,,,,Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± Ø¯Ø±?Ø§ÙØª Ù‚Ø·Ø¹Ù‡
+206,Zagros,5026220,560140,CFM56-5B4/P,779245,"Cleaning, Inspection, Repair",80, HPT Blade (80) ,Engine Shop,1957M10P03,18/05/25,,,,Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø§Ø¯? Ú©Ø§Ø±Ù†Øª
