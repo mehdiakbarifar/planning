@@ -1,0 +1,308 @@
+/* ---------------------------- */
+/* Mobile CSS – Revised for Dash2 with Themes, Coloring, and Row Highlighting */
+/* ---------------------------- */
+
+/* Re-declare font and resets */
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.woff2') format('woff2'), url('../fonts/BNazanin.woff') format('woff'), url('../fonts/BNazanin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:lang(fa) {
+    font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables (same as your desktop theme) */
+:root {
+    --background-color: #1f1f1f;
+    --section-bg: #2a2a2a;
+    --heading-bg: #333;
+    --heading-text: #ffffff;
+    --text-color: #ffffff;
+    --chart-padding: 1px;
+    --chart-margin: 1px;
+    --chart-height: 150px;
+    --rd-chart-gap: 1px;
+    --content-font-size: 1.2rem;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Vazir', 'Tahoma', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    direction: ltr;
+    transition: background-color 0.5s, color 0.5s;
+    overflow-x: hidden;
+}
+
+/* Allow vertical scroll on mobile */
+html, body {
+    overflow-y: auto;
+}
+
+/* ----------------------------- */
+/* Mobile Header & Footer Styling */
+/* ----------------------------- */
+
+/* Improved Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, var(--heading-bg), var(--section-bg));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-left,
+.header-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+/* Clock and Date styling */
+#clock-time,
+#clock-date {
+    font-size: 1.1rem;
+    color: var(--heading-text);
+}
+
+/* Adjust Header Title */
+header .header-center h1 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    color: var(--heading-text);
+}
+
+/* Adjust Header Logo */
+.header-logo {
+    max-height: 40px !important;
+    width: auto;
+    object-fit: contain;
+    padding: 2px;
+    margin-left: auto;
+}
+
+/* Improved Footer Styling */
+footer {
+    background: var(--heading-bg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 15px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Adjust Footer Logo */
+.footer-logo {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ----------------------------- */
+/* Dashboard Grid & Sections */
+/* ----------------------------- */
+
+/* Dashboard grid: switch from desktop grid to block layout */
+.dashboard-grid {
+    display: block;
+    width: 100%;
+    padding: 80px 10px 80px; /* leave room for fixed header and footer */
+    box-sizing: border-box;
+    height: auto;
+    background: var(--background-color);
+}
+
+/* Sections: preserve original colors and radii */
+.section {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--section-bg) !important;
+    border: 1px solid var(--section-bg);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Section header: same as desktop */
+.section-header {
+    display: flex;
+    align-items: center;
+    background: var(--heading-bg);
+    color: var(--heading-text);
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+}
+
+.section-header-left,
+.section-header-center,
+.section-header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+    /* Input fields in section header */
+    .section-header-left input.section-filter,
+    .section-header-right input.section-filter {
+        background: var(--heading-bg);
+        border: 1px solid var(--heading-text);
+        color: var(--heading-text);
+        padding: 4px;
+        border-radius: 4px;
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+/* Table styling: force same themed background and text
+   (using !important so that these rules override any defaults) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 4px;
+        text-align: center;
+        background-color: var(--section-bg) !important;
+        color: var(--text-color) !important;
+    }
+
+    table th {
+        background-color: var(--heading-bg) !important;
+        color: var(--heading-text) !important;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+/* Highlight classes (applied to rows) */
+.highlight-red {
+    /* The override is in the next rule */
+}
+
+.highlight-yellow {
+}
+
+/* Remove fixed table heights so tables expand naturally */
+.scrollable-table {
+    max-height: none;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+/* Mobile Tab Navigation */
+.tab-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--heading-bg);
+    padding: 8px;
+    margin-top: 60px; /* appears below fixed header */
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--heading-text);
+    font-size: 1em;
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .tab-button.active,
+    .tab-button:hover {
+        background: var(--section-bg);
+    }
+
+/* Only display the active section; hide the others */
+.section {
+    display: none;
+}
+
+    .section.active {
+        display: block;
+    }
+
+/* Hide desktop-only features */
+.drag-bar,
+#hover-popup {
+    display: none !important;
+}
+
+/* Modal styling remains as in desktop */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 10%;
+    width: 90%;
+    max-width: 500px;
+    background: var(--section-bg);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.close-modal {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ----------------------------- */
+/* NEW: Row Highlight Overrides */
+/* ----------------------------- */
+/* When a row is marked with .highlight-red or .highlight-yellow,
+   override the table cell backgrounds so the highlight is visible */
+tr.highlight-red td {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+tr.highlight-yellow td {
+    background-color: rgba(255, 255, 0, 0.3) !important;
+}
