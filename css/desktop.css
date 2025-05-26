@@ -508,7 +508,6 @@ footer {
     z-index: 1000;
 }
 
-/* Flip Animation Keyframes */
 @keyframes flip {
     0% {
         transform: rotateX(90deg);
