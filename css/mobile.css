@@ -1,5 +1,5 @@
 /* ---------------------------- */
-/* Mobile CSS – Revised for Dash2 with Themes, Coloring, and Row Highlighting */
+/* Mobile CSS â€“ Revised for Dash2 with Themes, Coloring, and Row Highlighting */
 /* ---------------------------- */
 
 /* Re-declare font and resets */
@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 5px 5px;
     background: linear-gradient(135deg, var(--heading-bg), var(--section-bg));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -79,7 +79,7 @@ header {
 /* Clock and Date styling */
 #clock-time,
 #clock-date {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--heading-text);
 }
 
@@ -107,7 +107,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 15px;
+    padding: 5px 5px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -121,7 +121,7 @@ footer {
 
 /* Adjust Footer Logo */
 .footer-logo {
-    max-height: 40px;
+    max-height: 30px;
     width: auto;
     object-fit: contain;
 }
