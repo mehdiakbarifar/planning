@@ -1,258 +1,179 @@
-Row,Client,Service Order,New Service order,Engine Type,ESN,SOW,QTY,Part Name,Applicant,Part No.,Actual End,Cleaning,Inspection,Repair & Coating,Status,Remarks
-1,GT 31,5026277,510005,SAM 146,"146119, 146134","Cleaning, Inspection",8,"Dome, Inner, Outer, cowl",Sharifi,"3650115040, 3650116010, 3650114040, 3650117040",26/02/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-2,QC- NDT,5025114,510005,SAM 146 GDT-NDT005,GT21,"Cleaning, Inspection (FPI-2)",23755,"LIST (Bolt,..)",NDT-QC,List,11/3/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-4,Pars Air,S-10008,560007,CF34,,"Cleaning, Inspection, Repair",40,HPT Nozzle segment 2 (19+21),,5099T23G07,,Completed,Completed,,,"21 ŞØÚå ÊÍæ?á ˜ÇÑİÑãÇ ÑÏ?Ïå ÇÓÊ. 19ÚÏÏ ÈÑ?Ò?ä ÇäÌÇã ÔÏå ÇÓÊ. ÏÑ ÍÇá ÊÚã?Ñ äåÇ??: ÈáäÏ?ä æ ÈÇÒÑÓ? ÇäÌÇã ÔÏå ÇÓÊ¡ ŞØÚÇÊ ÏÑ ÈÑ?Ò?ä ã? ÈÇÔäÏ æ ÓÓ ÈáäÏ?ä¡ ˜æá?ä˜ æ æÔÔ"
-5,Meraj,S-10006,560005,CFM56-5B5/P,575649,Cleaning /Inspection (FPI-2),596,LPT Blade stg.1-4,Engine Shop,List,30/03/24,Completed,Completed,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-6,Sepahan,S-10005,560004,CFM56-5A3,731548,Cleaning,2512,HPT Rotor parts list,,List,19/02/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-7,Kish air,5025293,560141,CFM56-B,577860,"Cleaning, Inspection",35,Fan Rotor Blade,,List,20/02/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-8,Aseman ,5025213,560102,CFM56-5C2,"740178, 740107","Cleaning, Inspection (FPI-2,3,4)",20,Compressor Rotor Assembly parts,Engine Shop,List,12/3/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-9,Iran Air,5025109,560192,Tay650-15,,"Cleaning, Inspection, Repiar",72,HPT 1th ST Blade ,,List,,Completed,Completed,,,Repair outsourcing
-10,GT 31,5026277,510005,SAM 146,146122,"Cleaning, Inspection, Repair",4," Cowl, Inner, Outer, Dome",GT 31,,,Completed,Completed,,,ÏÑ ÍÇá ÊÚã?Ñ ÏÑ ÊÚã?Ñ ŞØÚå
-11,Zagros,5026220,,CFM56-5B4/P,,"Cleaning, Inspection, Repair",54,"Combustion Chamber (3),  Shroud (30), Nozzle(21)",Engine Shop,338-003-403-0,,Completed,Completed,,Completed,"Ç?Çä ÈÇÒÑÓ? ÏÑ 1403/12/07¡ ÇÑÓÇá ÇÓ˜æ ÊÚã?Ñ ãÍİÙå ÇÍÊÑÇŞ æ Ç ? Ê? Èá?Ï. ÏÑ ÇäÊÙÇÑ ÊÃ??Ï ÇÓ˜æ ÊÚã?Ñ ÇÒ ãæÊæÑ"
-12,Owner/Apadana,5026205,,JT8D,728135,"Cleaning, Inspection (FPI)",195,"Blade, Vane, Disk",Engine Design,List,17/03/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-13,Owner,,,JT8D,,Cleaning,257,Part list LPT,Engine Shop,List,19/02/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-14,Meraj,S-10006,560005,CFM56/5B5P,575649,"Cleaning, Inspection (VT, DT), Repair",3," CC (Inner, Outer, Dome)",Engine Shop,"1561M26G05, 1968M44G06, 1968M64G01",10/9/2024,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ
-15,Iran Air tour,S-20002,560028,JT8D,,"Cleaning, Inspection, Repair",64,1st HPT Blade (60Rl+4Sl),,"856101, 843901",28/05/24,Completed,Completed,,,"ÇÑÓÇá ÌÇÈ ˜ÇÑÏåÇ? ÊÚã?ÑÇÊ Èå ÔÇ¡ Ç?Çä ÓÇÎÊ İ?˜ÓÑ (ÊÍæ?á ÂŞÇ? á˜ÇÑ)."
-17,Air 1,S-10014,560013,CFM56-3C1,,Cleaning,1533,"CC, HPT Nozzle, HPT shroud, LPT Nozzle, Part List",Engine Shop,List,12/3/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-18,GT 20,5023621,510001,CFM56-5C,,"Cleaning, Inspection (FPI-4)",12,"LPT, HPT blades",,"208M81P01, 3371277120",16/03/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-19,Meraj,S-10006,560005,CFM56-5B5/P,575649,"Cleaning, inspection (FPI)",39,"Nozzle segment stg 2,3 , center vent tube",Engine Shop,List,10/6/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-20,Air 1,S-10014,560013,CFM56-3C1,,Cleaning,475,"Inner Liner, Nozzle, Blade, …",Engine Shop,List,12/3/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-21,Sepahan,S-10007,560006,CFM56-5A1/F,731585,Cleaning,144,"Fan Blade, Damper, Retainer, Spacer",Engine shop,List,14/03/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-22,,,,PW4000 ,,Inspection (Vt),1,HPT Blade Stage2,,,8/4/2024,,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-23,Qeshm ,S-10009,560008,CF6-80C2A5,,"Cleaning, Inspection",185,"BLADES ASSY- STG 1 & 2 HPTR, Shroud 1 & 2, seal, Nozzle assy",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,27/02/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-24,Qeshm,S-10009,560008,CF6-80C2A5,,"Cleaning, Inspection, Repair, coating",120,HPT Blade 1 (53) & 2 (67),ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,,Completed,Completed,,, Repair Outsourcing
-25,Qeshm ,S-10009,560008,CF6-80C2A5,,"Cleaning, Inspection (Vt, Dt), Repair",62,"Seal. Shroud, Nozzle",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,27/04/24,Completed,Completed,,,"ÇÑÓÇá ÇÓ˜æ æ åÒ?äå ÈÑÇ? ãÔÊÑ? (13 ÚÏÏ ŞÇÈá ÊÚã?Ñ)¡ ÏÑ ÇäÊÙÇÑ ÊÃ??Ï?å ˜ÇÑİÑãÇ"
-26,Taban,S-10021,560020,JT8D-219,,"Cleaning, Inspection, Repair",116, LPT Blade stg 2,,800002,1/2/2025,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ- ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÏÇÑÏ.
-27,Aseman,5025213,560102,CFM56-5C2,"740178, 740107","Cleaning, Inspection (FPI-2,4)",6,"Spool, bushing, spacer, c.c",Engine Shop,List,27/04/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-28,Meraj,5025755/896,"560105, 560112",V2500,,"Cleaning, inspection, Repair",35,Vane HPT stg 2,,List,13/01/25,Completed,Completed,Completed,Completed,"Ç?Çä ˜ÇÑ ÏÑ ãæÇÏ ˜ÇÑÇä¡ ÏÑ ÊÇÑ?Î 1403/10/24 ÊÍæ?á ãÚÑÇÌ ÑÏ?Ï."
-29,GT 27,,,PW127M,,Cleaning,1,HPT Disk stg 1,Engine Design,,20/04/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-30,Meraj,S-10006,560005,CFM56-5B5/P,575649,"Cleaning, inspection (Vt, Dt), repair",14,Hanger Shroud HPT stator,Engine Shop,"1808M61G04, 1808M61G08",,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?. ÇÈáÇÛ Èå Ê?ã ÊÚã?ÑÇÊ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÏÇÑÏ. Ç?Çä ÊÚã?Ñ 12 ÚÏÏ¡ ÏÑÎæÇÓÊ  ÊÃã?ä 2 ÚÏÏ Èå ˜ÇÑİÑãÇ"
-31,Sepahan,S-10005,560004,CFM56-5A3,731548,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,14/12/24,Completed,Completed,Completed,,"Ç?Çä ˜ÇÑ æ ÊÍæ?á Èå İÑÏ?Ó¡ UT ÇæÊÑ ˜æá ÇäÌÇã ÔÏå ÇÓÊ."
-32,Sepahan,S-10007,560006,CFM56-5A3,731585,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,,Completed,Completed,,,ÇÊãÇã ÈÇÒÑÓ?. ÊÓÊ ãæäÊÇ ÇäÌÇã ÔÏå ÇÓÊ. ÊÍæ?á æÇÍÏ ÊÚã?ÑÇÊ.
-33,Sepahan,donator,,CFM56-5A1/F,731330,"Cleaning, Inspection, Repair",6,"Combustion Chamber list, inner, outer, dome, cowl",Engine Shop,List,14/12/24,Completed,Completed,Completed,Completed,ÇÊãÇã ÈÇÒÑÓ?. ÊÓÊ ãæäÊÇ ÇäÌÇã ÔÏå ÇÓÊ. ÊÍæ?á æÇÍÏ ÊÚã?ÑÇÊ. ãÌæÒ ÊÎÑ?È æ ÇÓÊİÇÏå ÌåÊ Ïæ ÓÑæ?Ó ÇæÑÏÑ Ï?Ñ ÇÎĞ ÔÏå ÇÓÊ.
-34,Taban,S-10020,560019,JT8D-219,,"Cleaning, Inspection (VT, DT, FPI)",292,"LPT Blade stg 3 (176), 4 (116)",,"798403, 822504",20/10/24,Completed,Completed,Completed,Completed,Ç?Çä ÈÇÒÑÓ? æ ÊÚã?Ñ. 20 ÚÏÏ  ÇÓÊ?Ì 4 ÈÇŞ? ãÇäÏå ãæÑÎ 1403/12/05ÊÍæ?á ÊÇÈÇä ÑÏ?Ï. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÏÇÑÏ.
-35,,,,PW4000 ,,"Inspection (VT, DT)",143,HPT Blade,,List,14/05/24,,Completed,,Completed,83 parts were sent on 04/21/2024 and 60 parts were sent on 05/14/2024
-36,Sepahan,S-10005,560004,CFM56-5A3,731548,Cleaning,1182,"Seal, Nozzel",Engine Shop,,5/5/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-37,Fars Co 1st,S-10022,560021,JT8D,728058,"Cleaning, Inspection (VT, DT, FPI), Repair",146,"LPT Blade stg 3 (88), 4 (58)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",23/10/24,Completed,Completed,Completed,Completed,"ÓåäÏ ÂÓ?Ç¡ ÊÚã?Ñ (36+83)¡ ÊÍæ?á Èå ãÔÊÑ? (ÓåäÏ ÂÓ?Ç)."
-38,Fars Co 2nd,S-10022,560021,JT8D,718106,"Cleaning, Inspection (VT, DT, FPI), Repair",146,"LPT Blade stg 3 (88), 4 (58)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",7/7/2024,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ Úá? ÈÇÈÇ
-39,Fars Co 3rd,S-10022,560021,JT8D,726041,"Cleaning, Inspection (VT, DT, FPI), Repair",146,"LPT Blade stg 3 (88), 4 (58)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822505",23/10/24,Completed,Completed,Completed,Completed,˜ÇÓ?ä ÊÚã?Ñ (45+85). ÊÍæ?á Èå ãÔÊÑ? (˜ÇÓ?ä).
-40,Meraj,S-10006,560005,CFM56-5B5/P,575649,"Cleaning, Inspection, Repair (Tack weld)",1,LPT Case (Borescope Boss Stage 3 &  4),Engine Shop,3381174520,13/05/24,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ
-41,GT 25,,,JT8D,,Cleaning,2,Disk stg 3 & 4,Engine Design,"777603, 800804",28/04/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-42,Air 1,S-10018,560007,CFM56-3C1,,Cleaning,2972,"Part List (Fan blade, bolt, nut, ..)",Engine Shop,List,2/5/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-43,Meraj,S-10006,560005,CFM56-5B5/P,,Cleaning,1,Combustion case,Engine Shop,1784M91G02,8/5/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-44,Fars Co 4th (Kish),S-10022,560021,JT8D,725418,"Cleaning, Inspection (VT, DT, FPI), Repair",42,LPT Blade stg 4 (58),ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822505, 851704",14/05/25,Completed,Completed,Completed,Completed,"˜?Ô ÊÚã?Ñ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå¡  ÊÃ??Ï ÊÚã?Ñ ÊæÓØ ˜ÇÑİÑãÇ. ÇÑÓÇá ŞØÚÇÊ Èå NVO ãæÑÎ 1403/11/24¡ ÈÑÔÊ ŞØÚÇÊ ÇÒ ÊÚã?Ñ ãæÑÎ 1404/02/20"
-45,Fars Co 5th,S-10022,560021,JT8D,"725973, 717475","Cleaning, Inspection (VT, DT, FPI), Repair",204,"LPT Blade stg 3 (88), 4 (116)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822505",21/08/24,Completed,Completed,Completed,Completed,"Ç?Çä ÊÚã?Ñ¡ Úá? ÈÇÈÇ ÊÚã?Ñ (58+57)¡ Ç?ÑÊæÑ(50)."
-46,Apadana,5025973,560114,V2500,,Cleaning,244,"TURBINE STAGE NOZZLE, Case LpT",Engine Shop,List,23/05/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-47,Aseman,5025213,560102,CFM56-5C2/F,,"Cleaning, Inspection (FPI)",614,HPC Blade,Engine Shop,List,28/07/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-48,Sepahan,Donator,,CFM56-5A1/F,,"Cleaning, Inspection",80,"BLADE, HPT ROTOR",Engine Shop,2080M87P04,,Completed,Completed,,,"ÇÚáÇã äÊÇ?Ì ÈÇÒÑÓ?¡ ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÊæÓØ ÎÇäã ÑÈ?Ú? ÂãÇÏå ÇÓÊ."
-49,Sepahan,S-10005,560004,CFM56-5A3,731548,"Cleaning, Inspection",13,"BLADE, HPT ROTOR",Engine Shop,2080M87P07,9/12/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-50,Sepahan,S-10007,560006,CFM56-5A3,,"Cleaning, Inspection",67,"BLADE, HPT ROTOR",Engine Shop,2080M87P04,,Completed,Completed,,,"ÇÚáÇã äÊÇ?Ì ÈÇÒÑÓ?¡ ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÊæÓØ ÎÇäã ÑÈ?Ú? ÂãÇÏå ÇÓÊ. ?˜ ÚÏÏ ÚæÏÊ ÌåÊ ÈÇÒÑÓ? Ó ÇÒ ÊÚã?Ñ"
-51,Sepahan,S-10019,560018,CFM56-5A3,731878,"Cleaning, Inspection",86,"BLADE, HPT ROTOR, linner, outer, cowl, dome, nut",Engine Shop,List,11/6/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-52,Air 1,S-10014,560013,CFM56-3C1,,"Cleaning, Inspection",4,"Shaft, Seal, RETAINER, BLADE HPT RTR REAR & Front",Engine Shop,List,27/05/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-53,Sepahan,S-10007,560006,CFM56-5A3,731585,"Cleaning, Inspection (FPI)",1,"DISK, ASSY-FAN",Engine Shop,336-018-165-0,19/05/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-55,GT 25,,,JT8D,,"Cleaning, Inspection, ",13,"LPT VANE STAGE 3 & 4 (10), LPT Blade stg 3 (3)",Engine Shop,List,,Completed,Completed,,Completed,ÏÑ ÇäÊÙÇÑ ÊÃ??Ï åÒ?äå ÊÚã?Ñ ÊæÓØ ˜ÇÑİÑãÇ (ãåäÏÓ ÎæÔÏá)
-56,Meraj,S-10006,560005,CFM56-5B5/P,,Cleaning,2152,List,,List,19/02/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-57,Zagros,S-20003,560029,CFM56-5A,731805,"Cleaning, Inspection (FPI-4)",1,"SEAL, ROTAITING AIR REAR",Engine Shop, 1359M86P03,10/3/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-58,Sepahan,S-10007,560006,CFM56-5A3,731585,"Cleaning, Inspection (FPI)",66,"BOLT, SHEAR DBL HEX HD",Engine Shop,"J818P060A , J816P063A",26/05/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-59,Meraj,S-10006,560005,CFM56-5B5/P,,"Cleaning, Inspection, Repair",43,"Shroud, HPT Stator (42), CVT support (1)",Engine Shop,"2080M28P02, 337-111-903-0",,Completed,Completed,,,"ÇÊãÇã ÈÇÒÑÓ? CVT. ÇÈáÇÛ ÊÚã?Ñ ÔÑÇÏåÇ Èå æÇÍÏ ÊÚã?ÑÇÊ¡ ÊÃ??Ï æÔÔ HVOF. ãæÑÎ 1403/11/15 ÊÚÏÇÏ 5 ÚÏÏ ÈÑÇ? æÔÔ Èå ÇÕİåÇä ÇÑÓÇá ÑÏ?Ï ˜å ãæÑÎ 1403/11/28 ÏÑ?ÇİÊ ÑÏ?Ï."
-60,Meraj,S-10006,560005,CFM56-5B5/P,,"Cleaning, Inspection",614,HPC Blade STG 1-9 ,Engine Shop,List,20/07/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-61,"Apadana, Meraj","5025896, 5025755, 5025872 ",560109,V2500,,"Cleaning, Inspection, Repair",143,"HPT vane satg 1 (51+28), HPT blade stg 1 (48+16)",,"2A4201, 2A9201",7/9/2024,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ
-62,GT 20,,,,,Sandblast,12,HPT Blade,Engine Construct,,16/05/24,Completed,,,Completed,Ç?Çä ÓäÏÈáÇÓÊ
-63,Sepahan,S-10019,560018,CFM56-5A3,731878,Cleaning,2451,Parts list,Engine Shop,List,28/05/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-65,,,,V2500,,Cleaning,2,1ST STG HPT SHROUD,Mechanic,-,23/05/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-66,Qeshm ,S-10009,560008,CF6-80C2,,"Cleaning, Inspection, Repair",28,"HPT Blade Stg.1 (18), HPT NGV2 (7), C.C (3 set)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,10/4/2025,Completed,Completed,,,Ç?Çä ÈÇÒÑÓ?. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÇæÊÑ áÇ?äÑ ÂãÇÏå ÇÓÊ. Óå ÚÏÏ ÇæÊÑ ˜á Ó ÇÒ UT ÊÍæ?á ÇäÈÇÑ İÑÏ?Ó ã? ÈÇÔÏ.
-68,Sepahan,S-10019,560018,CFM56-5A3,731878,Cleaning,1969,"LPT Rotor/Stator Part List, HPT Shroud & LPT Nozzle 1 Part List",Engine Shop,,23/07/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-69,Meraj,S-10006,560005,CFM56-5B5/P,,Cleaning,2,"CASE, CPRSR STTR REAR, Front",Engine Shop,"1559M40G03, 1559M30G06",29/05/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-70,Meraj,S-10006,560005,CFM56-5B5/P,,"Cleaning (is Done), inspection, Repair",6,"Bracket, Tube, ..",Engine Shop,List,28/09/24,Completed,Completed,Completed,Completed,Ç?Çä ÊÚã?Ñ
-71,GT 25,,,,,"Cleaning, Inspection (FPI)",2,Blade turbine 3rd stg,NDT-QC,B 803003,6/7/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-72,Sahand Asia,-,560217,JT8D,,"Cleaning, Inspection, Repair",78,2nd stg. LPT Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,800002,8/9/2024,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡ ÌÇÈ ˜ÇÑÏ ÊÚã?ÑÇÊ ÏÇÑÏ. ŞØÚÇÊ ãæÑÎ 1403/12/12 Èå NVOÌåÊ ÊÚã?Ñ ÇÑÓÇá ÑÏ?Ï."
-73,GT 25,,,JT8D,,"Cleaning, Inspection (FPI)",8,Blade turbine 3rd stg,NDT-QC,"B 803003, 822504",6/7/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-74,GT 22,,,LTC4B-8D,,"Cleaning, Inspection (FPI), Repair",1,2ND NOZZLE,Roostapishe,2-140-240-01 ,14/12/24,Completed,Completed,,Completed,ÚÏã ÊÇ??Ï ˜ÇÑİÑãÇ ÈÑÇ? ÊÚã?Ñ ÊæÓØ ?ãÇä˜ÇÑ æ ÊŞÇÖÇ? ÚæÏÊ ŞØÚå
-75,Zagros,S-20003,560029,CFM56-5A3,,Cleaning,1,"Case, CPRSR STTR REAR",Engine Shop,1559M40G03,23/07/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-76,Zagros,S-10023,560022,CFM56-5A1,,Cleaning,2,"CASE, ASSY-CPRSR STTR, CASE, COMBUSTION",Engine Shop,"1318M75G10, 2002M88G02",23/07/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-78,GT 25,,,JT8D,,Cleaning,2,LPT Disk Stage3 & Stage4,Engine Design,"777603, 800804",28/06/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-79,Fars Co 6th,S-20007,560033,JT8D,"717475, 708424","Cleaning, Inspection, Repair",160,HPT Blade stg 1,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"856001, 847601",,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ? ¡ÏÑ ãÑÍáå ÊÚã?Ñ ÏÑ NVO. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ."
-80,Iran Air tour,S-10003,560002,JT8D,,"Inspection, Repair",146,LPT Blade stg 3&4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"803003, 851704",5/10/2024,Completed,Completed,Completed,Completed, ÊÍæ?á Èá?Ï åÇ? 3 æ 4 Èå ä?˜á Âá?Ç ÌåÊ ÊÚã?Ñ (74 ÚÏÏ Èá?Ï 3 æ 57 ÚÏÏ Èá?Ï 4). Ç?Çä ÊÚã?Ñ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ.
-81,Fars Co 7th,S-10022,560021,JT8D,725562,"Cleaning, Inspection, Repair",88,LPT Blade stg 3,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,798403  ,,Completed,Completed,,,"ÇÊãÇã ÈÇÒÑÓ?¡˜ÇÓ?ä. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÊÏæ?ä ÑÏ?Ïå ÇÓÊ. ÏÑ ÇäÊÙÇÑ ÊÃ??Ï?å ÂŞÇ? ÑÖÇ?? ÈÑÇ? ÊÚã?Ñ."
-82,Sepahan,S-10019,560018,CFM56-5A3,731878,Cleaning,74,Blade stg 3 & 4,Engine Shop,List,20/07/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-83,Sepahan,Donator,,CFM56-5A1/F,731330,Cleaning,78,Blade stg 3 & 4,Engine Shop,List,20/07/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-84,Iran Air tour,-,560098,JT8D-219,,Root Cause Failure Analysis,4,LPT Blade Stage 2 ,Engine Shop,B 800002,21/08/24,,,,Completed,ÊÍæ?á æÇÍÏ ÊÍŞ?Ş æ ÊæÓÚå. ãÌæÒ ÊÎÑ?È ÑİÊå ÔÏå ÇÓÊ.
-85,Meraj,S-10006,560005,CFM56-5B5/P,,Heat tint,4,LPT Blade Stage 2 ,Engine Shop,3381083040,22/06/24,,,,Completed,ÒÇÑÔ ÊæÓØ æÇÍÏ ÊÍŞ?Ş æÊæÓÚå ÇÑÓÇá ÔÏå ÇÓÊ.
-86,Iran Air tour,-,560098,JT8D-219,,"Cleaning, Inspection",5,"Shaft, Disk, HUB ASSY",Engine Shop,List,26/10/24,Completed,Completed,,Completed," Ç?Çä ÈÇÒÑÓ? æ ÊÍæ?á ŞØÚÇÊ Èå İÑÏ?Ó¡ ÚÏã Ê˜ã?á ÈÇÒÑÓ? ÇÈÚÇÏ? ÔİÊ. ÏÑ ãÑÍáå ÇÏ? ˜ÇÑäÊ Ï?Ó˜ 4"
-87,Chabahar,-,560186,JT8D,, Inspection,188,HPT Blade stg 1,,856101,29/10/24,Completed,Completed,Completed,Completed,"Ç?Çä ÊÚã?Ñ¡ 180 ŞØÚå serviceable- ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ Èå æÇÍÏ ÊÚã?ÑÇÊ ÌåÊ Ê˜ã?á ÇÑÓÇá ÔÏå ÇÓÊ."
-88,Zagros,-,560161,JT8D,,"Cleaning, Inspection",146,LPT  Blade 3&4,Engine Shop,"851704, 803003",,Completed,Completed,,,ÇÊãÇã ÈÇÒÑÓ?. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÏÇÑÏ. ÊÍæ?á NVO ÈÑÇ? ÊÚã?Ñ
-89,Meraj,S-10006,560005,CFM56-5B5/P,,"Cleaning, Inspection, Coating (Aluminize)",350,"Blade stg 1(160SL+2 OL), Blade stg 2 (80SL+70OL), Nozzle stg 2 (17), Nozzle stg 3 (19),  Nozzle BS (2)",Engine Shop,List,22/04/25,Completed,Completed,Completed,Completed,Êã?Ò˜ÇÑ? ÇäÌÇã ÔÏå ÇÓÊ. Ç?Çä æÔÔ Èá?Ï 1 æ 2 (160 Èá?Ï ÑÏ?İ 1 ŞÇÈá ÎÏãÊ ÇÒ 162 ÚÏÏ) æ (80 ÚÏÏ Èá?Ï ÑÏ?İ 2 ŞÇÈá ÎÏãÊ ÇÒ 150 ÚÏÏ)-  ÚæÏÊ ãÌÏÏ 160 ÚÏÏ ÇÓÊ?Ì 1 æ 76 ÚÏÏ ÇÓÊ?Ì 2 Èå ÇÒãÇÊ˜
-91,,,,,,Cleaning,17,Accessory parts,ÊÌå?ÒÇÊ ÌÇäÈ?,List,7/7/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-92,Meraj,-,560187,CFM56-5B62P (575616),,"Cleaning, Inspection, Repair",5+1,"Cowl, Inner Dome, Outer Dome, OUTER COMB CHAMBER, INNER COMB CHAMBER (COMBUSTION CHAMBER ASSY  PN:73M18G02   S/N:MMTE6017     1EA)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"1873M18G02, 1968M91G03, 1968M90G02, 1873M78G07, 1968M96G10",4/3/2025,Completed,Completed,Completed,Completed,"Êã?Ò˜ÇÑ? æ ÈÇÒÑÓ? ÇäÌÇã ÔÏå¡ÏÑ ãÑÍáå ÊÚã?Ñ¡ ÇÈáÇÛ ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ Èå ÊÚã?ÑÇÊ. ÏÏáÇ?ä Çæá?å 30 ÔåÑ?æÑ æ ÏÏáÇ?ä ÌÏ?Ï ÊÚã?ÑÇÊ 20 ÂĞÑ ã? ÈÇÔÏ. ãæÑÎ 1403/11/15 ŞØÚÇÊ ÇæÊÑ áÇ?äÑ æ Ç?äÑ ÏÇã ÈÑÇ? æÔÔ Èå ÇÕİåÇä ÇÑÓÇá ÑÏ?Ï."
-93,Kish air,-,560185,JT8D,,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",13/10/24,Completed,Completed,Completed,Completed,ÊÍæ?á Èå ãÔÊÑ?. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÊæÓØ ÎÇäã ˜áÇäÊÑ? ÂãÇÏå ÔÏå ÇÓÊ.
-94,Fars Co 4th (Kish),S-10022,560021,JT8D,,"Cleaning, Inspection, Repair",82,LPT Blade stg 3,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,798403,14/05/25,Completed,Completed,Completed,Completed,.  ãÌæÒ ÊÎÑ?È ÈÑÇ? Óå ŞØÚå OL ÑİÊå ÔÏ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÏÇÑÏ. ÊÃ??Ï ÊÚã?Ñ ÊæÓØ ˜ÇÑİÑãÇ. ÇÑÓÇá ŞØÚÇÊ Èå NVO ãæÑÎ 1403/11/24
-95,GT 20,,,,,Cleaning,80,HPT balde,Engine Design,M79G01 ( 2080M81P01),19/08/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-96,Air 1,S-10018,560017,CFM56-3C1,,"Cleaning, inspection, Repair",13,"HPT Seal, Cover Assy, …",Engine Shop,List,,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡ ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ åÑ Ïæ ŞØÚå Èå ÊÚã?ÑÇÊ ÇÈáÇÛ ÑÏ?Ï."
-97,Air 1,S-10014,560013,CFM56-3C1,,"Cleaning, inspection, Repair",3,"Screen Thermal, Cone spinner",Engine Shop,List,,Completed,Completed,,,Ç?Çä ÈÇÒÑÓ?.ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ Cone Spinner æ Thermal Èå ˜ÇÑÇå ÇÈáÇÛ ÑÏ?Ïå ÇÓÊ. ÚÏã Çã˜Çä ÊÚã?Ñ  Cone æ ÚæÏÊ Èå İÑÏ?Ó- ÏÑ ÇäÊÙÇÑ ÊÃã?ä İ?áÑ ÌäÓ S.S 321 ?Ç 347  ÌåÊ ÊÚã?Ñ ŞØÚå Thermal
-98,Iran Air tour,S-10003,560002,JT8D,,"Cleaning Inspection, Repair",111,"Ring Assy, Duct, Spacer",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,5/10/2024,Completed,Completed,,Completed,äÊÇ?Ì ÈÇÒÑÓ? ÇÑÓÇá ÑÏ?Ï.
-99,Zagros,-,560162,JT8D,,Cleaning,466,"Disk, Case, standard, …",Engine Shop,List,10/9/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-100,Sepahan,S-10019,560018,CFM56-5A,731878,"Cleaning, FPI (2-3-4)",211,"Damper, Shaft, Seal , Disk, ...",Engine Shop,List,19/09/24,Completed,Completed,,Completed,"ÇÈáÇÛ Êã?Ò˜ÇÑ?¡ Ç?Çä FPI¡ ÏÑ ãÑÍáå Êã?Ò˜ÇÑ? Ó ÇÒ FPI"
-101,Zagros,560161,560161,JT8D-217C,,Cleaning,244,"Vane, Blade, Ring Assy, …",Engine Shop,List,10/9/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-102,Air 1,560097,560097,CFM56-3C1,,Cleaning,930,"CC, Nozzle, Shroud, …",Engine Shop,List,17/10/24,Completed,,,Completed,"ÔÑæÚ Êã?Ò˜ÇÑ?¡ Èá?Ï åÇ ÏÑ ãÑÍáå æÊ ÈáÇÓÊ"
-105,Air 1,,560097,CFM56-3C1,858594,Cleaning,2982,Standard Parts,Engine Shop,List,11/9/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-110,Sepahan,S-10019,,CFM56-5A,731878,Cleaning,1,"FRAME, ASSY-LPT",Engine Shop,336-031-631-0,10/9/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-111,Qeshm ,,560208,CFM56-5B4/P,779213,Cleaning,107,"Liner, Dome, Shroud, Blade",Engine Shop,List,30/09/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-113,Fars Co 8th ,,560210,JT8D-219,725839,"Cleaning, Inspection, Repair",64,1th stg. HPT  Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"856101, 830701-003",23/02/25,Completed,Completed,Completed,Completed,"Ç?Çä ÈÇÒÑÓ?¡ ŞØÚÇÊ ÊÍæ?á NVO¡ Ç?Çä ÊÚã?Ñ æ ÊÍæ?á Èå ÊÇÈÇä"
-114,Fars Co 8th ,,560211,JT8D,717475,"Cleaning, Inspection, Repair",88,3rd stg. HPT  Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,803003,31/08/24,Completed,Completed,,Completed,Êã?Ò˜ÇÑ? ÇäÌÇã ÔÏå ÇÓÊ. Ç?Çä ÈÇÒÑÓ? ÊãÇã ŞØÚÇÊ OL
-115,ATA,,560223,JT8D,725883   ,"Cleaning, Inspection, Repair",146,3rd & 4th stg LPT Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",23/10/24,Completed,Completed,Completed,Completed,"Ç?Çä ÊÚã?Ñ¡ ÊÍæ?á Èå ãÔÊÑ?"
-116,Esfahan,,,AC-P4,,Cleaning,2,"Torus assembly, outlet",ÊÌå?ÒÇÊ ÌÇäÈ?,,31/08/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-117,Purchased parts,,,CF6-80C2,,Inspection,276,HPT Shroud stg 1 & 2,,List,15/09/24,,Completed,,Completed,ÊãÇã ŞØÚÇÊ ÏÑ æÖÚ?Ê serviceable æ ÕÏæÑ İÑã 1
-119,Iran Air tour,,560098,JT8D-219,725802,"Cleaning, DT, FPI",74,LPT Blade Stage 2 ,Engine Shop 2,800002,29/09/24,Completed,Completed,,Completed,"Êã?Ò˜ÇÑ?¡ FPI æ ÈÇÒÑÓ? ÇÈÚÇÏ? ÇäÌÇã ÔÏå ÇÓÊ. äÊÇ?Ì Ô˜ÓÊ ÇÑÓÇá ÑÏ?Ï."
-120,Iran Air tour,,560229,JT8D-219,725979,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,Engine Shop 2,"798403, 822504",1/2/2025,Completed,Completed,Completed,Completed,"Ç?Çä ÈÇÒÑÓ? æ ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ¡ Ç?Çä ÊÚã?Ñ"
-121,Taban,,560209,JT8D-219,725441,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,Engine Shop 2,"798403, 822504",23/02/25,Completed,Completed,Completed,,"Ç?Çä ÈÇÒÑÓ? æ ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ¡ Ç?Çä ÊÚã?Ñ¡ ÊÍæ?á ŞØÚÇÊ Èå ÊÇÈÇä"
-122,Qeshm ,S-10011,560010,CF6-80C2A5,695362,"Cleaning, Inspection, Repair",24,HPT NGV Stg 2,Engine Shop 2,"2080M12G01, 2080M12G02",,Completed,Completed,,,Êã?Ò˜ÇÑ? ÇäÌÇã ÔÏå ÇÓÊ. ÏÑ ãÑÍáå ÈÇÒÑÓ? Ôã? ÇÓ˜æ æ ÌÇÈ ˜ÇÑÏ ÊÚã?ÑÏÇÑÏ. ÏÑ ÇäÊÙÇÑ ÊÃ??Ï?å ÔÇ 2 ÈÑÇ? ÊÚã?Ñ
-123,Qeshm ,S-10011,560010,CF6-80C2A5,695372,"Cleaning, Inspection, Repair",74,BLADE HPTSTG 2,Engine Shop 2,1881M5205,,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ? æ Õİ ÊÏæ?ä ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ¡ ÏÑ ÇäÊÙÇÑ ÊÃ??Ï?å ÔÇ 2 ÈÑÇ? ÊÚã?Ñ"
-124,Qeshm ,,560214,CFM56-5B4/P,779221,Cleaning,147,"Disk, seal, nozzle, …",Engine Shop,List,10/9/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-125,Meraj,S-10006,560005,CFM56-5B5/P,575649,"Cleaning, Inspection, Repair",83,"HPT Blade, HPT Nozzle",Engine Shop,"1957M10P01, 2086M14G02",,Completed,Completed,,,"Êã?Ò˜ÇÑ? æ æÊ ÈáÓÊ ÇäÌÇã ÔÏå ÇÓÊ. Ç?Çä ÈÇÒÑÓ?¡ ÇÑÓÇá 71 ÚÏÏ ŞØÚå Èå äãÇ?äÏå NVO Messenger Agency  ÌåÊ ÊÚã?Ñ¡ÚÏã Çã˜Çä ÊÚã?Ñ Óå ÚÏÏ æ?ä ÏÑ ãÚÇæäÊ. 5 ÚÏÏ Èá?Ï ÚæÏÊ ÌåÊ ÈÇÒÑÓ? Ó ÇÒ ÊÚã?Ñ"
-126,äãÇ?ÔÇå?,,,,,Cleaning,45,"Disk, Vane, Blade, …",Engine Shop 2,,14/09/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-127,GT 20,,,CFM56-5C,,Cleaning,7,"HPT Disk, LPT Disk stg 1, LPT Blade stg 1",Engine Design,"1498M34P04, 3371277120, 337004030",22/09/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-129,Iran Air tour,,560231,JT8D,,"Cleaning, Inspection, Repair",7,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"803003, 851704",,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡  ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ. ÊÍæ?á Óå ÚÏÏ Èå Ç?ÑÊæÑ"
-130,Pars Air,,560235,CF34,,"Cleaning, Inspection, Repair",26,HPT Nozzle segment stg 2,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,5099T23G08,5/1/2025,Completed,Completed,Completed,Completed,"24  ÊÚã?Ñ?- 24 ÚÏÏ Èå ãÔÊÑ? ÊÍæ?á ÔÏå ÇÓÊ. 2 ÚÏÏ ÏÑ ãÑÍáå ÈÑ?Ò?ä¡ ãÏÇÑ˜ ÈÑÇ? 24 ÚÏÏ Ê˜ã?á ÑÏ?Ï."
-131,Qeshm ,,560214,CFM56-5B4/P,779221,Cleaning,272,"Blade, lock blade, …",Engine Shop,List,11/10/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-132,Qeshm ,,560208,CFM56-5B4/P,779213,Cleaning,2049,Standard Parts,Engine Shop,List,11/10/2024,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-133,GT 22,,,,,Cleaning,9,"Nut, locked, seal, ..",Engine design,List,28/09/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-134,Iran Air tour,,560229,JT8D,725979,"Cleaning, Inspection, Repair",64,Blade hpt stg1,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,855901-856101-843901-002,,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡ ÏÑ ãÑÍáå ÊÚã?Ñ ÏÑ NVO. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ."
-135,Iran Air tour,,560098,JT8D,725802,"Cleaning, Inspection, Repair",64,Blade-turb motor stg 1,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,856101-843901,,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡ ÏÑ ãÑÍáå ÊÚã?Ñ ÏÑ NVO. ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ."
-136,Pars Air,,560232,CF34,,"Cleaning, Inspection, Repair",39,Segment turbine nozzle stg 1&2,,"5099T19G04, 4923T36G01, 4923T36G02 , 5099T23G07",,Completed,Completed,,,"ÏÑ ãÑÍáå ÊÚã?Ñ¡ ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÇÑÓÇá ÔÏå ÇÓÊ . 3 ÚÏÏ ãæÑÎ 1403/11/06 ÌåÊ ÓæÑÏÑ?á ÎÇÑÌ ÑÏ?Ï."
-137,Iran Air tour,S-10003,560002,JT8D-217A      ,717412,Inspection (FPI),2,"LPT Disk stg 2, 3",Engine Construct,"777603, 800804",22/09/24,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-139,Purchased parts,,520026,,,Inspection,43,LLP,,,,,,,Cancelled,
-140,GT 25,,,,,Coating 3mm,6,Disk,Engine design,,29/11/24,,,Completed,,Ç?Çä ˜ÇÑ ÊÚã?ÑÇÊ
-142,Air 1 ,S-10018,560017,CFM56-3C1,858719,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G08, 1317M90G04, 1317M58G02",16/10/24,Completed,,,Cancelled,
-143,Air 1,,560097,CFM56-3C1,858594,"Cleaning, Inspection, Repair",3,"LINER, INNER , LINER, OUTER, DOME",Engine Shop ,"1317M89G04, 1317M90G04, 1317M91G02",16/10/24,Completed,,,Cancelled,
-144,KISH AIR,5026297,560117,CFM56-5B3/P,577867,"Cleaning, Inspection",2,"Support shroud, Case",Engine Shop,"2002M69G02, 1784M91G07",14/05/25,Completed,Completed,,Completed,"Ç?Çä ÈÇÒÑÓ?¡ ÏÑ ÇäÊÙÇÑ ÊÃ??Ï ÇÓ˜æ ÊÚã?Ñ ÊæÓØ ˜ÇÑİÑãÇ"
-145,Qeshm,,560208,CFM56-5B4/P,779213,"Cleaning, Inspection (FPI)",30,Nut,Engine Shop,1498M58P01,1/10/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-148,GT 31,,,,,Cleaning,55,Standard Parts,Engine Design,,14/10/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-149,GT 20,,,,,Cleaning,25,LPT Blade  Stage1,Engine Design,337-127-712,16/10/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-150,Aseman,,560230,CFM56-5C2/F,740284,"Cleaning, Inspection",6,"Outer, inner, dome, inner cow, outer cowl",Engine Shop,List,2/3/2025,Completed,Completed,,Completed,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÇÈáÇÛ ÈÇÒÑÓ?¡ Ç?Çä ÓäÏÈáÇÓÊ. ÇæÊÑ ˜æá ÈÚÏ ÇÒ ÇäÌÇã UT ÊÍæ?á ÇäÈÇÑ İÑÏ?Ó ã? ÈÇÔÏ. Ç?Çä ÈÇÒÑÓ? ãæÑÎ 1403/11/30¡ ÇÚáÇã ÚÏã ä?ÇÒ Èå ÊÚã?Ñ ÊæÓØ ãæÊæÑ. ŞØÚÇÊ ãæÌæÏ ÏÑÇäÈÇÑ ?Çã."
-151,ATA,,560223,JT8D,725883 ,"Cleaning, Inspection, Repair",6,3rd (5) & 4th (1) stg LPT Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",23/10/24,Completed,Completed,Completed,Completed,Ç?Çä ÈÇÒÑÓ? æ ÊÚã?Ñ.
-152,˜Çã?áÇ ä?˜á Âá?Ç,,560245,V2500,,Inspection,313,"HPT Duct segment stg 2 & 1, Inner liner, Blade HPT stg 2",ä?˜á Âá?Ç,List,5/11/2024,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-153,    Qeshm,,560207,CF6-80C2A,695372,695372,52,"HPT Shroud  Stage 2, HPT Vane Stage 2",Engine Shop 2,List,22/04/25,Completed,Completed,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ Ç?Çä ÈÇÒÑÓ? ãæÑÎ 1404/02/03"
-154,   Taban,,560209,JT8D-219,725441,"Cleaning, Inspection, Repair",64,HPT Blade Stage 1,Engine Shop 2,List,23/02/25,Completed,Completed,Completed,Completed,"Ç?Çä ÈÇÒÑÓ?¡ ÊÍæ?á NVO ÌåÊ ÊÚã?Ñ¡ Ç?Çä ÊÚã?Ñ¡ ÊÍæ?á Èå ÊÇÈÇä"
-156,Air 1,,560255,CFM56-3C1,"858594, 858719","Cleaning, Inspection, Repair",163,"C.C, Blade LPT stg 3",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,,Completed,Completed,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ Ç?Çä ÈÇÒÑÓ?¡ ÏÑ ãÑÍáå ÊÚã?Ñ ãæÑÎ 1403/11/15¡ ŞØÚÇÊ 1317M90G04-1317M89G08-1317M58G02 ÈÑÇ? æÔÔ ÇÑÓÇá ÑÏ?Ï. ãÇÈŞ? ŞØÚÇÊ ãæÑÎ 1403/11/23 Èå Ç?ÑæÇä ÚæÏÊ ÑÏ?Ï. Ç?Çä ÊÚã?Ñ  ÓÊ Çæá ãÍİÙå ÇÍÊÑÇŞ ãæÑÎ 1403/12/12 æ ãæÌæÏ ÏÑ ÇäÈÇÑ İÑÏ?Ó- ÊÚã?Ñ Èá?Ï ÇÓÊ?Ì 3 ãÇäÏå ÇÓÊ. ŞØÚÇÊ ÓÊ Çæá Èå ˜ á?ÓÊ ÇÖÇİå ÑÏ?Ï. ŞØÚÇÊ ÓÊ Ïæã ÏÑ ˜ á?ÓÊ ä?ÓÊ"
-157,ATA,,560223,JT8D,725883,"Cleaning, Inspection, Repair",4,3rd (2) & 4th (2) stg LPT Blade,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ?¡ ÇÑÓÇá Èå NVO ÌåÊ ÊÚã?Ñ"
-159,˜Çã?áÇ ,,"560260, 560261",JT8D,,"Cleaning, Inspection",172,"HPT-BLADE STG1 (80), NGV-STG1 (46+46)",NDT-QC,799191,,Completed,Completed,,,"Ç?Çä ÈÇÒÑÓ? 46 ÚÏÏ NGV  æ ÕÏæÑ İÑã 1¡ 29 ÂĞÑ ÊÍæ?á  ãÔÊÑ? ÔÏå ÇÓÊ"
-160,Qeshm ,,560214,CFM56-5B4/P,779221,Cleaning,2509,Standard Parts,Engine Shop,List,20/11/24,Completed,,,Completed,Ç?Çä Êã?Ò˜ÇÑ?
-161,LLP (ÔÇåÏ shahed),,520031,JT8D-219 ,728135,"Cleaning, Inspection",4,"Shaft, disk",Engine Shop 2,"5000923-01, 777622, 777603, 800804",,Completed,Completed,,,ÊÓÊ ÇÏ? ˜ÇÑäÊ æ ÓÎÊ? ÓäÌ? Ï?Ó˜ ÇÓÊ?Ì 4 ÇäÌÇã ÔÏ
-162,Aseman,"5025213, 5026221",560102-560139,CFM56-5C2F,"740178, 740107","Cleaning, Inspection, Repair",3,"C.C: Outer, Inner, Dome",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"1968M64G01, 1968M44G06, 1561M26G05",,Completed,Completed,,,"ÏÑ ãÑÍáå ÊÚã?Ñ¡ ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÇÑÓÇá ÔÏå ÇÓÊ ."
-163,Purchased parts (NVO),,560256,JT8D-217,,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",9/11/2024,Completed,Completed,,Completed,ÏÑ ÇäÊÙÇÑ ÕÏæÑ ÓÑæ?Ó ÇæÑÏÑ
-164,Aseman,,560230,CFM56-5C2/F,740284,Cleaning,358,Standard Parts,Engine Shop,List,9/12/2024,Completed,,,Completed,
-165,Aseman,,560230,CFM56-5C2/F,740284,"Cleaning, Inspection, Repair",1,"MANIFOLD, ASSY-CLG",Engine Shop,337-099-110-0,12/3/2025,Completed,Completed,,Completed,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÇÈÇä ÈÇÒÑÓ? ÏÑ ÊÇÑ?Î 1403/10/22- ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ Èå ÊÚã?ÑÇÊ ÇÈáÇÛ ÑÏ?Ï. ÚÏã Çã˜Çä ÊÚã?Ñ ÏÇÎá? æ ÚæÏÊ ŞØÚå Èå İÑÏ?Ó"
-166,Aseman,,560230,CFM56-5C2/F,740284,"Cleaning, Inspection (FPI)",93,"Shaft, Blade stg 1 & 2, Seal",Engine Shop,List,13/01/24,Completed,Completed,,Completed,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÏÑ ãÑÍáå ÈÇÒÑÓ?¡ ÏÑ ÇäÊÙÇÑ ÊÃã?ä ÊäÎæÇå? ãÊÑ?Çá Ñ?ãæ ÑÇÈÑ"
-167,Qeshm ,,560267,CFM56,779913,"Cleaning, Inspection, Repair",1,HPT FRONT SHAFT           ,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,1498M40P05,7/11/2024,Completed,Completed,,Completed,
-168,Zagros,,560162,JT8D-217C,726987, Inspection,146,LPT Blade stg 3 & 4,Engine Shop,"798403, 822504",15/03/25,Completed,Completed,Completed,Completed,ÌÇÈ ˜ÇÑÏ ÊÚã?ÑÇÊ ÓÇ?ä ÑÏ?Ï.
-170,GT 22,,,,,Cleaning,5,Disk,Engine Design,List,26/11/24,,,,Completed,
-171,Zagros,,560162,JT8D-217C,726987, Inspection (FPI),150,"Vane, Disk",Engine Shop,List,2/2/2025,Completed,Completed,,Completed,"Ç?Çä Êã?Ò˜ÇÑ?¡ Ç?Çä ÈÇÒÑÓ?¡ æ?ä åÇ Èå İÑÏ?Ó ÚæÏÊ ÑÏ?Ï¡ Êã?Ò˜ÇÑ? ÈÚÏ ÇÒ FPI Ï?Ó˜ åÇ ÈÇŞ? ãÇäÏå ÇÓÊ."
-172,Zagros,,560161,JT8D-217A,717439, Inspection (FPI),72,"Vane, Disk",Engine Shop,List,20/01/25,Completed,Completed,,Completed,"Ç?Çä Êã?Ò˜ÇÑ?¡ Ç?Çä ÈÇÒÑÓ?¡ æ?ä åÇ Èå İÑÏ?Ó ÚæÏÊ ÑÏ?Ï. Êã?Ò˜ÇÑ? ÈÚÏ ÇÒ FPI Ï?Ó˜ åÇ ãÇäÏå ÇÓÊ."
-173,Air 1,,560097,CFM56-3C1,858594,"Cleaning, Inspection (FPI)",1,HPT FRONT SHAFT ,Engine Shop,1385M90P04,18/12/24,Completed,Completed,,Completed,Ç?Çä Êã?Ò˜ÇÑ? æ ÈÇÒÑÓ?
-174,Sahand Asia,,560021,JT8D-219,-,"Cleaning, Inspection, Repair",10,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",17/02/25,Completed,Completed,Completed,Completed,Ç?Çä ÈÇÒÑÓ? æ ÊÚã?Ñ
-175,Taban,,560224,CFM56-3C1,858811,Cleaning,6013,Engine/Module Part List,Engine Shop,List,29/01/25,Completed,,,Completed,
-176,Aseman,,560230,CFM56-5C2/F,740284,"Cleaning, Inspection",80,"BLADE, HPT ROTOR",Engine Shop,2080M81P01,13/01/25,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-177,Aseman,5025213,560102,CFM56-5C,740178,Inspection,80,HPT BLADE,Engine Shop,2080M81P01,3/2/2025,Completed,Completed,,Completed,Ç?Çä ÈÇÒÑÓ?
-178,Qeshm ,,560286,CF6,,"Cleaning, Inspection",113,"HPT Vane (24), HPT Blade (89)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,List,2/3/2025,Completed,Completed,,Completed,"Ç?Çä ÈÇÒÑÓ?¡ ÏÑ ÇäÊÙÇÑ ÊÃ??Ï ÊÚã?Ñ ÊæÓØ ˜ÇÑİÑãÇ"
-179,Iran Air tour,,560229,JT8D,718555 ,"Cleaning, Inspection, Repair",8,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",12/2/2025,Completed,Completed,Completed,Completed,Èå ÏÑÎæÇÓÊ ÂŞÇ? ÑÖÇ?? Èå ÓÑæ?Ó ÇæÑÏÑ 560229 ÇÖÇİå ÑÏ?Ï. Ç?Çä ÈÇÒÑÓ? 1/13/2025- ÌÇÈ ˜ÇÑÏ ÊÚã?Ñ ÂãÇÏå ÇÓÊ. Ç?Çä ÊÚã?Ñ ãæÑÎ 1403/11/24
-180,Taban,Part 1,560224,CFM56-3C1,858811,Inspection FPI,1414,"Blade, Nozzle, Standard Part",Engine Shop,List,4/2/2025,Completed,Completed,,,Ç?Çä ÈÇÒÑÓ? FPI æ ÊÍæ?á ŞØÚÇÊ Èå İÑÏ?Ó
-181,Meraj,,560005,CFM56-5B5/P,575649,Repair (Tack weld),1,"COMBUSTION, CHAMBER ASSY",Engine Shop,1968M41G03,27/01/25,,,Completed,,ä?ÇÒ Èå 80 ÚÏÏ  Tack Weld  È?ä Head Bolt åÇ? ãÊÕá ÔÏå Èå Outer liner æ Inner cowl ÏÇÑÏ
-182,Meraj (Paya soroush),,560292,TAY650,,"Cleaning, Inspaection",25,HPT NGV,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,JR34272A,13/01/25,Completed,Completed,,Completed,İÑã 1 ÕÇÏÑ ÑÏ?Ï
-183,Air 1,,560097,CFM56-3C1,858594,Coating,80,OGV,Engine Shop,"335-034-621-0, 335-034-623-0",,Completed,Completed,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ Ç?Çä ÈÇÒÑÓ? Ôã?¡ ÖÑæÑÊ æÔÔ ÈÑÏÇÑ? ÌåÊ FPI¡ ØæáÇä? ÈæÏä ÒãÇä ÊÃã?ä ãæÇÏ Çæá?å ÎÇÑÌ? ÌåÊ ÇÚãÇá æÔÔ á? ÇæÑÊÇä "
-184,Qeshm ,,560262,CFM56-5B4/P,779225,Cleaning,80,HPT Blade,Engine Shop,2100M96P02,25/01/25,Completed,,,Completed,
-185,GT 22,,,,,Cleaning,1,"Housing, Compressor Front Bearing",GT 22,R-2-100-250-07,5/4/2025,Completed,,,,
-187,Chabahar,RO-1403-668,560305,JT8D,,"Cleaning, Inspection",146,LPT Blade stg 3 & 4,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,"798403, 822504",8/2/2025,Completed,Completed,,Completed,
-188,Kish Air,"5025649, 5026042, 5026346, 5025851","560306, 560141, 560119, 560136",CFM56-5B,,"Cleaning, Inspection, Repair",72,"HPT Nozzle (12), LPT Nozzle (15), HPT Shroud (42), Dome (2), Outer Liner (1)",ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,,,Completed,completed,,," Ç?Çä ÈÇÒÑÓ? ŞØÚÇÊ¡ ?˜? ÇÒ ÏÇã åÇ ÊÚã?Ñ Óä?ä? ÏÇÑÏ. ÇÈáÇÛ ÇæÊÑ áÇ?äÑ æ ÏÇã Èå ÊÚã?ÑÇÊ. Ïæ ÚÏÏ LPT Nozzle segment stg 1 ÈÇ ÇÑÊ äÇãÈÑ 338-108-608-0 ÎÇÑÌ ÇÒ ÍÏ ÊÚã?Ñ ã? ÈÇÔäÏ. ?˜ ÏÇã ÏÑ ˜ á?ÓÊ ä?ÓÊ- ÚÏã Çã˜Çä ÊÚã?Ñ LPT Nozzle ÏÑ ÊÚã?Ñ ŞØÚå- ÚÏã Çã˜Çä ÊÚã?Ñ HPT Nozzle"
-189,GT 20,,510001,CFM56-5B,,Sandblast,1,1st Stage LPT Blade,GT 20,337-127-712-0,17/02/25,Completed,,,,
-191,Qeshm,,560262,CFM56-5B4/P,779225,"Cleaning, FPI",1,HPT FRONT SHAFT ,Engine Shop,1498M40P05,5/3/2025,Completed,Completed,,Completed,
-192,Qeshm,,560262,CFM56-5B4/P,779225,Inspection FPI,2,"Duct, Retainer",Engine Shop,List,12/3/2025,,Completed,,Completed,"Èå Ïá?á ÚÏã Çã˜Çä æÔÔ ÈÑÏÇÑ? æ æÔÔ¡ 309 ŞØÚå Ï?Ñ Ñæå ÈÏæä ÈÇÒÑÓ? Èå ãæÊæÑ ÚæÏÊ ÑÏ?Ï."
-193,Taban,,560224,CFM56-3C1,858811,Inspection FPI,208,"Seal, Slide, …",Engine Shop,List,25/02/25,Completed,Completed,,Completed,ÇÌÑÇ? ÈÇÒÑÓ? FPI ÊæÓØ æÇÍÏ NDT ÂŞÇ? ãÚÕæã ÑÓÊ ÇäÌÇã ÑÏ?Ï. Êã?Ò˜ÇÑ? Ó ÇÒ FPI ÊæÓØ ãæÊæÑ ÇäÌÇã ÑÏ?Ï.
-194,GT 20,,,,,Inspection,1,LPT Blade,NDT-QC,337-127-712-0,14/04/25,,Completed,,Completed,ÊæÓØ ÑÓäá NDT ÈÇ ÊÌå?ÒÇÊ ÊÚã?ÑŞØÚå ÓØÍ Ç?Ñİæ?á ÈÇÒÑÓ? ÑÏ?Ï.
-195,Qeshm,,560208,CFM56-5B4/P,779213,"Cleaning, Inspection, Repair",35,HPT Blade,Engine Shop,2100M96P02,,Completed,,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÏÑ ãÑÍáå ÈÇÒÑÓ?¡ ä?ÇÒãäÏ Ç æ ÔÇÊ ?ä"
-196,Qeshm,,560262,CFM56-5B4/P,779225,"Cleaning, Inspection, Repair",44,HPT Blade,Engine Shop,2100M96P02,,Completed,,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÏÑ ãÑÍáå ÈÇÒÑÓ?¡ ä?ÇÒãäÏ Ç æ ÔÇÊ ?ä"
-197,560187,,560173,JT8D-219,709737,"Cleaning, Inspection, repair",146,LPT Blade stg 3 & 4,Engine Shop,"798403, 822504",,Completed,,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÈÇÒÑÓ? ?ÔÑİÊ 90%"
-198,Kish Air,,560173,JT8D-219,709737,"Cleaning, Inspection",67,"Disk 3 & 4, Vane 2, 3 & 4",Engine Shop,List,,Completed,,,,"Ç?Çä Êã?Ò˜ÇÑ?¡ ÈÇÒÑÓ? ?ÔÑİÊ 10%"
-199,GT 20,,510001,CFM56,,Sandblast,1,1st Stage LPT Blade,NDT-QC,337-127-712-0,24/04/25,Completed,,,Completed,
-200,Kish Air,5025293,560141,CFM56-5B ,577860,"Cleaning, Inspection",8,"LLP (Booster Spool, Fan shaft,..)",Engine Shop,List,,,,,,ÏÑ ãÑÍáå Êã?Ò˜ÇÑ?
-202,Taban,,560332,JT8D219,,"Cleaning, Inspection, Repair",64,HPT Blade Stage1,ãÚÇæäÊ ˜ÓÈ æ ˜ÇÑ,856101,,Completed,,,,"Ç?Çä Êã?Ò˜ÇÑ? æ ÓäÏÈáÇÓÊ¡ ÏÑ ãÑÍáå ÈÇÒÑÓ?"
-205,GT 20,,,,,"Cleaning, Inspection (FPI-4)",3,LPT Blade stg 3,NDT-QC,337-127-712-0,14/05/25,Completed,Completed,,Completed,
-206,Zagros,5026220,560140,CFM56-5B4/P,779245,"Cleaning, Inspection, Repair",80, HPT Blade (80) ,Engine Shop,1957M10P03,,,,,,ÏÑ ãÑÍáå ÇÏ? ˜ÇÑäÊ
-207,,,,,,,,,,,,,,,,
-208,,,,,,,,,,,,,,,,
-209,,,,,,,,,,,,,,,,
-210,,,,,,,,,,,,,,,,
-211,,,,,,,,,,,,,,,,
-212,,,,,,,,,,,,,,,,
-213,,,,,,,,,,,,,,,,
-214,,,,,,,,,,,,,,,,
-215,,,,,,,,,,,,,,,,
-216,,,,,,,,,,,,,,,,
-217,,,,,,,,,,,,,,,,
-218,,,,,,,,,,,,,,,,
-219,,,,,,,,,,,,,,,,
-220,,,,,,,,,,,,,,,,
-221,,,,,,,,,,,,,,,,
-222,,,,,,,,,,,,,,,,
-223,,,,,,,,,,,,,,,,
-224,,,,,,,,,,,,,,,,
-225,,,,,,,,,,,,,,,,
-226,,,,,,,,,,,,,,,,
-227,,,,,,,,,,,,,,,,
-228,,,,,,,,,,,,,,,,
-229,,,,,,,,,,,,,,,,
-230,,,,,,,,,,,,,,,,
-231,,,,,,,,,,,,,,,,
-232,,,,,,,,,,,,,,,,
-233,,,,,,,,,,,,,,,,
-234,,,,,,,,,,,,,,,,
-235,,,,,,,,,,,,,,,,
-236,,,,,,,,,,,,,,,,
-237,,,,,,,,,,,,,,,,
-238,,,,,,,,,,,,,,,,
-239,,,,,,,,,,,,,,,,
-240,,,,,,,,,,,,,,,,
-241,,,,,,,,,,,,,,,,
-242,,,,,,,,,,,,,,,,
-243,,,,,,,,,,,,,,,,
-244,,,,,,,,,,,,,,,,
-245,,,,,,,,,,,,,,,,
-246,,,,,,,,,,,,,,,,
-247,,,,,,,,,,,,,,,,
-248,,,,,,,,,,,,,,,,
-249,,,,,,,,,,,,,,,,
-250,,,,,,,,,,,,,,,,
-251,,,,,,,,,,,,,,,,
-252,,,,,,,,,,,,,,,,
-253,,,,,,,,,,,,,,,,
-254,,,,,,,,,,,,,,,,
-255,,,,,,,,,,,,,,,,
-256,,,,,,,,,,,,,,,,
-257,,,,,,,,,,,,,,,,
-258,,,,,,,,,,,,,,,,
-259,,,,,,,,,,,,,,,,
-260,,,,,,,,,,,,,,,,
-261,,,,,,,,,,,,,,,,
-262,,,,,,,,,,,,,,,,
-263,,,,,,,,,,,,,,,,
-264,,,,,,,,,,,,,,,,
-265,,,,,,,,,,,,,,,,
-266,,,,,,,,,,,,,,,,
-267,,,,,,,,,,,,,,,,
-268,,,,,,,,,,,,,,,,
-269,,,,,,,,,,,,,,,,
-270,,,,,,,,,,,,,,,,
-271,,,,,,,,,,,,,,,,
-272,,,,,,,,,,,,,,,,
-273,,,,,,,,,,,,,,,,
-274,,,,,,,,,,,,,,,,
-275,,,,,,,,,,,,,,,,
-276,,,,,,,,,,,,,,,,
-277,,,,,,,,,,,,,,,,
-278,,,,,,,,,,,,,,,,
-279,,,,,,,,,,,,,,,,
-280,,,,,,,,,,,,,,,,
-281,,,,,,,,,,,,,,,,
-282,,,,,,,,,,,,,,,,
-283,,,,,,,,,,,,,,,,
-Sum,-,-,,-,,-,68534,-,,,-,,,,0,-
-Count,104,-,,104,,SOW,-,-,,,-,,,,0,-
+ï»¿Row	Client	Service Order	New Service order	Engine Type	ESN	SOW	QTY	Part Name	Applicant	Part No.	Actual End	Cleaning	Inspection	Repair & Coating	Status	Remarks
+1	GT 31	5026277	510005	SAM 146	"146119, 146134"	"Cleaning, Inspection"	8	"Dome, Inner, Outer, cowl"	Sharifi	"3650115040, 3650116010, 3650114040, 3650117040"	26/02/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+2	QC- NDT	5025114	510005	SAM 146 GDT-NDT005	GT21	"Cleaning, Inspection (FPI-2)"	23755	"LIST (Bolt,..)"	NDT-QC	List	11/3/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+4	Pars Air	S-10008	560007	CF34		"Cleaning, Inspection, Repair"	40	HPT Nozzle segment 2 (19+21)		5099T23G07		Completed	Completed			"21 Ù‚Ø·Ø¹Ù‡ ØªØ­Ùˆ?Ù„ Ú©Ø§Ø±ÙØ±Ù…Ø§ Ú¯Ø±Ø¯?Ø¯Ù‡ Ø§Ø³Øª. 19Ø¹Ø¯Ø¯ Ø¨Ø±?Ø²?Ù†Ú¯ Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ø¯Ø± Ø­Ø§Ù„ ØªØ¹Ù…?Ø± Ù†Ù‡Ø§??: Ø¨Ù„Ù†Ø¯?Ù†Ú¯ Ùˆ Ø¨Ø§Ø²Ø±Ø³? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³ØªØŒ Ù‚Ø·Ø¹Ø§Øª Ø¯Ø± Ø¨Ø±?Ø²?Ù†Ú¯ Ù…? Ø¨Ø§Ø´Ù†Ø¯ Ùˆ Ø³Ù¾Ø³ Ø¨Ù„Ù†Ø¯?Ù†Ú¯ØŒ Ú©ÙˆÙ„?Ù†Ú© Ùˆ Ù¾ÙˆØ´Ø´"
+5	Meraj	S-10006	560005	CFM56-5B5/P	575649	Cleaning /Inspection (FPI-2)	596	LPT Blade stg.1-4	Engine Shop	List	30/03/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+6	Sepahan	S-10005	560004	CFM56-5A3	731548	Cleaning	2512	HPT Rotor parts list		List	19/02/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+7	Kish air	5025293	560141	CFM56-B	577860	"Cleaning, Inspection"	35	Fan Rotor Blade		List	20/02/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+8	Aseman 	5025213	560102	CFM56-5C2	"740178, 740107"	"Cleaning, Inspection (FPI-2,3,4)"	20	Compressor Rotor Assembly parts	Engine Shop	List	12/3/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+9	Iran Air	5025109	560192	Tay650-15		"Cleaning, Inspection, Repiar"	72	HPT 1th ST Blade 		List		Completed	Completed			Repair outsourcing
+10	GT 31	5026277	510005	SAM 146	146122	"Cleaning, Inspection, Repair"	4	" Cowl, Inner, Outer, Dome"	GT 31			Completed	Completed			Ø¯Ø± Ø­Ø§Ù„ ØªØ¹Ù…?Ø± Ø¯Ø± ØªØ¹Ù…?Ø± Ù‚Ø·Ø¹Ù‡
+11	Zagros	5026220		CFM56-5B4/P		"Cleaning, Inspection, Repair"	54	"Combustion Chamber (3),  Shroud (30), Nozzle(21)"	Engine Shop	338-003-403-0		Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ø¯Ø± 1403/12/07ØŒ Ø§Ø±Ø³Ø§Ù„ Ø§Ø³Ú©ÙˆÙ¾ ØªØ¹Ù…?Ø± Ù…Ø­ÙØ¸Ù‡ Ø§Ø­ØªØ±Ø§Ù‚ Ùˆ Ø§Ú† Ù¾? Øª? Ø¨Ù„?Ø¯. Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯ Ø§Ø³Ú©ÙˆÙ¾ ØªØ¹Ù…?Ø± Ø§Ø² Ù…ÙˆØªÙˆØ±"
+12	Owner/Apadana	5026205		JT8D	728135	"Cleaning, Inspection (FPI)"	195	"Blade, Vane, Disk"	Engine Design	List	17/03/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+13	Owner			JT8D		Cleaning	257	Part list LPT	Engine Shop	List	19/02/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+14	Meraj	S-10006	560005	CFM56/5B5P	575649	"Cleaning, Inspection (VT, DT), Repair"	3	" CC (Inner, Outer, Dome)"	Engine Shop	"1561M26G05, 1968M44G06, 1968M64G01"	10/9/2024	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±
+15	Iran Air tour	S-20002	560028	JT8D		"Cleaning, Inspection, Repair"	64	1st HPT Blade (60Rl+4Sl)		"856101, 843901"	28/05/24	Completed	Completed			"Ø§Ø±Ø³Ø§Ù„ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯Ù‡Ø§? ØªØ¹Ù…?Ø±Ø§Øª Ø¨Ù‡ Ø´Ø§Ù¾ØŒ Ù¾Ø§?Ø§Ù† Ø³Ø§Ø®Øª Ù?Ú©Ø³Ú†Ø± (ØªØ­Ùˆ?Ù„ Ø¢Ù‚Ø§? Ú¯Ù„Ú©Ø§Ø±)."
+17	Air 1	S-10014	560013	CFM56-3C1		Cleaning	1533	"CC, HPT Nozzle, HPT shroud, LPT Nozzle, Part List"	Engine Shop	List	12/3/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+18	GT 20	5023621	510001	CFM56-5C		"Cleaning, Inspection (FPI-4)"	12	"LPT, HPT blades"		"208M81P01, 3371277120"	16/03/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+19	Meraj	S-10006	560005	CFM56-5B5/P	575649	"Cleaning, inspection (FPI)"	39	"Nozzle segment stg 2,3 , center vent tube"	Engine Shop	List	10/6/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+20	Air 1	S-10014	560013	CFM56-3C1		Cleaning	475	"Inner Liner, Nozzle, Blade, â€¦"	Engine Shop	List	12/3/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+21	Sepahan	S-10007	560006	CFM56-5A1/F	731585	Cleaning	144	"Fan Blade, Damper, Retainer, Spacer"	Engine shop	List	14/03/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+22				PW4000 		Inspection (Vt)	1	HPT Blade Stage2			8/4/2024		Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+23	Qeshm 	S-10009	560008	CF6-80C2A5		"Cleaning, Inspection"	185	"BLADES ASSY- STG 1 & 2 HPTR, Shroud 1 & 2, seal, Nozzle assy"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List	27/02/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+24	Qeshm	S-10009	560008	CF6-80C2A5		"Cleaning, Inspection, Repair, coating"	120	HPT Blade 1 (53) & 2 (67)	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List		Completed	Completed			 Repair Outsourcing
+25	Qeshm 	S-10009	560008	CF6-80C2A5		"Cleaning, Inspection (Vt, Dt), Repair"	62	"Seal. Shroud, Nozzle"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List	27/04/24	Completed	Completed			"Ø§Ø±Ø³Ø§Ù„ Ø§Ø³Ú©ÙˆÙ¾ Ùˆ Ù‡Ø²?Ù†Ù‡ Ø¨Ø±Ø§? Ù…Ø´ØªØ±? (13 Ø¹Ø¯Ø¯ Ù‚Ø§Ø¨Ù„ ØªØ¹Ù…?Ø±)ØŒ Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯?Ù‡ Ú©Ø§Ø±ÙØ±Ù…Ø§"
+26	Taban	S-10021	560020	JT8D-219		"Cleaning, Inspection, Repair"	116	 LPT Blade stg 2		800002	1/2/2025	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±- Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¯Ø§Ø±Ø¯.
+27	Aseman	5025213	560102	CFM56-5C2	"740178, 740107"	"Cleaning, Inspection (FPI-2,4)"	6	"Spool, bushing, spacer, c.c"	Engine Shop	List	27/04/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+28	Meraj	5025755/896	"560105, 560112"	V2500		"Cleaning, inspection, Repair"	35	Vane HPT stg 2		List	13/01/25	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† Ú©Ø§Ø± Ø¯Ø± Ù…ÙˆØ§Ø¯ Ú©Ø§Ø±Ø§Ù†ØŒ Ø¯Ø± ØªØ§Ø±?Ø® 1403/10/24 ØªØ­Ùˆ?Ù„ Ù…Ø¹Ø±Ø§Ø¬ Ú¯Ø±Ø¯?Ø¯."
+29	GT 27			PW127M		Cleaning	1	HPT Disk stg 1	Engine Design		20/04/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+30	Meraj	S-10006	560005	CFM56-5B5/P	575649	"Cleaning, inspection (Vt, Dt), repair"	14	Hanger Shroud HPT stator	Engine Shop	"1808M61G04, 1808M61G08"		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?. Ø§Ø¨Ù„Ø§Øº Ø¨Ù‡ Øª?Ù… ØªØ¹Ù…?Ø±Ø§Øª. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¯Ø§Ø±Ø¯. Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø± 12 Ø¹Ø¯Ø¯ØŒ Ø¯Ø±Ø®ÙˆØ§Ø³Øª  ØªØ£Ù…?Ù† 2 Ø¹Ø¯Ø¯ Ø¨Ù‡ Ú©Ø§Ø±ÙØ±Ù…Ø§"
+31	Sepahan	S-10005	560004	CFM56-5A3	731548	"Cleaning, Inspection, Repair"	6	"Combustion Chamber list, inner, outer, dome, cowl"	Engine Shop	List	14/12/24	Completed	Completed	Completed		"Ù¾Ø§?Ø§Ù† Ú©Ø§Ø± Ùˆ ØªØ­Ùˆ?Ù„ Ø¨Ù‡ ÙØ±Ø¯?Ø³ØŒ UT Ø§ÙˆØªØ± Ú©ÙˆÙ„ Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª."
+32	Sepahan	S-10007	560006	CFM56-5A3	731585	"Cleaning, Inspection, Repair"	6	"Combustion Chamber list, inner, outer, dome, cowl"	Engine Shop	List		Completed	Completed			Ø§ØªÙ…Ø§Ù… Ø¨Ø§Ø²Ø±Ø³?. ØªØ³Øª Ù…ÙˆÙ†ØªØ§Ú˜ Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. ØªØ­Ùˆ?Ù„ ÙˆØ§Ø­Ø¯ ØªØ¹Ù…?Ø±Ø§Øª.
+33	Sepahan	donator		CFM56-5A1/F	731330	"Cleaning, Inspection, Repair"	6	"Combustion Chamber list, inner, outer, dome, cowl"	Engine Shop	List	14/12/24	Completed	Completed	Completed	Completed	Ø§ØªÙ…Ø§Ù… Ø¨Ø§Ø²Ø±Ø³?. ØªØ³Øª Ù…ÙˆÙ†ØªØ§Ú˜ Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. ØªØ­Ùˆ?Ù„ ÙˆØ§Ø­Ø¯ ØªØ¹Ù…?Ø±Ø§Øª. Ù…Ø¬ÙˆØ² ØªØ®Ø±?Ø¨ Ùˆ Ø§Ø³ØªÙØ§Ø¯Ù‡ Ø¬Ù‡Øª Ø¯Ùˆ Ø³Ø±Ùˆ?Ø³ Ø§ÙˆØ±Ø¯Ø± Ø¯?Ú¯Ø± Ø§Ø®Ø° Ø´Ø¯Ù‡ Ø§Ø³Øª.
+34	Taban	S-10020	560019	JT8D-219		"Cleaning, Inspection (VT, DT, FPI)"	292	"LPT Blade stg 3 (176), 4 (116)"		"798403, 822504"	20/10/24	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ ØªØ¹Ù…?Ø±. 20 Ø¹Ø¯Ø¯  Ø§Ø³Øª?Ø¬ 4 Ø¨Ø§Ù‚? Ù…Ø§Ù†Ø¯Ù‡ Ù…ÙˆØ±Ø® 1403/12/05ØªØ­Ùˆ?Ù„ ØªØ§Ø¨Ø§Ù† Ú¯Ø±Ø¯?Ø¯. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¯Ø§Ø±Ø¯.
+35				PW4000 		"Inspection (VT, DT)"	143	HPT Blade		List	14/05/24		Completed		Completed	83 parts were sent on 04/21/2024 and 60 parts were sent on 05/14/2024
+36	Sepahan	S-10005	560004	CFM56-5A3	731548	Cleaning	1182	"Seal, Nozzel"	Engine Shop		5/5/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+37	Fars Co 1st	S-10022	560021	JT8D	728058	"Cleaning, Inspection (VT, DT, FPI), Repair"	146	"LPT Blade stg 3 (88), 4 (58)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	23/10/24	Completed	Completed	Completed	Completed	"Ø³Ù‡Ù†Ø¯ Ø¢Ø³?Ø§ØŒ ØªØ¹Ù…?Ø± (36+83)ØŒ ØªØ­Ùˆ?Ù„ Ø¨Ù‡ Ù…Ø´ØªØ±? (Ø³Ù‡Ù†Ø¯ Ø¢Ø³?Ø§)."
+38	Fars Co 2nd	S-10022	560021	JT8D	718106	"Cleaning, Inspection (VT, DT, FPI), Repair"	146	"LPT Blade stg 3 (88), 4 (58)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	7/7/2024	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø± Ø¹Ù„? Ø¨Ø§Ø¨Ø§
+39	Fars Co 3rd	S-10022	560021	JT8D	726041	"Cleaning, Inspection (VT, DT, FPI), Repair"	146	"LPT Blade stg 3 (88), 4 (58)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822505"	23/10/24	Completed	Completed	Completed	Completed	Ú©Ø§Ø³Ù¾?Ù† ØªØ¹Ù…?Ø± (45+85). ØªØ­Ùˆ?Ù„ Ø¨Ù‡ Ù…Ø´ØªØ±? (Ú©Ø§Ø³Ù¾?Ù†).
+40	Meraj	S-10006	560005	CFM56-5B5/P	575649	"Cleaning, Inspection, Repair (Tack weld)"	1	LPT Case (Borescope Boss Stage 3 &  4)	Engine Shop	3381174520	13/05/24	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±
+41	GT 25			JT8D		Cleaning	2	Disk stg 3 & 4	Engine Design	"777603, 800804"	28/04/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+42	Air 1	S-10018	560007	CFM56-3C1		Cleaning	2972	"Part List (Fan blade, bolt, nut, ..)"	Engine Shop	List	2/5/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+43	Meraj	S-10006	560005	CFM56-5B5/P		Cleaning	1	Combustion case	Engine Shop	1784M91G02	8/5/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+44	Fars Co 4th (Kish)	S-10022	560021	JT8D	725418	"Cleaning, Inspection (VT, DT, FPI), Repair"	42	LPT Blade stg 4 (58)	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822505, 851704"	14/05/25	Completed	Completed	Completed	Completed	"Ú©?Ø´ ØªØ¹Ù…?Ø±. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ØŒ  ØªØ£??Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ú©Ø§Ø±ÙØ±Ù…Ø§. Ø§Ø±Ø³Ø§Ù„ Ù‚Ø·Ø¹Ø§Øª Ø¨Ù‡ NVO Ù…ÙˆØ±Ø® 1403/11/24ØŒ Ø¨Ø±Ú¯Ø´Øª Ù‚Ø·Ø¹Ø§Øª Ø§Ø² ØªØ¹Ù…?Ø± Ù…ÙˆØ±Ø® 1404/02/20"
+45	Fars Co 5th	S-10022	560021	JT8D	"725973, 717475"	"Cleaning, Inspection (VT, DT, FPI), Repair"	204	"LPT Blade stg 3 (88), 4 (116)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822505"	21/08/24	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±ØŒ Ø¹Ù„? Ø¨Ø§Ø¨Ø§ ØªØ¹Ù…?Ø± (58+57)ØŒ Ø§?Ø±ØªÙˆØ±(50)."
+46	Apadana	5025973	560114	V2500		Cleaning	244	"TURBINE STAGE NOZZLE, Case LpT"	Engine Shop	List	23/05/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+47	Aseman	5025213	560102	CFM56-5C2/F		"Cleaning, Inspection (FPI)"	614	HPC Blade	Engine Shop	List	28/07/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+48	Sepahan	Donator		CFM56-5A1/F		"Cleaning, Inspection"	80	"BLADE, HPT ROTOR"	Engine Shop	2080M87P04		Completed	Completed			"Ø§Ø¹Ù„Ø§Ù… Ù†ØªØ§?Ø¬ Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ø®Ø§Ù†Ù… Ø±Ø¨?Ø¹? Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª."
+49	Sepahan	S-10005	560004	CFM56-5A3	731548	"Cleaning, Inspection"	13	"BLADE, HPT ROTOR"	Engine Shop	2080M87P07	9/12/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+50	Sepahan	S-10007	560006	CFM56-5A3		"Cleaning, Inspection"	67	"BLADE, HPT ROTOR"	Engine Shop	2080M87P04		Completed	Completed			"Ø§Ø¹Ù„Ø§Ù… Ù†ØªØ§?Ø¬ Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ø®Ø§Ù†Ù… Ø±Ø¨?Ø¹? Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª. ?Ú© Ø¹Ø¯Ø¯ Ø¹ÙˆØ¯Øª Ø¬Ù‡Øª Ø¨Ø§Ø²Ø±Ø³? Ù¾Ø³ Ø§Ø² ØªØ¹Ù…?Ø±"
+51	Sepahan	S-10019	560018	CFM56-5A3	731878	"Cleaning, Inspection"	86	"BLADE, HPT ROTOR, linner, outer, cowl, dome, nut"	Engine Shop	List	11/6/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+52	Air 1	S-10014	560013	CFM56-3C1		"Cleaning, Inspection"	4	"Shaft, Seal, RETAINER, BLADE HPT RTR REAR & Front"	Engine Shop	List	27/05/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+53	Sepahan	S-10007	560006	CFM56-5A3	731585	"Cleaning, Inspection (FPI)"	1	"DISK, ASSY-FAN"	Engine Shop	336-018-165-0	19/05/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+55	GT 25			JT8D		"Cleaning, Inspection, "	13	"LPT VANE STAGE 3 & 4 (10), LPT Blade stg 3 (3)"	Engine Shop	List		Completed	Completed		Completed	Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯ Ù‡Ø²?Ù†Ù‡ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ú©Ø§Ø±ÙØ±Ù…Ø§ (Ù…Ù‡Ù†Ø¯Ø³ Ø®ÙˆØ´Ø¯Ù„)
+56	Meraj	S-10006	560005	CFM56-5B5/P		Cleaning	2152	List		List	19/02/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+57	Zagros	S-20003	560029	CFM56-5A	731805	"Cleaning, Inspection (FPI-4)"	1	"SEAL, ROTAITING AIR REAR"	Engine Shop	 1359M86P03	10/3/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+58	Sepahan	S-10007	560006	CFM56-5A3	731585	"Cleaning, Inspection (FPI)"	66	"BOLT, SHEAR DBL HEX HD"	Engine Shop	"J818P060A , J816P063A"	26/05/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+59	Meraj	S-10006	560005	CFM56-5B5/P		"Cleaning, Inspection, Repair"	43	"Shroud, HPT Stator (42), CVT support (1)"	Engine Shop	"2080M28P02, 337-111-903-0"		Completed	Completed			"Ø§ØªÙ…Ø§Ù… Ø¨Ø§Ø²Ø±Ø³? CVT. Ø§Ø¨Ù„Ø§Øº ØªØ¹Ù…?Ø± Ø´Ø±Ø§Ø¯Ù‡Ø§ Ø¨Ù‡ ÙˆØ§Ø­Ø¯ ØªØ¹Ù…?Ø±Ø§ØªØŒ ØªØ£??Ø¯ Ù¾ÙˆØ´Ø´ HVOF. Ù…ÙˆØ±Ø® 1403/11/15 ØªØ¹Ø¯Ø§Ø¯ 5 Ø¹Ø¯Ø¯ Ø¨Ø±Ø§? Ù¾ÙˆØ´Ø´ Ø¨Ù‡ Ø§ØµÙÙ‡Ø§Ù† Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯ Ú©Ù‡ Ù…ÙˆØ±Ø® 1403/11/28 Ø¯Ø±?Ø§ÙØª Ú¯Ø±Ø¯?Ø¯."
+60	Meraj	S-10006	560005	CFM56-5B5/P		"Cleaning, Inspection"	614	HPC Blade STG 1-9 	Engine Shop	List	20/07/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+61	"Apadana, Meraj"	"5025896, 5025755, 5025872 "	560109	V2500		"Cleaning, Inspection, Repair"	143	"HPT vane satg 1 (51+28), HPT blade stg 1 (48+16)"		"2A4201, 2A9201"	7/9/2024	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±
+62	GT 20					Sandblast	12	HPT Blade	Engine Construct		16/05/24	Completed			Completed	Ù¾Ø§?Ø§Ù† Ø³Ù†Ø¯Ø¨Ù„Ø§Ø³Øª
+63	Sepahan	S-10019	560018	CFM56-5A3	731878	Cleaning	2451	Parts list	Engine Shop	List	28/05/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+65				V2500		Cleaning	2	1ST STG HPT SHROUD	Mechanic	-	23/05/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+66	Qeshm 	S-10009	560008	CF6-80C2		"Cleaning, Inspection, Repair"	28	"HPT Blade Stg.1 (18), HPT NGV2 (7), C.C (3 set)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List	10/4/2025	Completed	Completed			Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø§ÙˆØªØ± Ù„Ø§?Ù†Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª. Ø³Ù‡ Ø¹Ø¯Ø¯ Ø§ÙˆØªØ± Ú©Ù„ Ù¾Ø³ Ø§Ø² UT ØªØ­Ùˆ?Ù„ Ø§Ù†Ø¨Ø§Ø± ÙØ±Ø¯?Ø³ Ù…? Ø¨Ø§Ø´Ø¯.
+68	Sepahan	S-10019	560018	CFM56-5A3	731878	Cleaning	1969	"LPT Rotor/Stator Part List, HPT Shroud & LPT Nozzle 1 Part List"	Engine Shop		23/07/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+69	Meraj	S-10006	560005	CFM56-5B5/P		Cleaning	2	"CASE, CPRSR STTR REAR, Front"	Engine Shop	"1559M40G03, 1559M30G06"	29/05/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+70	Meraj	S-10006	560005	CFM56-5B5/P		"Cleaning (is Done), inspection, Repair"	6	"Bracket, Tube, .."	Engine Shop	List	28/09/24	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±
+71	GT 25					"Cleaning, Inspection (FPI)"	2	Blade turbine 3rd stg	NDT-QC	B 803003	6/7/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+72	Sahand Asia	-	560217	JT8D		"Cleaning, Inspection, Repair"	78	2nd stg. LPT Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	800002	8/9/2024	Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø±Ø§Øª Ø¯Ø§Ø±Ø¯. Ù‚Ø·Ø¹Ø§Øª Ù…ÙˆØ±Ø® 1403/12/12 Ø¨Ù‡ NVOØ¬Ù‡Øª ØªØ¹Ù…?Ø± Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯."
+73	GT 25			JT8D		"Cleaning, Inspection (FPI)"	8	Blade turbine 3rd stg	NDT-QC	"B 803003, 822504"	6/7/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+74	GT 22			LTC4B-8D		"Cleaning, Inspection (FPI), Repair"	1	2ND NOZZLE	Roostapishe	2-140-240-01 	14/12/24	Completed	Completed		Completed	Ø¹Ø¯Ù… ØªØ§??Ø¯ Ú©Ø§Ø±ÙØ±Ù…Ø§ Ø¨Ø±Ø§? ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ù¾?Ù…Ø§Ù†Ú©Ø§Ø± Ùˆ ØªÙ‚Ø§Ø¶Ø§? Ø¹ÙˆØ¯Øª Ù‚Ø·Ø¹Ù‡
+75	Zagros	S-20003	560029	CFM56-5A3		Cleaning	1	"Case, CPRSR STTR REAR"	Engine Shop	1559M40G03	23/07/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+76	Zagros	S-10023	560022	CFM56-5A1		Cleaning	2	"CASE, ASSY-CPRSR STTR, CASE, COMBUSTION"	Engine Shop	"1318M75G10, 2002M88G02"	23/07/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+78	GT 25			JT8D		Cleaning	2	LPT Disk Stage3 & Stage4	Engine Design	"777603, 800804"	28/06/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+79	Fars Co 6th	S-20007	560033	JT8D	"717475, 708424"	"Cleaning, Inspection, Repair"	160	HPT Blade stg 1	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"856001, 847601"		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? ØŒØ¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø± Ø¯Ø± NVO. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª."
+80	Iran Air tour	S-10003	560002	JT8D		"Inspection, Repair"	146	LPT Blade stg 3&4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"803003, 851704"	5/10/2024	Completed	Completed	Completed	Completed	 ØªØ­Ùˆ?Ù„ Ø¨Ù„?Ø¯ Ù‡Ø§? 3 Ùˆ 4 Ø¨Ù‡ Ù†?Ú©Ù„ Ø¢Ù„?Ø§Ú˜ Ø¬Ù‡Øª ØªØ¹Ù…?Ø± (74 Ø¹Ø¯Ø¯ Ø¨Ù„?Ø¯ 3 Ùˆ 57 Ø¹Ø¯Ø¯ Ø¨Ù„?Ø¯ 4). Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª.
+81	Fars Co 7th	S-10022	560021	JT8D	725562	"Cleaning, Inspection, Repair"	88	LPT Blade stg 3	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	798403Â  		Completed	Completed			"Ø§ØªÙ…Ø§Ù… Ø¨Ø§Ø²Ø±Ø³?ØŒÚ©Ø§Ø³Ù¾?Ù†. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± ØªØ¯Ùˆ?Ù† Ú¯Ø±Ø¯?Ø¯Ù‡ Ø§Ø³Øª. Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯?Ù‡ Ø¢Ù‚Ø§? Ø±Ø¶Ø§?? Ø¨Ø±Ø§? ØªØ¹Ù…?Ø±."
+82	Sepahan	S-10019	560018	CFM56-5A3	731878	Cleaning	74	Blade stg 3 & 4	Engine Shop	List	20/07/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+83	Sepahan	Donator		CFM56-5A1/F	731330	Cleaning	78	Blade stg 3 & 4	Engine Shop	List	20/07/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+84	Iran Air tour	-	560098	JT8D-219		Root Cause Failure Analysis	4	LPT Blade Stage 2 	Engine Shop	B 800002	21/08/24				Completed	ØªØ­Ùˆ?Ù„ ÙˆØ§Ø­Ø¯ ØªØ­Ù‚?Ù‚ Ùˆ ØªÙˆØ³Ø¹Ù‡. Ù…Ø¬ÙˆØ² ØªØ®Ø±?Ø¨ Ú¯Ø±ÙØªÙ‡ Ø´Ø¯Ù‡ Ø§Ø³Øª.
+85	Meraj	S-10006	560005	CFM56-5B5/P		Heat tint	4	LPT Blade Stage 2 	Engine Shop	3381083040	22/06/24				Completed	Ú¯Ø²Ø§Ø±Ø´ ØªÙˆØ³Ø· ÙˆØ§Ø­Ø¯ ØªØ­Ù‚?Ù‚ ÙˆØªÙˆØ³Ø¹Ù‡ Ø§Ø±Ø³Ø§Ù„ Ø´Ø¯Ù‡ Ø§Ø³Øª.
+86	Iran Air tour	-	560098	JT8D-219		"Cleaning, Inspection"	5	"Shaft, Disk, HUB ASSY"	Engine Shop	List	26/10/24	Completed	Completed		Completed	" Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ ØªØ­Ùˆ?Ù„ Ù‚Ø·Ø¹Ø§Øª Ø¨Ù‡ ÙØ±Ø¯?Ø³ØŒ Ø¹Ø¯Ù… ØªÚ©Ù…?Ù„ Ø¨Ø§Ø²Ø±Ø³? Ø§Ø¨Ø¹Ø§Ø¯? Ø´ÙØª. Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø§Ø¯? Ú©Ø§Ø±Ù†Øª Ø¯?Ø³Ú© 4"
+87	Chabahar	-	560186	JT8D		 Inspection	188	HPT Blade stg 1		856101	29/10/24	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±ØŒ 180 Ù‚Ø·Ø¹Ù‡ serviceable- Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¨Ù‡ ÙˆØ§Ø­Ø¯ ØªØ¹Ù…?Ø±Ø§Øª Ø¬Ù‡Øª ØªÚ©Ù…?Ù„ Ø§Ø±Ø³Ø§Ù„ Ø´Ø¯Ù‡ Ø§Ø³Øª."
+88	Zagros	-	560161	JT8D		"Cleaning, Inspection"	146	LPT  Blade 3&4	Engine Shop	"851704, 803003"		Completed	Completed			Ø§ØªÙ…Ø§Ù… Ø¨Ø§Ø²Ø±Ø³?. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¯Ø§Ø±Ø¯. ØªØ­Ùˆ?Ù„ NVO Ø¨Ø±Ø§? ØªØ¹Ù…?Ø±
+89	Meraj	S-10006	560005	CFM56-5B5/P		"Cleaning, Inspection, Coating (Aluminize)"	350	"Blade stg 1(160SL+2 OL), Blade stg 2 (80SL+70OL), Nozzle stg 2 (17), Nozzle stg 3 (19),  Nozzle BS (2)"	Engine Shop	List	22/04/25	Completed	Completed	Completed	Completed	ØªÙ…?Ø²Ú©Ø§Ø±? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ù¾Ø§?Ø§Ù† Ù¾ÙˆØ´Ø´ Ø¨Ù„?Ø¯ 1 Ùˆ 2 (160 Ø¨Ù„?Ø¯ Ø±Ø¯?Ù 1 Ù‚Ø§Ø¨Ù„ Ø®Ø¯Ù…Øª Ø§Ø² 162 Ø¹Ø¯Ø¯) Ùˆ (80 Ø¹Ø¯Ø¯ Ø¨Ù„?Ø¯ Ø±Ø¯?Ù 2 Ù‚Ø§Ø¨Ù„ Ø®Ø¯Ù…Øª Ø§Ø² 150 Ø¹Ø¯Ø¯)-  Ø¹ÙˆØ¯Øª Ù…Ø¬Ø¯Ø¯ 160 Ø¹Ø¯Ø¯ Ø§Ø³Øª?Ø¬ 1 Ùˆ 76 Ø¹Ø¯Ø¯ Ø§Ø³Øª?Ø¬ 2 Ø¨Ù‡ Ø§Ø²Ù…Ø§ØªÚ©
+91						Cleaning	17	Accessory parts	ØªØ¬Ù‡?Ø²Ø§Øª Ø¬Ø§Ù†Ø¨?	List	7/7/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+92	Meraj	-	560187	CFM56-5B62P (575616)		"Cleaning, Inspection, Repair"	5+1	"Cowl, Inner Dome, Outer Dome, OUTER COMB CHAMBER, INNER COMB CHAMBER (COMBUSTION CHAMBER ASSY  PN:73M18G02   S/N:MMTE6017     1EA)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"1873M18G02, 1968M91G03, 1968M90G02, 1873M78G07, 1968M96G10"	4/3/2025	Completed	Completed	Completed	Completed	"ØªÙ…?Ø²Ú©Ø§Ø±? Ùˆ Ø¨Ø§Ø²Ø±Ø³? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ØŒØ¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø±ØŒ Ø§Ø¨Ù„Ø§Øº Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¨Ù‡ ØªØ¹Ù…?Ø±Ø§Øª. Ø¯Ø¯Ù„Ø§?Ù† Ø§ÙˆÙ„?Ù‡ 30 Ø´Ù‡Ø±?ÙˆØ± Ùˆ Ø¯Ø¯Ù„Ø§?Ù† Ø¬Ø¯?Ø¯ ØªØ¹Ù…?Ø±Ø§Øª 20 Ø¢Ø°Ø± Ù…? Ø¨Ø§Ø´Ø¯. Ù…ÙˆØ±Ø® 1403/11/15 Ù‚Ø·Ø¹Ø§Øª Ø§ÙˆØªØ± Ù„Ø§?Ù†Ø± Ùˆ Ø§?Ù†Ø± Ø¯Ø§Ù… Ø¨Ø±Ø§? Ù¾ÙˆØ´Ø´ Ø¨Ù‡ Ø§ØµÙÙ‡Ø§Ù† Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯."
+93	Kish air	-	560185	JT8D		"Cleaning, Inspection"	146	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	13/10/24	Completed	Completed	Completed	Completed	ØªØ­Ùˆ?Ù„ Ø¨Ù‡ Ù…Ø´ØªØ±?. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ø®Ø§Ù†Ù… Ú©Ù„Ø§Ù†ØªØ±? Ø¢Ù…Ø§Ø¯Ù‡ Ø´Ø¯Ù‡ Ø§Ø³Øª.
+94	Fars Co 4th (Kish)	S-10022	560021	JT8D		"Cleaning, Inspection, Repair"	82	LPT Blade stg 3	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	798403	14/05/25	Completed	Completed	Completed	Completed	.  Ù…Ø¬ÙˆØ² ØªØ®Ø±?Ø¨ Ø¨Ø±Ø§? Ø³Ù‡ Ù‚Ø·Ø¹Ù‡ OL Ú¯Ø±ÙØªÙ‡ Ø´Ø¯. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¯Ø§Ø±Ø¯. ØªØ£??Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ú©Ø§Ø±ÙØ±Ù…Ø§. Ø§Ø±Ø³Ø§Ù„ Ù‚Ø·Ø¹Ø§Øª Ø¨Ù‡ NVO Ù…ÙˆØ±Ø® 1403/11/24
+95	GT 20					Cleaning	80	HPT balde	Engine Design	M79G01 ( 2080M81P01)	19/08/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+96	Air 1	S-10018	560017	CFM56-3C1		"Cleaning, inspection, Repair"	13	"HPT Seal, Cover Assy, â€¦"	Engine Shop	List		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ù‡Ø± Ø¯Ùˆ Ù‚Ø·Ø¹Ù‡ Ø¨Ù‡ ØªØ¹Ù…?Ø±Ø§Øª Ø§Ø¨Ù„Ø§Øº Ú¯Ø±Ø¯?Ø¯."
+97	Air 1	S-10014	560013	CFM56-3C1		"Cleaning, inspection, Repair"	3	"Screen Thermal, Cone spinner"	Engine Shop	List		Completed	Completed			Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?.Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Cone Spinner Ùˆ Thermal Ø¨Ù‡ Ú©Ø§Ø±Ú¯Ø§Ù‡ Ø§Ø¨Ù„Ø§Øº Ú¯Ø±Ø¯?Ø¯Ù‡ Ø§Ø³Øª. Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªØ¹Ù…?Ø±  Cone Ùˆ Ø¹ÙˆØ¯Øª Ø¨Ù‡ ÙØ±Ø¯?Ø³- Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£Ù…?Ù† Ù?Ù„Ø± Ø¬Ù†Ø³ S.S 321 ?Ø§ 347  Ø¬Ù‡Øª ØªØ¹Ù…?Ø± Ù‚Ø·Ø¹Ù‡ Thermal
+98	Iran Air tour	S-10003	560002	JT8D		"Cleaning Inspection, Repair"	111	"Ring Assy, Duct, Spacer"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List	5/10/2024	Completed	Completed		Completed	Ù†ØªØ§?Ø¬ Ø¨Ø§Ø²Ø±Ø³? Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯.
+99	Zagros	-	560162	JT8D		Cleaning	466	"Disk, Case, standard, â€¦"	Engine Shop	List	10/9/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+100	Sepahan	S-10019	560018	CFM56-5A	731878	"Cleaning, FPI (2-3-4)"	211	"Damper, Shaft, Seal , Disk, ..."	Engine Shop	List	19/09/24	Completed	Completed		Completed	"Ø§Ø¨Ù„Ø§Øº ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† FPIØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªÙ…?Ø²Ú©Ø§Ø±? Ù¾Ø³ Ø§Ø² FPI"
+101	Zagros	560161	560161	JT8D-217C		Cleaning	244	"Vane, Blade, Ring Assy, â€¦"	Engine Shop	List	10/9/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+102	Air 1	560097	560097	CFM56-3C1		Cleaning	930	"CC, Nozzle, Shroud, â€¦"	Engine Shop	List	17/10/24	Completed			Completed	"Ø´Ø±ÙˆØ¹ ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¨Ù„?Ø¯ Ù‡Ø§ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ÙˆØª Ø¨Ù„Ø§Ø³Øª"
+105	Air 1		560097	CFM56-3C1	858594	Cleaning	2982	Standard Parts	Engine Shop	List	11/9/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+110	Sepahan	S-10019		CFM56-5A	731878	Cleaning	1	"FRAME, ASSY-LPT"	Engine Shop	336-031-631-0	10/9/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+111	Qeshm 		560208	CFM56-5B4/P	779213	Cleaning	107	"Liner, Dome, Shroud, Blade"	Engine Shop	List	30/09/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+113	Fars Co 8th 		560210	JT8D-219	725839	"Cleaning, Inspection, Repair"	64	1th stg. HPT  Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"856101, 830701-003"	23/02/25	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ù‚Ø·Ø¹Ø§Øª ØªØ­Ùˆ?Ù„ NVOØŒ Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø± Ùˆ ØªØ­Ùˆ?Ù„ Ø¨Ù‡ ØªØ§Ø¨Ø§Ù†"
+114	Fars Co 8th 		560211	JT8D	717475	"Cleaning, Inspection, Repair"	88	3rd stg. HPT  Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	803003	31/08/24	Completed	Completed		Completed	ØªÙ…?Ø²Ú©Ø§Ø±? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? ØªÙ…Ø§Ù… Ù‚Ø·Ø¹Ø§Øª OL
+115	ATA		560223	JT8D	725883Â Â  	"Cleaning, Inspection, Repair"	146	3rd & 4th stg LPT Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	23/10/24	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±ØŒ ØªØ­Ùˆ?Ù„ Ø¨Ù‡ Ù…Ø´ØªØ±?"
+116	Esfahan			AC-P4		Cleaning	2	"Torus assembly, outlet"	ØªØ¬Ù‡?Ø²Ø§Øª Ø¬Ø§Ù†Ø¨?		31/08/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+117	Purchased parts			CF6-80C2		Inspection	276	HPT Shroud stg 1 & 2		List	15/09/24		Completed		Completed	ØªÙ…Ø§Ù… Ù‚Ø·Ø¹Ø§Øª Ø¯Ø± ÙˆØ¶Ø¹?Øª serviceable Ùˆ ØµØ¯ÙˆØ± ÙØ±Ù… 1
+119	Iran Air tour		560098	JT8D-219	725802	"Cleaning, DT, FPI"	74	LPT Blade Stage 2 	Engine Shop 2	800002	29/09/24	Completed	Completed		Completed	"ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ FPI Ùˆ Ø¨Ø§Ø²Ø±Ø³? Ø§Ø¨Ø¹Ø§Ø¯? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ù†ØªØ§?Ø¬ Ø´Ú©Ø³Øª Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯."
+120	Iran Air tour		560229	JT8D-219	725979	"Cleaning, Inspection"	146	LPT Blade stg 3 & 4	Engine Shop 2	"798403, 822504"	1/2/2025	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±ØŒ Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±"
+121	Taban		560209	JT8D-219	725441	"Cleaning, Inspection"	146	LPT Blade stg 3 & 4	Engine Shop 2	"798403, 822504"	23/02/25	Completed	Completed	Completed		"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±ØŒ Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±ØŒ ØªØ­Ùˆ?Ù„ Ù‚Ø·Ø¹Ø§Øª Ø¨Ù‡ ØªØ§Ø¨Ø§Ù†"
+122	Qeshm 	S-10011	560010	CF6-80C2A5	695362	"Cleaning, Inspection, Repair"	24	HPT NGV Stg 2	Engine Shop 2	"2080M12G01, 2080M12G02"		Completed	Completed			ØªÙ…?Ø²Ú©Ø§Ø±? Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø§Ø²Ø±Ø³? Ú†Ø´Ù…? Ø§Ø³Ú©ÙˆÙ¾ Ùˆ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø±Ø¯Ø§Ø±Ø¯. Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯?Ù‡ Ø´Ø§Ù¾ 2 Ø¨Ø±Ø§? ØªØ¹Ù…?Ø±
+123	Qeshm 	S-10011	560010	CF6-80C2A5	695372	"Cleaning, Inspection, Repair"	74	BLADE HPTSTG 2	Engine Shop 2	1881M5205		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ ØµÙ ØªØ¯Ùˆ?Ù† Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø±ØŒ Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯?Ù‡ Ø´Ø§Ù¾ 2 Ø¨Ø±Ø§? ØªØ¹Ù…?Ø±"
+124	Qeshm 		560214	CFM56-5B4/P	779221	Cleaning	147	"Disk, seal, nozzle, â€¦"	Engine Shop	List	10/9/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+125	Meraj	S-10006	560005	CFM56-5B5/P	575649	"Cleaning, Inspection, Repair"	83	"HPT Blade, HPT Nozzle"	Engine Shop	"1957M10P01, 2086M14G02"		Completed	Completed			"ØªÙ…?Ø²Ú©Ø§Ø±? Ùˆ ÙˆØª Ø¨Ù„Ø³Øª Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯Ù‡ Ø§Ø³Øª. Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø§Ø±Ø³Ø§Ù„ 71 Ø¹Ø¯Ø¯ Ù‚Ø·Ø¹Ù‡ Ø¨Ù‡ Ù†Ù…Ø§?Ù†Ø¯Ù‡ NVO Messenger Agency  Ø¬Ù‡Øª ØªØ¹Ù…?Ø±ØŒØ¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªØ¹Ù…?Ø± Ø³Ù‡ Ø¹Ø¯Ø¯ Ùˆ?Ù† Ø¯Ø± Ù…Ø¹Ø§ÙˆÙ†Øª. 5 Ø¹Ø¯Ø¯ Ø¨Ù„?Ø¯ Ø¹ÙˆØ¯Øª Ø¬Ù‡Øª Ø¨Ø§Ø²Ø±Ø³? Ù¾Ø³ Ø§Ø² ØªØ¹Ù…?Ø±"
+126	Ù†Ù…Ø§?Ø´Ú¯Ø§Ù‡?					Cleaning	45	"Disk, Vane, Blade, â€¦"	Engine Shop 2		14/09/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+127	GT 20			CFM56-5C		Cleaning	7	"HPT Disk, LPT Disk stg 1, LPT Blade stg 1"	Engine Design	"1498M34P04, 3371277120, 337004030"	22/09/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+129	Iran Air tour		560231	JT8D		"Cleaning, Inspection, Repair"	7	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"803003, 851704"		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ  Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª. ØªØ­Ùˆ?Ù„ Ø³Ù‡ Ø¹Ø¯Ø¯ Ø¨Ù‡ Ø§?Ø±ØªÙˆØ±"
+130	Pars Air		560235	CF34		"Cleaning, Inspection, Repair"	26	HPT Nozzle segment stg 2	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	5099T23G08	5/1/2025	Completed	Completed	Completed	Completed	"24  ØªØ¹Ù…?Ø±?- 24 Ø¹Ø¯Ø¯ Ø¨Ù‡ Ù…Ø´ØªØ±? ØªØ­Ùˆ?Ù„ Ø´Ø¯Ù‡ Ø§Ø³Øª. 2 Ø¹Ø¯Ø¯ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø±?Ø²?Ù†Ú¯ØŒ Ù…Ø¯Ø§Ø±Ú© Ø¨Ø±Ø§? 24 Ø¹Ø¯Ø¯ ØªÚ©Ù…?Ù„ Ú¯Ø±Ø¯?Ø¯."
+131	Qeshm 		560214	CFM56-5B4/P	779221	Cleaning	272	"Blade, lock blade, â€¦"	Engine Shop	List	11/10/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+132	Qeshm 		560208	CFM56-5B4/P	779213	Cleaning	2049	Standard Parts	Engine Shop	List	11/10/2024	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+133	GT 22					Cleaning	9	"Nut, locked, seal, .."	Engine design	List	28/09/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+134	Iran Air tour		560229	JT8D	725979	"Cleaning, Inspection, Repair"	64	Blade hpt stg1	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	855901-856101-843901-002		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø± Ø¯Ø± NVO. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª."
+135	Iran Air tour		560098	JT8D	725802	"Cleaning, Inspection, Repair"	64	Blade-turb motor stg 1	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	856101-843901		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø± Ø¯Ø± NVO. Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª."
+136	Pars Air		560232	CF34		"Cleaning, Inspection, Repair"	39	Segment turbine nozzleÂ stg 1&2		"5099T19G04, 4923T36G01, 4923T36G02 , 5099T23G07"		Completed	Completed			"Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø±ØŒ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø§Ø±Ø³Ø§Ù„ Ø´Ø¯Ù‡ Ø§Ø³Øª . 3 Ø¹Ø¯Ø¯ Ù…ÙˆØ±Ø® 1403/11/06 Ø¬Ù‡Øª Ø³ÙˆÙ¾Ø±Ø¯Ø±?Ù„ Ø®Ø§Ø±Ø¬ Ú¯Ø±Ø¯?Ø¯."
+137	Iran Air tour	S-10003	560002	JT8D-217AÂ Â Â Â  Â 	717412	Inspection (FPI)	2	"LPT Disk stg 2, 3"	Engine Construct	"777603, 800804"	22/09/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+139	Purchased parts		520026			Inspection	43	LLP							Cancelled	
+140	GT 25					Coating 3mm	6	Disk	Engine design		29/11/24			Completed		Ù¾Ø§?Ø§Ù† Ú©Ø§Ø± ØªØ¹Ù…?Ø±Ø§Øª
+142	Air 1 	S-10018	560017	CFM56-3C1	858719	"Cleaning, Inspection, Repair"	3	"LINER, INNER , LINER, OUTER, DOME"	Engine Shop 	"1317M89G08, 1317M90G04, 1317M58G02"	16/10/24	Completed			Cancelled	
+143	Air 1		560097	CFM56-3C1	858594	"Cleaning, Inspection, Repair"	3	"LINER, INNER , LINER, OUTER, DOME"	Engine Shop 	"1317M89G04, 1317M90G04, 1317M91G02"	16/10/24	Completed			Cancelled	
+144	KISH AIR	5026297	560117	CFM56-5B3/P	577867	"Cleaning, Inspection"	2	"Support shroud, Case"	Engine Shop	"2002M69G02, 1784M91G07"	14/05/25	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯ Ø§Ø³Ú©ÙˆÙ¾ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ú©Ø§Ø±ÙØ±Ù…Ø§"
+145	Qeshm		560208	CFM56-5B4/P	779213	"Cleaning, Inspection (FPI)"	30	Nut	Engine Shop	1498M58P01	1/10/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+148	GT 31					Cleaning	55	Standard Parts	Engine Design		14/10/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+149	GT 20					Cleaning	25	LPT BladeÂ  Stage1	Engine Design	337-127-712	16/10/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+150	Aseman		560230	CFM56-5C2/F	740284	"Cleaning, Inspection"	6	"Outer, inner, dome, inner cow, outer cowl"	Engine Shop	List	2/3/2025	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø§Ø¨Ù„Ø§Øº Ø¨Ø§Ø²Ø±Ø³?ØŒ Ù¾Ø§?Ø§Ù† Ø³Ù†Ø¯Ø¨Ù„Ø§Ø³Øª. Ø§ÙˆØªØ± Ú©ÙˆÙ„ Ø¨Ø¹Ø¯ Ø§Ø² Ø§Ù†Ø¬Ø§Ù… UT ØªØ­Ùˆ?Ù„ Ø§Ù†Ø¨Ø§Ø± ÙØ±Ø¯?Ø³ Ù…? Ø¨Ø§Ø´Ø¯. Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ù…ÙˆØ±Ø® 1403/11/30ØŒ Ø§Ø¹Ù„Ø§Ù… Ø¹Ø¯Ù… Ù†?Ø§Ø² Ø¨Ù‡ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ù…ÙˆØªÙˆØ±. Ù‚Ø·Ø¹Ø§Øª Ù…ÙˆØ¬ÙˆØ¯ Ø¯Ø±Ø§Ù†Ø¨Ø§Ø± Ù¾?Ø§Ù…."
+151	ATA		560223	JT8D	725883Â 	"Cleaning, Inspection, Repair"	6	3rd (5) & 4th (1) stg LPT Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	23/10/24	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ ØªØ¹Ù…?Ø±.
+152	Ú©Ø§Ù…?Ù„Ø§ Ù†?Ú©Ù„ Ø¢Ù„?Ø§Ú˜		560245	V2500		Inspection	313	"HPT Duct segment stg 2 & 1, Inner liner, Blade HPT stg 2"	Ù†?Ú©Ù„ Ø¢Ù„?Ø§Ú˜	List	5/11/2024	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+153	    Qeshm		560207	CF6-80C2A	695372	695372	52	"HPT Shroud Â Stage 2, HPT Vane Stage 2"	Engine Shop 2	List	22/04/25	Completed	Completed			"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ù…ÙˆØ±Ø® 1404/02/03"
+154	   Taban		560209	JT8D-219	725441	"Cleaning, Inspection, Repair"	64	HPT Blade Stage 1	Engine Shop 2	List	23/02/25	Completed	Completed	Completed	Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ ØªØ­Ùˆ?Ù„ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±ØŒ Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±ØŒ ØªØ­Ùˆ?Ù„ Ø¨Ù‡ ØªØ§Ø¨Ø§Ù†"
+156	Air 1		560255	CFM56-3C1	"858594, 858719"	"Cleaning, Inspection, Repair"	163	"C.C, Blade LPT stg 3"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List		Completed	Completed			"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø± Ù…ÙˆØ±Ø® 1403/11/15ØŒ Ù‚Ø·Ø¹Ø§Øª 1317M90G04-1317M89G08-1317M58G02 Ø¨Ø±Ø§? Ù¾ÙˆØ´Ø´ Ø§Ø±Ø³Ø§Ù„ Ú¯Ø±Ø¯?Ø¯. Ù…Ø§Ø¨Ù‚? Ù‚Ø·Ø¹Ø§Øª Ù…ÙˆØ±Ø® 1403/11/23 Ø¨Ù‡ Ø§?Ø±ÙˆØ§Ù† Ø¹ÙˆØ¯Øª Ú¯Ø±Ø¯?Ø¯. Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø±  Ø³Øª Ø§ÙˆÙ„ Ù…Ø­ÙØ¸Ù‡ Ø§Ø­ØªØ±Ø§Ù‚ Ù…ÙˆØ±Ø® 1403/12/12 Ùˆ Ù…ÙˆØ¬ÙˆØ¯ Ø¯Ø± Ø§Ù†Ø¨Ø§Ø± ÙØ±Ø¯?Ø³- ØªØ¹Ù…?Ø± Ø¨Ù„?Ø¯ Ø§Ø³Øª?Ø¬ 3 Ù…Ø§Ù†Ø¯Ù‡ Ø§Ø³Øª. Ù‚Ø·Ø¹Ø§Øª Ø³Øª Ø§ÙˆÙ„ Ø¨Ù‡ Ú©Ù¾ Ù„?Ø³Øª Ø§Ø¶Ø§ÙÙ‡ Ú¯Ø±Ø¯?Ø¯. Ù‚Ø·Ø¹Ø§Øª Ø³Øª Ø¯ÙˆÙ… Ø¯Ø± Ú©Ù¾ Ù„?Ø³Øª Ù†?Ø³Øª"
+157	ATA		560223	JT8D	725883	"Cleaning, Inspection, Repair"	4	3rd (2) & 4th (2) stg LPT Blade	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ NVO Ø¬Ù‡Øª ØªØ¹Ù…?Ø±"
+159	Ú©Ø§Ù…?Ù„Ø§ 		"560260, 560261"	JT8D		"Cleaning, Inspection"	172	"HPT-BLADE STG1 (80), NGV-STG1 (46+46)"	NDT-QC	799191		Completed	Completed			"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? 46 Ø¹Ø¯Ø¯ NGV  Ùˆ ØµØ¯ÙˆØ± ÙØ±Ù… 1ØŒ 29 Ø¢Ø°Ø± ØªØ­Ùˆ?Ù„  Ù…Ø´ØªØ±? Ø´Ø¯Ù‡ Ø§Ø³Øª"
+160	Qeshm 		560214	CFM56-5B4/P	779221	Cleaning	2509	Standard Parts	Engine Shop	List	20/11/24	Completed			Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?
+161	LLP (Ø´Ø§Ù‡Ø¯ shahed)		520031	JT8D-219 	728135	"Cleaning, Inspection"	4	"Shaft, disk"	Engine Shop 2	"5000923-01, 777622, 777603, 800804"		Completed	Completed			ØªØ³Øª Ø§Ø¯? Ú©Ø§Ø±Ù†Øª Ùˆ Ø³Ø®Øª? Ø³Ù†Ø¬? Ø¯?Ø³Ú© Ø§Ø³Øª?Ø¬ 4 Ø§Ù†Ø¬Ø§Ù… Ø´Ø¯
+162	Aseman	"5025213, 5026221"	560102-560139	CFM56-5C2F	"740178, 740107"	"Cleaning, Inspection, Repair"	3	"C.C: Outer, Inner, Dome"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"1968M64G01, 1968M44G06, 1561M26G05"		Completed	Completed			"Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªØ¹Ù…?Ø±ØŒ Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø§Ø±Ø³Ø§Ù„ Ø´Ø¯Ù‡ Ø§Ø³Øª ."
+163	Purchased parts (NVO)		560256	JT8D-217		"Cleaning, Inspection"	146	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	9/11/2024	Completed	Completed		Completed	Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØµØ¯ÙˆØ± Ø³Ø±Ùˆ?Ø³ Ø§ÙˆØ±Ø¯Ø±
+164	Aseman		560230	CFM56-5C2/F	740284	Cleaning	358	Standard Parts	Engine Shop	List	9/12/2024	Completed			Completed	
+165	Aseman		560230	CFM56-5C2/F	740284	"Cleaning, Inspection, Repair"	1	"MANIFOLD, ASSY-CLG"	Engine Shop	337-099-110-0	12/3/2025	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§Ø¨Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ø¯Ø± ØªØ§Ø±?Ø® 1403/10/22- Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¨Ù‡ ØªØ¹Ù…?Ø±Ø§Øª Ø§Ø¨Ù„Ø§Øº Ú¯Ø±Ø¯?Ø¯. Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªØ¹Ù…?Ø± Ø¯Ø§Ø®Ù„? Ùˆ Ø¹ÙˆØ¯Øª Ù‚Ø·Ø¹Ù‡ Ø¨Ù‡ ÙØ±Ø¯?Ø³"
+166	Aseman		560230	CFM56-5C2/F	740284	"Cleaning, Inspection (FPI)"	93	"Shaft, Blade stg 1 & 2, Seal"	Engine Shop	List	13/01/24	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£Ù…?Ù† ØªÙ†Ø®ÙˆØ§Ù‡? Ù…ØªØ±?Ø§Ù„ Ø±?Ù…Ùˆ Ø±Ø§Ø¨Ø±"
+167	Qeshm 		560267	CFM56	779913	"Cleaning, Inspection, Repair"	1	HPTÂ FRONT SHAFTÂ  Â  Â  Â  Â  Â 	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	1498M40P05	7/11/2024	Completed	Completed		Completed	
+168	Zagros		560162	JT8D-217C	726987	 Inspection	146	LPT Blade stg 3 & 4	Engine Shop	"798403, 822504"	15/03/25	Completed	Completed	Completed	Completed	Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø±Ø§Øª Ø³Ø§?Ù† Ú¯Ø±Ø¯?Ø¯.
+170	GT 22					Cleaning	5	Disk	Engine Design	List	26/11/24				Completed	
+171	Zagros		560162	JT8D-217C	726987	 Inspection (FPI)	150	"Vane, Disk"	Engine Shop	List	2/2/2025	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ùˆ?Ù† Ù‡Ø§ Ø¨Ù‡ ÙØ±Ø¯?Ø³ Ø¹ÙˆØ¯Øª Ú¯Ø±Ø¯?Ø¯ØŒ ØªÙ…?Ø²Ú©Ø§Ø±? Ø¨Ø¹Ø¯ Ø§Ø² FPI Ø¯?Ø³Ú© Ù‡Ø§ Ø¨Ø§Ù‚? Ù…Ø§Ù†Ø¯Ù‡ Ø§Ø³Øª."
+172	Zagros		560161	JT8D-217A	717439	 Inspection (FPI)	72	"Vane, Disk"	Engine Shop	List	20/01/25	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ùˆ?Ù† Ù‡Ø§ Ø¨Ù‡ ÙØ±Ø¯?Ø³ Ø¹ÙˆØ¯Øª Ú¯Ø±Ø¯?Ø¯. ØªÙ…?Ø²Ú©Ø§Ø±? Ø¨Ø¹Ø¯ Ø§Ø² FPI Ø¯?Ø³Ú© Ù‡Ø§ Ù…Ø§Ù†Ø¯Ù‡ Ø§Ø³Øª."
+173	Air 1		560097	CFM56-3C1	858594	"Cleaning, Inspection (FPI)"	1	HPT FRONT SHAFT 	Engine Shop	1385M90P04	18/12/24	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±? Ùˆ Ø¨Ø§Ø²Ø±Ø³?
+174	Sahand Asia		560021	JT8D-219	-	"Cleaning, Inspection, Repair"	10	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	17/02/25	Completed	Completed	Completed	Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ùˆ ØªØ¹Ù…?Ø±
+175	Taban		560224	CFM56-3C1	858811	Cleaning	6013	Engine/Module Part List	Engine Shop	List	29/01/25	Completed			Completed	
+176	Aseman		560230	CFM56-5C2/F	740284	"Cleaning, Inspection"	80	"BLADE, HPT ROTOR"	Engine Shop	2080M81P01	13/01/25	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+177	Aseman	5025213	560102	CFM56-5C	740178	Inspection	80	HPT BLADE	Engine Shop	2080M81P01	3/2/2025	Completed	Completed		Completed	Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?
+178	Qeshm 		560286	CF6		"Cleaning, Inspection"	113	"HPT Vane (24), HPT Blade (89)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	List	2/3/2025	Completed	Completed		Completed	"Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³?ØŒ Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ£??Ø¯ ØªØ¹Ù…?Ø± ØªÙˆØ³Ø· Ú©Ø§Ø±ÙØ±Ù…Ø§"
+179	Iran Air tour		560229	JT8D	718555Â 	"Cleaning, Inspection, Repair"	8	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	12/2/2025	Completed	Completed	Completed	Completed	Ø¨Ù‡ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ø¢Ù‚Ø§? Ø±Ø¶Ø§?? Ø¨Ù‡ Ø³Ø±Ùˆ?Ø³ Ø§ÙˆØ±Ø¯Ø± 560229 Ø§Ø¶Ø§ÙÙ‡ Ú¯Ø±Ø¯?Ø¯. Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? 1/13/2025- Ø¬Ø§Ø¨ Ú©Ø§Ø±Ø¯ ØªØ¹Ù…?Ø± Ø¢Ù…Ø§Ø¯Ù‡ Ø§Ø³Øª. Ù¾Ø§?Ø§Ù† ØªØ¹Ù…?Ø± Ù…ÙˆØ±Ø® 1403/11/24
+180	Taban	Part 1	560224	CFM56-3C1	858811	Inspection FPI	1414	"Blade, Nozzle, Standard Part"	Engine Shop	List	4/2/2025	Completed	Completed			Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? FPI Ùˆ ØªØ­Ùˆ?Ù„ Ù‚Ø·Ø¹Ø§Øª Ø¨Ù‡ ÙØ±Ø¯?Ø³
+181	Meraj		560005	CFM56-5B5/P	575649	Repair (Tack weld)	1	"COMBUSTION, CHAMBER ASSY"	Engine Shop	1968M41G03	27/01/25			Completed		Ù†?Ø§Ø² Ø¨Ù‡ 80 Ø¹Ø¯Ø¯ Â Tack WeldÂ  Ø¨?Ù† Head Bolt Ù‡Ø§? Ù…ØªØµÙ„ Ø´Ø¯Ù‡ Ø¨Ù‡ Outer liner Ùˆ Inner cowl Ø¯Ø§Ø±Ø¯
+182	Meraj (Paya soroush)		560292	TAY650		"Cleaning, Inspaection"	25	HPT NGV	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	JR34272A	13/01/25	Completed	Completed		Completed	ÙØ±Ù… 1 ØµØ§Ø¯Ø± Ú¯Ø±Ø¯?Ø¯
+183	Air 1		560097	CFM56-3C1	858594	Coating	80	OGV	Engine Shop	"335-034-621-0, 335-034-623-0"		Completed	Completed			"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ú†Ø´Ù…?ØŒ Ø¶Ø±ÙˆØ±Øª Ù¾ÙˆØ´Ø´ Ø¨Ø±Ø¯Ø§Ø±? Ø¬Ù‡Øª FPIØŒ Ø·ÙˆÙ„Ø§Ù†? Ø¨ÙˆØ¯Ù† Ø²Ù…Ø§Ù† ØªØ£Ù…?Ù† Ù…ÙˆØ§Ø¯ Ø§ÙˆÙ„?Ù‡ Ø®Ø§Ø±Ø¬? Ø¬Ù‡Øª Ø§Ø¹Ù…Ø§Ù„ Ù¾ÙˆØ´Ø´ Ù¾Ù„? Ø§ÙˆØ±ØªØ§Ù† "
+184	Qeshm 		560262	CFM56-5B4/P	779225	Cleaning	80	HPT Blade	Engine Shop	2100M96P02	25/01/25	Completed			Completed	
+185	GT 22					Cleaning	1	"Housing, Compressor Front Bearing"	GT 22	R-2-100-250-07	5/4/2025	Completed				
+187	Chabahar	RO-1403-668	560305	JT8D		"Cleaning, Inspection"	146	LPT Blade stg 3 & 4	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	"798403, 822504"	8/2/2025	Completed	Completed		Completed	
+188	Kish Air	"5025649, 5026042, 5026346, 5025851"	"560306, 560141, 560119, 560136"	CFM56-5B		"Cleaning, Inspection, Repair"	72	"HPT Nozzle (12), LPT Nozzle (15), HPT Shroud (42), Dome (2), Outer Liner (1)"	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±			Completed	completed			" Ù¾Ø§?Ø§Ù† Ø¨Ø§Ø²Ø±Ø³? Ù‚Ø·Ø¹Ø§ØªØŒ ?Ú©? Ø§Ø² Ø¯Ø§Ù… Ù‡Ø§ ØªØ¹Ù…?Ø± Ø³Ù†Ú¯?Ù†? Ø¯Ø§Ø±Ø¯. Ø§Ø¨Ù„Ø§Øº Ø§ÙˆØªØ± Ù„Ø§?Ù†Ø± Ùˆ Ø¯Ø§Ù… Ø¨Ù‡ ØªØ¹Ù…?Ø±Ø§Øª. Ø¯Ùˆ Ø¹Ø¯Ø¯ LPT Nozzle segment stg 1 Ø¨Ø§ Ù¾Ø§Ø±Øª Ù†Ø§Ù…Ø¨Ø± 338-108-608-0 Ø®Ø§Ø±Ø¬ Ø§Ø² Ø­Ø¯ ØªØ¹Ù…?Ø± Ù…? Ø¨Ø§Ø´Ù†Ø¯. ?Ú© Ø¯Ø§Ù… Ø¯Ø± Ú©Ù¾ Ù„?Ø³Øª Ù†?Ø³Øª- Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªØ¹Ù…?Ø± LPT Nozzle Ø¯Ø± ØªØ¹Ù…?Ø± Ù‚Ø·Ø¹Ù‡- Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† ØªØ¹Ù…?Ø± HPT Nozzle"
+189	GT 20		510001	CFM56-5B		Sandblast	1	1st Stage LPT Blade	GT 20	337-127-712-0	17/02/25	Completed				
+191	Qeshm		560262	CFM56-5B4/P	779225	"Cleaning, FPI"	1	HPT FRONT SHAFT 	Engine Shop	1498M40P05	5/3/2025	Completed	Completed		Completed	
+192	Qeshm		560262	CFM56-5B4/P	779225	Inspection FPI	2	"Duct, Retainer"	Engine Shop	List	12/3/2025		Completed		Completed	"Ø¨Ù‡ Ø¯Ù„?Ù„ Ø¹Ø¯Ù… Ø§Ù…Ú©Ø§Ù† Ù¾ÙˆØ´Ø´ Ø¨Ø±Ø¯Ø§Ø±? Ùˆ Ù¾ÙˆØ´Ø´ØŒ 309 Ù‚Ø·Ø¹Ù‡ Ø¯?Ú¯Ø± Ù¾Ø±ÙˆÚ˜Ù‡ Ø¨Ø¯ÙˆÙ† Ø¨Ø§Ø²Ø±Ø³? Ø¨Ù‡ Ù…ÙˆØªÙˆØ± Ø¹ÙˆØ¯Øª Ú¯Ø±Ø¯?Ø¯."
+193	Taban		560224	CFM56-3C1	858811	Inspection FPI	208	"Seal, Slide, â€¦"	Engine Shop	List	25/02/25	Completed	Completed		Completed	Ø§Ø¬Ø±Ø§? Ø¨Ø§Ø²Ø±Ø³? FPI ØªÙˆØ³Ø· ÙˆØ§Ø­Ø¯ NDT Ø¢Ù‚Ø§? Ù…Ø¹ØµÙˆÙ… Ù¾Ø±Ø³Øª Ø§Ù†Ø¬Ø§Ù… Ú¯Ø±Ø¯?Ø¯. ØªÙ…?Ø²Ú©Ø§Ø±? Ù¾Ø³ Ø§Ø² FPI ØªÙˆØ³Ø· Ù…ÙˆØªÙˆØ± Ø§Ù†Ø¬Ø§Ù… Ú¯Ø±Ø¯?Ø¯.
+194	GT 20					Inspection	1	LPT Blade	NDT-QC	337-127-712-0	14/04/25		Completed		Completed	ØªÙˆØ³Ø· Ù¾Ø±Ø³Ù†Ù„ NDT Ø¨Ø§ ØªØ¬Ù‡?Ø²Ø§Øª ØªØ¹Ù…?Ø±Ù‚Ø·Ø¹Ù‡ Ø³Ø·Ø­ Ø§?Ø±ÙÙˆ?Ù„ Ø¨Ø§Ø²Ø±Ø³? Ú¯Ø±Ø¯?Ø¯.
+195	Qeshm		560208	CFM56-5B4/P	779213	"Cleaning, Inspection, Repair"	35	HPT Blade	Engine Shop	2100M96P02		Completed				"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø§Ø²Ø±Ø³?ØŒ Ù†?Ø§Ø²Ù…Ù†Ø¯ Ø§Ú† Ùˆ Ø´Ø§Øª Ù¾?Ù†"
+196	Qeshm		560262	CFM56-5B4/P	779225	"Cleaning, Inspection, Repair"	44	HPT Blade	Engine Shop	2100M96P02		Completed				"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø§Ø²Ø±Ø³?ØŒ Ù†?Ø§Ø²Ù…Ù†Ø¯ Ø§Ú† Ùˆ Ø´Ø§Øª Ù¾?Ù†"
+197	560187		560173	JT8D-219	709737	"Cleaning, Inspection, repair"	146	LPT Blade stg 3 & 4	Engine Shop	"798403, 822504"		Completed				"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¨Ø§Ø²Ø±Ø³? Ù¾?Ø´Ø±ÙØª 90%"
+198	Kish Air		560173	JT8D-219	709737	"Cleaning, Inspection"	67	"Disk 3 & 4, Vane 2, 3 & 4"	Engine Shop	List		Completed				"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±?ØŒ Ø¨Ø§Ø²Ø±Ø³? Ù¾?Ø´Ø±ÙØª 10%"
+199	GT 20		510001	CFM56		Sandblast	1	1st Stage LPT Blade	NDT-QC	337-127-712-0	24/04/25	Completed			Completed	
+200	Kish Air	5025293	560141	CFM56-5B 	577860	"Cleaning, Inspection"	8	"LLP (Booster Spool, Fan shaft,..)"	Engine Shop	List						Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ ØªÙ…?Ø²Ú©Ø§Ø±?
+202	Taban		560332	JT8D219		"Cleaning, Inspection, Repair"	64	HPT Blade Stage1	Ù…Ø¹Ø§ÙˆÙ†Øª Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±	856101		Completed				"Ù¾Ø§?Ø§Ù† ØªÙ…?Ø²Ú©Ø§Ø±? Ùˆ Ø³Ù†Ø¯Ø¨Ù„Ø§Ø³ØªØŒ Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø§Ø²Ø±Ø³?"
+205	GT 20					"Cleaning, Inspection (FPI-4)"	3	LPT Blade stg 3	NDT-QC	337-127-712-0	14/05/25	Completed	Completed		Completed	
+206	Zagros	5026220	560140	CFM56-5B4/P	779245	"Cleaning, Inspection, Repair"	80	 HPT Blade (80) 	Engine Shop	1957M10P03						Ø¯Ø± Ù…Ø±Ø­Ù„Ù‡ Ø§Ø¯? Ú©Ø§Ø±Ù†Øª
