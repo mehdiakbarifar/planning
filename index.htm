@@ -1,244 +1,224 @@
 <!DOCTYPE html>
 <html lang="fa">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>داشبورد پروژه</title>
-    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Load desktop CSS for viewports 768px and wider, and mobile CSS for smaller ones -->
+    <link rel="stylesheet" media="(min-width:768px)" href="css/desktop.css" />
+    <link rel="stylesheet" media="(max-width:767px)" href="css/mobile.css" />
 
     <!-- Embedded Font: BNazanin -->
     <style>
-      @font-face {
-        font-family: 'BNazanin';
-        src: url('fonts/BNazanin.woff2') format('woff2'),
-             url('fonts/BNazanin.woff') format('woff'),
-             url('fonts/BNazanin.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      :lang(fa) {
-        font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
-      }
+        @font-face {
+            font-family: 'BNazanin';
+            src: url('fonts/BNazanin.woff2') format('woff2'), url('fonts/BNazanin.woff') format('woff'), url('fonts/BNazanin.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :lang(fa) {
+            font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
+        }
     </style>
 
     <!-- Chart.js and PapaParse libraries -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
-  </head>
-  <body lang="fa">
+</head>
+<body lang="fa">
     <!-- Header -->
     <header>
-      <div class="header-left">
-        <div id="clock-time"></div>
-        <div id="clock-date"></div>
-      </div>
-      <div class="header-center">
-        <h1>داشبورد پروژه</h1>
-      </div>
-      <div class="header-right">
-        <img src="logo.png" alt="Logo" class="header-logo" />
-      </div>
+        <div class="header-left">
+            <div id="clock-time"></div>
+            <div id="clock-date"></div>
+        </div>
+        <div class="header-center">
+            <h1>داشبورد پروژه</h1>
+        </div>
+        <div class="header-right">
+            <img src="logo.png" alt="Logo" class="header-logo" />
+        </div>
     </header>
 
-    <!-- Mobile Tab Navigation -->
+    <!-- Mobile Tab Navigation (visible only in mobile.css) -->
     <nav class="tab-nav">
-      <button class="tab-button active" data-target="section-a">پروژه‌های جاری</button>
-      <button class="tab-button" data-target="section-b">داده‌های تجهیز</button>
-      <button class="tab-button" data-target="section-c">پروژه‌های آینده</button>
-      <button class="tab-button" data-target="section-d">تحقیق و توسعه</button>
+        <button class="tab-button active" data-target="section-a">پروژه‌های جاری</button>
+        <button class="tab-button" data-target="section-b">داده‌های تجهیز</button>
+        <button class="tab-button" data-target="section-c">پروژه‌های آینده</button>
+        <button class="tab-button" data-target="section-d">تحقیق و توسعه</button>
     </nav>
 
     <!-- Main Container -->
     <main class="dashboard-grid">
-      <!-- Section A: Current Projects -->
-      <section id="section-a" class="section active">
-        <div class="section-header">
-          <div class="section-header-left">
-            <input type="text" class="section-filter" placeholder="جستجو..." data-target="#current-projects-table" />
-          </div>
-          <div class="section-header-center">
-            <h2>پروژه‌های جاری</h2>
-          </div>
-          <div class="section-header-right">
-            <!-- Future controls can go here -->
-          </div>
-        </div>
-        <div class="scrollable-table" id="current-projects-table-container">
-          <table id="current-projects-table">
-            <thead>
-   
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Section B: Equipment Data -->
-      <section id="section-b" class="section">
-        <div class="section-header">
-          <div class="section-header-left">
-            <input type="text" class="section-filter" placeholder="جستجو همه تجهیزات..." data-target=".equipment-container table" />
-          </div>
-          <div class="section-header-center">
-            <h2>داده‌های تجهیز</h2>
-          </div>
-          <div class="section-header-right">
-            <input type="text" class="section-filter" placeholder="فیلتر تجهیزات کالیبراسیون..." data-target="#calibration-equipment-table" />
-          </div>
-        </div>
-        <div class="equipment-container">
-          <!-- Service Equipment Table -->
-          <div class="equipment-subsection">
-            <h3 class="subsection-header">تجهیزات سرویس</h3>
-            <div class="scrollable-table" id="service-equipment-scroll">
-              <table id="service-equipment-table">
-                <thead>
-             
-                </thead>
-                <tbody>
-                  <!-- Placeholder row -->
-           
-                </tbody>
-              </table>
+        <!-- Section A: Current Projects -->
+        <section id="section-a" class="section active">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <input type="text" class="section-filter" placeholder="جستجو..." data-target="#current-projects-table" />
+                </div>
+                <div class="section-header-center">
+                    <h2>پروژه‌های جاری</h2>
+                </div>
+                <div class="section-header-right">
+                    <!-- Future controls can go here -->
+                </div>
             </div>
-          </div>
-          <!-- Calibration Equipment Table -->
-          <div class="equipment-subsection">
-            <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
-            <div class="scrollable-table" id="calibration-equipment-scroll">
-              <table id="calibration-equipment-table">
-                <thead>
-       
-                </thead>
-                <tbody>
-                  <!-- Placeholder row -->
-         
-                </tbody>
-              </table>
+            <div class="scrollable-table" id="current-projects-table-container">
+                <table id="current-projects-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
             </div>
-          </div>
-        </div>
-        <!-- Calibration Timeline Chart -->
-        <div class="equipment-timeline-container">
-          <h3 class="timeline-title">توزیع تاریخ کالیبراسیون</h3>
-          <canvas id="calibrationTimelineChart" aria-label="Calibration Timeline Chart" role="img"></canvas>
-        </div>
-      </section>
+        </section>
 
-      <!-- Section C: Future Projects -->
-      <section id="section-c" class="section">
-        <div class="section-header">
-          <div class="section-header-left">
-            <input type="text" class="section-filter" placeholder="جستجو..." data-target="#future-projects-table" />
-          </div>
-          <div class="section-header-center">
-            <h2>پروژه‌های آینده</h2>
-          </div>
-          <div class="section-header-right">
-            <!-- Future controls can go here -->
-          </div>
-        </div>
-        <div class="scrollable-table" id="future-projects-table-container">
-          <table id="future-projects-table">
-            <thead>
+        <!-- Section B: Equipment Data -->
+        <section id="section-b" class="section">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <input type="text" class="section-filter" placeholder="جستجو همه تجهیزات..." data-target=".equipment-container table" />
+                </div>
+                <div class="section-header-center">
+                    <h2>داده‌های تجهیز</h2>
+                </div>
+                <div class="section-header-right">
+                    <input type="text" class="section-filter" placeholder="فیلتر تجهیزات کالیبراسیون..." data-target="#calibration-equipment-table" />
+                </div>
+            </div>
+            <div class="equipment-container">
+                <!-- Service Equipment Table -->
+                <div class="equipment-subsection">
+                    <h3 class="subsection-header">تجهیزات سرویس</h3>
+                    <div class="scrollable-table" id="service-equipment-scroll">
+                        <table id="service-equipment-table">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Calibration Equipment Table -->
+                <div class="equipment-subsection">
+                    <h3 class="subsection-header">تجهیزات کالیبراسیون</h3>
+                    <div class="scrollable-table" id="calibration-equipment-scroll">
+                        <table id="calibration-equipment-table">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-            </thead>
-            <tbody>
-              <!-- Placeholder row -->
-             
-            </tbody>
-          </table>
-        </div>
-      </section>
+        </section>
 
-      <!-- Section D: R&D Projects & Charts -->
-      <section id="section-d" class="section">
-        <div class="section-header">
-          <div class="section-header-left">
-            <!-- Hidden filter placeholder -->
-            <input type="text" class="section-filter" placeholder="جستجو..." data-target="" style="opacity: 0; pointer-events: none;" />
-          </div>
-          <div class="section-header-center">
-            <h2>پروژه‌های تحقیق و توسعه</h2>
-          </div>
-          <div class="section-header-right">
-            <!-- Future controls can go here -->
-          </div>
-        </div>
-        <div class="rd-text" id="rd-info-container">
-          <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
-        </div>
-        <div class="charts-container">
-          <div class="chart-item">
-            <canvas id="statusChart" aria-label="نمودار وضعیت پروژه‌ها" role="img"></canvas>
-            <p class="chart-label">Projects Status</p>
-          </div>
-          <div class="chart-item">
-            <canvas id="sowChart" aria-label="نمودار دسته‌بندی SOW" role="img"></canvas>
-            <p class="chart-label">Scope</p>
-          </div>
-          <div class="chart-item">
-            <canvas id="applicantChart" aria-label="نمودار توزیع متقاضیان" role="img"></canvas>
-            <p class="chart-label">Applicant</p>
-          </div>
-        </div>
-        <div class="client-chart-container">
-          <div class="chart-item">
-            <canvas id="clientChart" aria-label="Client Distribution Chart" role="img"></canvas>
-            <p class="chart-label">Client Distribution</p>
-          </div>
-        </div>
-      </section>
+        <!-- Section C: Future Projects -->
+        <section id="section-c" class="section">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <input type="text" class="section-filter" placeholder="جستجو..." data-target="#future-projects-table" />
+                </div>
+                <div class="section-header-center">
+                    <h2>پروژه‌های آینده</h2>
+                </div>
+                <div class="section-header-right">
+                    <!-- Future controls can go here -->
+                </div>
+            </div>
+            <div class="scrollable-table" id="future-projects-table-container">
+                <table id="future-projects-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
 
-      <!-- Desktop Drag Bars -->
-      <div id="drag-vertical" class="drag-bar vertical"></div>
-      <div id="drag-horizontal" class="drag-bar horizontal"></div>
+        <!-- Section D: R&D Projects & Charts -->
+        <section id="section-d" class="section">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <!-- Hidden filter placeholder-->
+                    <input type="text" class="section-filter" placeholder="جستجو..." data-target="" style="opacity: 0; pointer-events: none;" />
+                </div>
+                <div class="section-header-center">
+                    <h2>پروژه‌های تحقیق و توسعه</h2>
+                </div>
+                <div class="section-header-right">
+                    <!-- Future controls can go here -->
+                </div>
+            </div>
+            <div class="rd-text" id="rd-info-container">
+                <p id="rd-info">در انتظار دریافت داده‌ها ...</p>
+            </div>
+            <div class="charts-container">
+                <div class="chart-item">
+                    <canvas id="statusChart" aria-label="نمودار وضعیت پروژه‌ها" role="img"></canvas>
+                    <p class="chart-label">Projects Status</p>
+                </div>
+                <div class="chart-item">
+                    <canvas id="sowChart" aria-label="نمودار دسته‌بندی SOW" role="img"></canvas>
+                    <p class="chart-label">Scope</p>
+                </div>
+                <div class="chart-item">
+                    <canvas id="applicantChart" aria-label="نمودار توزیع متقاضیان" role="img"></canvas>
+                    <p class="chart-label">Applicant</p>
+                </div>
+            </div>
+            <div class="client-chart-container">
+                <div class="chart-item">
+                    <canvas id="clientChart" aria-label="Client Distribution Chart" role="img"></canvas>
+                    <p class="chart-label">Client Distribution</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desktop Drag Bars (visible only on desktop) -->
+        <div id="drag-vertical" class="drag-bar vertical"></div>
+        <div id="drag-horizontal" class="drag-bar horizontal"></div>
     </main>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-left">
-        <img src="footer-logo.png" alt="Footer Logo" class="footer-logo" />
-      </div>
-      <div class="footer-center">
-        <p>توسعه توسط بخش هماهنگ‌کننده معاونت تعمیر قطعه</p>
-      </div>
-      <div class="footer-right">
-        <div id="footer-controls">
-          <div id="font-size-controls">
-            <button id="decrease-font">A-</button>
-            <button id="increase-font">A+</button>
-          </div>
-          <div id="theme-switcher">
-            <div class="theme-option" data-theme="theme-dark"></div>
-            <div class="theme-option" data-theme="theme-light"></div>
-            <div class="theme-option" data-theme="theme-midnight"></div>
-            <div class="theme-option" data-theme="theme-light-colored"></div>
-            <div class="theme-option" data-theme="theme-gray"></div>
-            <div class="theme-option" data-theme="theme-vintage"></div>
-            <div class="theme-option" data-theme="theme-ocean"></div>
-            <div class="theme-option" data-theme="theme-forest"></div>
-            <div class="theme-option" data-theme="theme-solar"></div>
-            <div class="theme-option" data-theme="theme-crimson"></div>
-          </div>
+        <div class="footer-left">
+            <img src="footer-logo.png" alt="Footer Logo" class="footer-logo" />
         </div>
-      </div>
+        <div class="footer-center">
+            <p>توسعه توسط بخش هماهنگ‌کننده معاونت تعمیر قطعه</p>
+        </div>
+        <div class="footer-right">
+            <div id="footer-controls">
+                <div id="font-size-controls">
+                    <button id="decrease-font">A-</button>
+                    <button id="increase-font">A+</button>
+                </div>
+                <div id="theme-switcher">
+                    <div class="theme-option" data-theme="theme-dark"></div>
+                    <div class="theme-option" data-theme="theme-light"></div>
+                    <div class="theme-option" data-theme="theme-midnight"></div>
+                    <div class="theme-option" data-theme="theme-light-colored"></div>
+                    <div class="theme-option" data-theme="theme-gray"></div>
+                    <div class="theme-option" data-theme="theme-vintage"></div>
+                    <div class="theme-option" data-theme="theme-ocean"></div>
+                    <div class="theme-option" data-theme="theme-forest"></div>
+                    <div class="theme-option" data-theme="theme-solar"></div>
+                    <div class="theme-option" data-theme="theme-crimson"></div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script type="module" src="js/app.js"></script>
-<div id="row-modal" class="modal">
-  <div class="modal-content">
-    <span class="close-modal">&times;</span>
-    <h3>Row Details</h3>
-    <table id="modal-data-table">
-      <thead><tr></tr></thead>
-      <tbody><tr></tr></tbody>
-    </table>
-  </div>
-</div>
-
-  </body>
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/appInit.js"></script>
+    <!-- Modal for row view -->
+    <div id="row-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Row Details</h3>
+            <table id="modal-data-table">
+                <thead><tr></tr></thead>
+                <tbody><tr></tr></tbody>
+            </table>
+        </div>
+    </div>
+</body>
 </html>
