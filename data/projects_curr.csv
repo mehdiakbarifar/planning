@@ -1,4 +1,4 @@
-﻿Row	Client	Service Order	New Service order	Engine Type	ESN	SOW	QTY	Part Name	Applicant	Part No.	Actual End	Cleaning	Inspection	Repair & Coating	Status	Remarks
+﻿Row	Client	Service Order	New Service order	Engine Type	ESN	SOW	QTY	Part Name	Applicant	Part No.	Date	Cleaning	Inspection	Repair & Coating	Status	Remarks
 1	GT 31	5026277	510005	SAM 146	"146119, 146134"	"Cleaning, Inspection"	8	"Dome, Inner, Outer, cowl"	Sharifi	"3650115040, 3650116010, 3650114040, 3650117040"	26/02/24	Completed	Completed		Completed	پا?ان بازرس?
 2	QC- NDT	5025114	510005	SAM 146 GDT-NDT005	GT21	"Cleaning, Inspection (FPI-2)"	23755	"LIST (Bolt,..)"	NDT-QC	List	11/3/2024	Completed	Completed		Completed	پا?ان بازرس?
 4	Pars Air	S-10008	560007	CF34		"Cleaning, Inspection, Repair"	40	HPT Nozzle segment 2 (19+21)		5099T23G07		Completed	Completed			"21 قطعه تحو?ل کارفرما گرد?ده است. 19عدد بر?ز?نگ انجام شده است. در حال تعم?ر نها??: بلند?نگ و بازرس? انجام شده است، قطعات در بر?ز?نگ م? باشند و سپس بلند?نگ، کول?نک و پوشش"
