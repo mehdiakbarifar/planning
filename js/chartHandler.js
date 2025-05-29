@@ -1,29 +1,27 @@
-// chartHandler.js
-
-import { fetchCSV } from './csvHandler.js';
+import { fetchCSV } from './csvHelper.js';
 
 /**
  * Initialize Status Chart (Pie Chart for Completed, Repair, Pending tasks) – Section D.
  */
 export function initStatusChart() {
     const statusCanvas = document.getElementById('statusChart');
-    if (statusCanvas) {
-        const ctx = statusCanvas.getContext('2d');
-        new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Completed', 'Repair', 'Pending'],
-                datasets: [{
-                    data: [10, 5, 3],
-                    backgroundColor: ['#4caf50', '#ff9800', '#f44336']
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: { legend: { position: 'right' } }
-            }
-        });
-    }
+    if (!statusCanvas) return;
+
+    const ctx = statusCanvas.getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Completed', 'Repair', 'Pending'],
+            datasets: [{
+                data: [10, 5, 3],
+                backgroundColor: ['#4caf50', '#ff9800', '#f44336']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { position: 'right' } }
+        }
+    });
 }
 
 /**
@@ -31,23 +29,23 @@ export function initStatusChart() {
  */
 export function initScopeOfWorkChart() {
     const sowCanvas = document.getElementById('sowChart');
-    if (sowCanvas) {
-        const ctx = sowCanvas.getContext('2d');
-        new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Cleaning', 'Inspection', 'Repair', 'Other'],
-                datasets: [{
-                    data: [8, 6, 4, 2],
-                    backgroundColor: ['#2196f3', '#9c27b0', '#e91e63', '#00bcd4']
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: { legend: { position: 'right' } }
-            }
-        });
-    }
+    if (!sowCanvas) return;
+
+    const ctx = sowCanvas.getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Cleaning', 'Inspection', 'Repair', 'Other'],
+            datasets: [{
+                data: [8, 6, 4, 2],
+                backgroundColor: ['#2196f3', '#9c27b0', '#e91e63', '#00bcd4']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { position: 'right' } }
+        }
+    });
 }
 
 /**
