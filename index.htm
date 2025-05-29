@@ -5,23 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>داشبورد پروژه</title>
 
-    <!-- Load desktop CSS for viewports 768px and wider, and mobile CSS for smaller ones -->
+    <!-- Load common CSS first, then desktop/mobile overrides -->
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" media="(min-width:768px)" href="css/desktop.css" />
     <link rel="stylesheet" media="(max-width:767px)" href="css/mobile.css" />
-
-    <!-- Embedded Font: BNazanin -->
-    <style>
-        @font-face {
-            font-family: 'BNazanin';
-            src: url('fonts/BNazanin.woff2') format('woff2'), url('fonts/BNazanin.woff') format('woff'), url('fonts/BNazanin.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        :lang(fa) {
-            font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
-        }
-    </style>
 
     <!-- Chart.js and PapaParse libraries -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -109,7 +96,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Section C: Future Projects -->
@@ -137,7 +123,7 @@
         <section id="section-d" class="section">
             <div class="section-header">
                 <div class="section-header-left">
-                    <!-- Hidden filter placeholder-->
+                    <!-- Hidden filter placeholder -->
                     <input type="text" class="section-filter" placeholder="جستجو..." data-target="" style="opacity: 0; pointer-events: none;" />
                 </div>
                 <div class="section-header-center">
