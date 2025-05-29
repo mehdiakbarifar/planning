@@ -1,0 +1,123 @@
+/* common.css */
+
+/* Font Face & Reset */
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.woff2') format('woff2'), url('../fonts/BNazanin.woff') format('woff'), url('../fonts/BNazanin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:lang(fa) {
+    font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables & Theme Colors */
+:root {
+    --background-color: #1f1f1f;
+    --section-bg: #2a2a2a;
+    --heading-bg: #333;
+    --heading-text: #ffffff;
+    --text-color: #ffffff;
+    --chart-padding: 1px;
+    --chart-margin: 1px;
+    --chart-height: 150px;
+    --rd-chart-gap: 1px;
+    --content-font-size: 1.2rem;
+}
+
+/* Theme Variations */
+body.theme-dark {
+    --background-color: #1f1f1f;
+    --section-bg: #2a2a2a;
+    --heading-bg: #333;
+    --heading-text: #ffffff;
+    --text-color: #ffffff;
+}
+
+body.theme-light {
+    --background-color: #f5f5f5;
+    --section-bg: #ffffff;
+    --heading-bg: #e0e0e0;
+    --heading-text: #333;
+    --text-color: #333;
+}
+
+body.theme-midnight {
+    --background-color: #1a237e;
+    --section-bg: #303f9f;
+    --heading-bg: #283593;
+    --heading-text: #ffffff;
+    --text-color: #c5cae9;
+}
+
+body.theme-light-colored {
+    --background-color: #f5f5f5;
+    --section-bg: #ffffff;
+    --heading-bg: #03dac6;
+    --heading-text: #333;
+    --text-color: #333;
+}
+
+body.theme-gray {
+    --background-color: #cccccc;
+    --section-bg: #e0e0e0;
+    --heading-bg: #999999;
+    --heading-text: #333;
+    --text-color: #333;
+}
+
+body.theme-vintage {
+    --background-color: #f7f1e1;
+    --section-bg: #f0e4d7;
+    --heading-bg: #d4a373;
+    --heading-text: #5d4037;
+    --text-color: #5d4037;
+}
+
+body.theme-ocean {
+    --background-color: #a1c4fd;
+    --section-bg: #c2e9fb;
+    --heading-bg: #0077be;
+    --heading-text: #000000;
+    --text-color: #000000;
+}
+
+body.theme-forest {
+    --background-color: #a8e6cf;
+    --section-bg: #dcedc1;
+    --heading-bg: #388e3c;
+    --heading-text: #000000;
+    --text-color: #000000;
+}
+
+body.theme-solar {
+    --background-color: #ffcc80;
+    --section-bg: #f0a500;
+    --heading-bg: #c67c00;
+    --heading-text: #ffffff;
+    --text-color: #4a2800;
+}
+
+body.theme-crimson {
+    --background-color: #b71c1c;
+    --section-bg: #c62828;
+    --heading-bg: #d32f2f;
+    --heading-text: #ffffff;
+    --text-color: #ffebee;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Vazir', 'Tahoma', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    direction: ltr;
+    transition: background-color 0.5s, color 0.5s;
+}

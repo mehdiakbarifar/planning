@@ -1,48 +1,10 @@
-/* ---------------------------- */
-/* Mobile CSS – Revised for Dash2 with Themes, Coloring, and Row Highlighting */
-/* ---------------------------- */
+/* mobile.css */
 
-/* Re-declare font and resets */
-@font-face {
-    font-family: 'BNazanin';
-    src: url('../fonts/BNazanin.woff2') format('woff2'),
-         url('../fonts/BNazanin.woff') format('woff'),
-         url('../fonts/BNazanin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Import common styles */
+@import url('common.css');
 
-:lang(fa) {
-    font-family: 'BNazanin', 'Vazir', 'Tahoma', sans-serif !important;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* CSS Variables (same as your desktop theme) */
-:root {
-    --background-color: #1f1f1f;
-    --section-bg: #2a2a2a;
-    --heading-bg: #333;
-    --heading-text: #ffffff;
-    --text-color: #ffffff;
-    --chart-padding: 1px;
-    --chart-margin: 1px;
-    --chart-height: 150px;
-    --rd-chart-gap: 1px;
-    --content-font-size: 1.2rem;
-}
-
-/* Base body styles */
+/* Mobile-specific styling */
 body {
-    font-family: 'Vazir', 'Tahoma', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    direction: ltr;
-    transition: background-color 0.5s, color 0.5s;
     overflow-x: hidden;
 }
 
@@ -51,11 +13,7 @@ html, body {
     overflow-y: auto;
 }
 
-/* ----------------------------- */
 /* Mobile Header & Footer Styling */
-/* ----------------------------- */
-
-/* Improved Header Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -78,14 +36,12 @@ header {
     text-align: center;
 }
 
-/* Clock and Date styling */
 #clock-time,
 #clock-date {
     font-size: 1.1rem;
     color: var(--heading-text);
 }
 
-/* Adjust Header Title */
 header .header-center h1 {
     font-size: 1.5rem;
     margin: 5px 0;
@@ -93,7 +49,6 @@ header .header-center h1 {
     color: var(--heading-text);
 }
 
-/* Adjust Header Logo */
 .header-logo {
     max-height: 40px !important;
     width: auto;
@@ -102,7 +57,7 @@ header .header-center h1 {
     margin-left: auto;
 }
 
-/* Improved Footer Styling */
+/* Mobile Footer Styling */
 footer {
     background: var(--heading-bg);
     display: flex;
@@ -121,28 +76,23 @@ footer {
     margin: 5px 0;
 }
 
-/* Adjust Footer Logo */
 .footer-logo {
     max-height: 40px;
     width: auto;
     object-fit: contain;
 }
 
-/* ----------------------------- */
 /* Dashboard Grid & Sections */
-/* ----------------------------- */
-
-/* Dashboard grid: switch from desktop grid to block layout */
 .dashboard-grid {
     display: block;
     width: 100%;
-    padding: 80px 10px 80px; /* leave room for fixed header and footer */
+    padding: 80px 10px 80px;
     box-sizing: border-box;
     height: auto;
     background: var(--background-color);
 }
 
-/* Sections: preserve original colors and radii */
+/* Sections */
 .section {
     width: 100%;
     padding: 8px;
@@ -153,7 +103,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* Section header: same as desktop */
+/* Section Header */
 .section-header {
     display: flex;
     align-items: center;
@@ -173,7 +123,6 @@ footer {
     align-items: center;
 }
 
-    /* Input fields in section header */
     .section-header-left input.section-filter,
     .section-header-right input.section-filter {
         background: var(--heading-bg);
@@ -185,8 +134,7 @@ footer {
         font-size: 1.3em;
     }
 
-/* Table styling: force same themed background and text
-   (using !important so that these rules override any defaults) */
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -210,15 +158,16 @@ table {
         z-index: 2;
     }
 
-/* Highlight classes (applied to rows) */
-.highlight-red {
-    /* Actual override handled via row classes */
+/* Row Highlighting */
+tr.highlight-red td {
+    background-color: rgba(255, 0, 0, 0.3) !important;
 }
 
-.highlight-yellow {
+tr.highlight-yellow td {
+    background-color: rgba(255, 255, 0, 0.3) !important;
 }
 
-/* Remove fixed table heights so tables expand naturally */
+/* Scrollable Table Container */
 .scrollable-table {
     max-height: none;
     overflow: auto;
@@ -232,7 +181,7 @@ table {
     align-items: center;
     background: var(--heading-bg);
     padding: 8px;
-    margin-top: 60px; /* appears below fixed header */
+    margin-top: 60px;
     margin-bottom: 10px;
 }
 
@@ -252,7 +201,7 @@ table {
         background: var(--section-bg);
     }
 
-/* Only display the active section; hide the others */
+/* Only display the active section */
 .section {
     display: none;
 }
@@ -267,7 +216,7 @@ table {
     display: none !important;
 }
 
-/* Modal styling remains as in desktop */
+/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -296,22 +245,7 @@ table {
     cursor: pointer;
 }
 
-/* ----------------------------- */
-/* NEW: Row Highlight Overrides */
-/* ----------------------------- */
-tr.highlight-red td {
-    background-color: rgba(255, 0, 0, 0.3) !important;
-}
-
-tr.highlight-yellow td {
-    background-color: rgba(255, 255, 0, 0.3) !important;
-}
-
-/* ----------------------------- */
-/* Additional Mobile Adjustments */
-/* ----------------------------- */
-
-/* Ensure equipment-container occupies 60% of the overall dashboard grid's height */
+/* Equipment container adjustments on mobile */
 .equipment-container {
     display: flex;
     flex-direction: row;
@@ -320,7 +254,6 @@ tr.highlight-yellow td {
     height: 60%;
 }
 
-/* Make sure equipment subsections fill the equipment container */
 .equipment-subsection {
     flex: 1;
     display: flex;
@@ -353,16 +286,14 @@ tr.highlight-yellow td {
     text-align: center;
 }
 
-.equipment-timeline-container .timeline-title {
-    display: block;
-    font-size: 1.2em;
-    color: var(--heading-text);
-    margin-bottom: 8px;
-}
+    .equipment-timeline-container .timeline-title {
+        display: block;
+        font-size: 1.2em;
+        color: var(--heading-text);
+        margin-bottom: 8px;
+    }
 
-/* ----------------------------- */
-/* NEW: Row Highlight Overrides */
-/* ----------------------------- */
+/* Row Highlight Overrides (again for mobile) */
 tr.highlight-red td {
     background-color: rgba(255, 0, 0, 0.3) !important;
 }
@@ -370,3 +301,4 @@ tr.highlight-red td {
 tr.highlight-yellow td {
     background-color: rgba(255, 255, 0, 0.3) !important;
 }
+    
